@@ -1,0 +1,24 @@
+# Quotehelm
+
+> Quotehelm is run by Oscar Ayton, a sole trader in London (26 Everington Street, London W6 8DU). It sets up practical AI tools for London trades limited companies (plumbers, electricians, roofers, builders, kitchen fitters) to turn website visitors into enquiries. Contact: oscarayton@getquotehelm.co.uk.
+
+## Services and prices (GBP, no VAT charged, Quotehelm is not VAT registered)
+- Quote form (website quote form, every enquiry sent to your phone by text and email straight away): £295, live in 3 working days
+- Reviews feed (Google reviews shown on your site, plus an automatic review request after each job): £295, live in 5 working days
+- Online booking link (customers can book a site visit or call-out from your website): £195, live in 3 working days
+- Address fix (business name, address and phone made to match across your website, Google Business Profile and the main directories): £195, done in 3 working days. Google and directories can take longer to show the change
+- Chat assistant (AI chat that answers common questions and takes quote requests 24/7): £495, live in 5 working days
+- Website redesign (up to 5 mobile-friendly pages, quote form, Google reviews, click-to-call, HTTPS, basic Google setup, copy written from your information with your own photos, 2 rounds of changes): £899, live in 10 working days once content and access arrive
+- CRM and automations (missed-call text replies, quote follow-ups, review requests): £1,500 to £2,500
+- Optional care plan: £49 a month, 30 days' notice
+
+## Pages
+- [Home](https://getquotehelm.co.uk/)
+- [Pricing](https://getquotehelm.co.uk/pricing/)
+- [Plumbers](https://getquotehelm.co.uk/trades/plumbers/)
+- [Electricians](https://getquotehelm.co.uk/trades/electricians/)
+- [Roofers](https://getquotehelm.co.uk/trades/roofers/)
+- [Builders](https://getquotehelm.co.uk/trades/builders/)
+- [Kitchen fitters](https://getquotehelm.co.uk/trades/kitchen-fitters/)
+- [Contact](https://getquotehelm.co.uk/contact/)
+- [Privacy notice](https://getquotehelm.co.uk/privacy/)
