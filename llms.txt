@@ -1,16 +1,16 @@
 # Quotehelm
 
-> Quotehelm is run by Oscar Ayton, a sole trader in London (26 Everington Street, London W6 8DU). It sets up quote forms, Google reviews feeds, booking links, AI chat assistants, website redesigns and enquiry tracking for London trades limited companies (plumbers, electricians, roofers, builders, kitchen fitters), so more website visitors become enquiries. Fixed prices from £195. Contact: oscarayton@getquotehelm.co.uk.
+> Quotehelm is run by Oscar Ayton, a sole trader in London (26 Everington Street, London W6 8DU). It sets up quote forms, Google reviews feeds, booking links, AI chat assistants, website redesigns and enquiry tracking for London trades limited companies (plumbers, electricians, roofers, builders, kitchen fitters), so more website visitors become enquiries. Fixed prices from £225. Contact: oscarayton@getquotehelm.co.uk.
 
 ## Services and prices (GBP, no VAT charged, Quotehelm is not VAT registered)
-- Quote form (A quote form on your website. Every enquiry is sent to your phone by text and email straight away): £295, live in 3 working days
-- Reviews feed (Your Google reviews shown on your site, plus an automatic review request sent after each job): £295, live in 5 working days
-- Online booking link (Customers can book a site visit or call-out from your website): £195, live in 3 working days
-- Address fix (Business name, address and phone number made to match across your website, Google Business Profile and the main directories. Google and the directories can take longer to show the change): £195, done in 3 working days
-- Chat assistant (An AI chat assistant that answers common questions and takes quote requests 24/7, then sends them straight to you): £495, live in 5 working days
-- Website redesign (Up to 5 mobile-friendly pages with a quote form, your Google reviews, click-to-call, HTTPS and basic Google setup. I write the copy from your information and use your own photos. 2 rounds of changes): £899, live in 10 working days once I have your content and access
-- CRM and automations (A simple system to track every enquiry, with missed-call text replies, quote follow-ups and review requests that run on their own): £1,500 to £2,500
-- Care plan (optional) (I keep everything running, make small changes and check it each month): £49 a month, 30 days’ notice to cancel
+- Quote form (A quote form on your website. Every enquiry is sent to your phone by text and email straight away): £345, live in 3 working days
+- Reviews feed (Your Google reviews shown on your site, plus an automatic review request sent after each job): £345, live in 5 working days
+- Online booking link (Customers can book a site visit or call-out from your website): £225, live in 3 working days
+- Address fix (Business name, address and phone number made to match across your website, Google Business Profile and the main directories. Google and the directories can take longer to show the change): £225, done in 3 working days
+- Chat assistant (An AI chat assistant that answers common questions and takes quote requests 24/7, then sends them straight to you): £595, live in 5 working days
+- Website redesign (Up to 5 mobile-friendly pages with a quote form, your Google reviews, click-to-call, HTTPS and basic Google setup. I write the copy from your information and use your own photos. 2 rounds of changes): £1,095, live in 10 working days once I have your content and access
+- CRM and automations (A simple system to track every enquiry, with missed-call text replies, quote follow-ups and review requests that run on their own): £1,750 to £2,750
+- Care plan (optional) (I keep everything running, make small changes and check it each month): from £59 a month, 30 days’ notice to cancel
 
 Every job has a fixed price agreed in writing before work starts. No lock-in. Clients approve every message their customers will see before anything goes live.
 
