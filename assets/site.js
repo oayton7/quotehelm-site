@@ -80,9 +80,13 @@
       boxes.forEach(function(b){
         if (!b.checked) return;
         names.push(b.dataset.name);
-        if (b.dataset.monthly) monthly += +b.dataset.monthly;
+        if (b.dataset.monthly) monthly = 1;
         else { min += +b.dataset.min; max += +b.dataset.max; }
       });
+      if (monthly) {
+        var picked = boxes.filter(function(b){ return b.checked && !b.dataset.monthly; }).map(function(b){ return b.value; });
+        monthly = (picked.indexOf('crm') > -1 || picked.indexOf('chat') > -1) ? 99 : (picked.indexOf('site') > -1 || picked.length >= 3) ? 79 : 59;
+      }
       $('[data-sum]').textContent = min === max ? fmt(min) : fmt(min) + ' to ' + fmt(max);
       $('[data-per]').textContent = monthly ? 'Plus ' + fmt(monthly) + ' a month' : '';
       $('[data-list]').innerHTML = names.length ? names.map(function(n){ return '<li>' + n + '</li>'; }).join('') : '<li>Nothing ticked yet</li>';
