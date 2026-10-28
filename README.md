@@ -31,6 +31,8 @@ This uses ordinary folders in one repository. No nested Git repository or submod
 10. [Competitors and sources](docs/09-competition-and-sources.md)
 11. [Brand and unresolved decisions](docs/10-decisions.md)
 12. [Using this repository and launching safely](docs/11-repository-guide.md)
+13. [Build the test enquiry flow](docs/12-test-build-guide.md)
+14. [First pilot pack: offer, messages and first conversation](docs/13-first-pilot-pack.md)
 
 ## Preview the Tandem site
 
