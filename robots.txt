@@ -1,28 +1,85 @@
+# Internal folders (business plan, archive, Tandem concept) are kept out of search.
+# Each crawler reads only its own section, so every section repeats the list.
+
 User-agent: *
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: GPTBot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: OAI-SearchBot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: ChatGPT-User
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: ClaudeBot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: Claude-SearchBot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: PerplexityBot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: Google-Extended
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 User-agent: Bingbot
+Disallow: /docs/
+Disallow: /archive/
+Disallow: /site/
+Disallow: /scripts/
+Disallow: /README.md
+Disallow: /AGENTS.md
 Allow: /
 
 Sitemap: https://getquotehelm.co.uk/sitemap.xml

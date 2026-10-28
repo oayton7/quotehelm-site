@@ -141,9 +141,14 @@ var QUOTEHELM = {
       button.disabled = true;
       status.className = "form-status";
       status.textContent = "Sending.";
+      /* several products can be ticked: send them as one field, so none are dropped */
+      var data = new FormData(form);
+      var picked = data.getAll("interested");
+      data.delete("interested");
+      data.append("interested", picked.length ? picked.join(", ") : "Not sure yet");
       fetch(endpoint, {
         method: "POST",
-        body: new FormData(form),
+        body: data,
         headers: { "Accept": "application/json" }
       }).then(function(res){
         if (!res.ok) throw new Error("form");
