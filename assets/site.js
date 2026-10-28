@@ -85,8 +85,11 @@ var QUOTEHELM = {
     var fmt = function(n){ return '\u00a3' + n.toLocaleString('en-GB'); };
     var update = function(){
       var min = 0, max = 0, monthly = 0, names = [];
+      /* the website already includes a quote form, so don't charge for it twice */
+      var hasSite = boxes.some(function(b){ return b.checked && b.value === 'site'; });
       boxes.forEach(function(b){
         if (!b.checked) return;
+        if (hasSite && b.value === 'quote') { names.push(b.dataset.name + ' (included with the website)'); return; }
         names.push(b.dataset.name);
         if (b.dataset.monthly) monthly = 1;
         else { min += +b.dataset.min; max += +b.dataset.max; }
