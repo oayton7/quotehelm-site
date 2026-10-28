@@ -1,6 +1,6 @@
 # Quotehelm
 
-> Quotehelm is run by Oscar Ayton, a sole trader. It adds quote forms, Google reviews feeds and AI chat to websites for trades businesses. Work starts with Chichester and West Sussex, then Sussex, Hampshire and the wider South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
+> Quotehelm is run by Oscar Ayton, a sole trader. It is Chichester based. It adds quote forms, Google reviews feeds and AI chat to websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
 
 Quotehelm does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
@@ -19,8 +19,8 @@ Roofers, builders, electricians, plumbers, decorators, kitchen fitters and simil
 
 Every job has a fixed price agreed in writing before work starts. The client approves every message their customers will see before anything goes live.
 
-## Area served
-Chichester and West Sussex first. Then Sussex, Hampshire and the wider South East of England. London is planned later and is not the current focus. No street address is published.
+## Where it is based, and the area served
+Chichester based. No street address is published. Serves West Sussex, Sussex, Hampshire and the South East of England. London is planned later and is not the current focus.
 
 ## How to enquire
 Quote form: https://getquotehelm.co.uk/contact/#quote
