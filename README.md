@@ -1,11 +1,12 @@
 # Quotehelm website
 
-Source for **[getquotehelm.co.uk](https://getquotehelm.co.uk)**, the marketing site for Quotehelm. Quotehelm sells fixed-price website and AI fixes to trades firms in London.
+Source for **[getquotehelm.co.uk](https://getquotehelm.co.uk)**, the marketing site for Quotehelm. Quotehelm sells fixed-price website and AI fixes to trades firms in Chichester, West Sussex and the South East.
 
 > **TL;DR**
 > - Static HTML/CSS/JS site, hosted free on GitHub Pages from this repo (`oayton7/quotehelm-site`).
 > - Push to `main` and the site goes live in about 1 to 2 minutes. There's no build step, framework or database.
 > - The site sets no cookies and uses no analytics. Keep it that way, or update the privacy notice first.
+> - The quote form sends through Formspree. The form ID lives in one place: `QUOTEHELM.formEndpoint` at the top of `assets/site.js`.
 > - Prices, VAT wording and contact details appear on several pages. Use the [change checklists](#10-change-checklists) so they stay consistent.
 
 ---
@@ -40,8 +41,8 @@ Source for **[getquotehelm.co.uk](https://getquotehelm.co.uk)**, the marketing s
 | | |
 |---|---|
 | **Business** | Quotehelm, a one-person side business run by Oscar Ayton as a sole trader |
-| **Location** | London W6 |
-| **Who it's for** | **Limited companies** (and LLPs) in the London trades: plumbers, electricians, roofers, builders, kitchen fitters |
+| **Location** | Chichester, West Sussex. The site shows the town only, with no street address (see [13.1](#131-business-status)) |
+| **Who it's for** | Trades firms across West Sussex, Sussex, Hampshire and the South East: roofers, builders, electricians, plumbers, decorators, kitchen fitters. London is a later extension. Cold outreach goes **only to limited companies and LLPs** (see [13.3](#133-pecr-cold-email-rules)) |
 | **What it sells** | Fixed-price fixes that turn website visitors into enquiries: quote forms, Google reviews, AI chat, online booking, listing clean-up, new sites, CRM and automations, plus an optional monthly care plan |
 | **How clients are found** | A free website audit sent by cold email, plus referrals |
 | **Time available** | 10 to 20 hours a week, alongside a full-time job |
@@ -64,7 +65,7 @@ Source for **[getquotehelm.co.uk](https://getquotehelm.co.uk)**, the marketing s
 
 In priority order:
 
-1. **Get a free website check request.** This is the main call to action on every page. It opens an email with the business name and website fields pre-filled.
+1. **Get a quote request.** This is the main call to action on every page. It leads to the quote form on the home page and the contact page (`/contact/#quote`). Email is always offered as a fallback.
 2. **Back up the cold email.** People who get an audit email will click through to see if Quotehelm is real. The site has to look credible, answer "who is this?" fast, and show clear prices.
 3. **Show, don't tell.** Every product has an interactive phone demo built on a made-up firm, *Example Plumbing Ltd (demo)*.
 4. **Let the visitor price it themselves.** The estimate builder adds up the ticked products and puts the total into an email.
@@ -82,21 +83,24 @@ Things the site deliberately does **not** do:
 
 | Page | URL | Purpose | Main call to action |
 |---|---|---|---|
-| **Home** | `/` | Hero, outcomes, product demos (8 tabs), estimate builder, how it works, who you're dealing with, FAQ | Ask for a free website check |
-| **Prices** | `/pricing/` | Full price table, how it works, estimate builder, extended FAQ | Ask for a free website check |
-| **Plumbers** | `/trades/plumbers/` | Trade landing page: scenario ("boiler breaks down at 9pm"), what I can set up, prices | Free check / see example site |
-| **Electricians** | `/trades/electricians/` | Trade landing page (rewires, consumer units, EV chargers) | Free check / see example site |
-| **Roofers** | `/trades/roofers/` | Trade landing page | Free check / see example site |
-| **Builders** | `/trades/builders/` | Trade landing page | Free check / see example site |
-| **Kitchen fitters** | `/trades/kitchen-fitters/` | Trade landing page | Free check / see example site |
-| **Contact** | `/contact/` | Email, postal address, reply times | Ask for a free website check |
-| **Privacy notice** | `/privacy/` | UK GDPR / PECR notice covering cold outreach | n/a |
+| **Home** | `/` | Hero, three fixes with prices, product demos (8 tabs), estimate builder, how it works, who you're dealing with, FAQ, quote form | Get a quote |
+| **Prices** | `/pricing/` | Full price table, how it works, estimate builder, extended FAQ | Get a quote |
+| **Roofers** | `/trades/roofers/` | Trade landing page | Get a quote / see example site |
+| **Builders** | `/trades/builders/` | Trade landing page | Get a quote / see example site |
+| **Electricians** | `/trades/electricians/` | Trade landing page (rewires, consumer units, EV chargers) | Get a quote / see example site |
+| **Plumbers** | `/trades/plumbers/` | Trade landing page: scenario ("boiler breaks down at 9pm"), what I can set up, prices | Get a quote / see example site |
+| **Decorators** | `/trades/decorators/` | Trade landing page | Get a quote / see example site |
+| **Kitchen fitters** | `/trades/kitchen-fitters/` | Trade landing page | Get a quote / see example site |
+| **Areas** | `/areas/` | Hub listing the area pages. Linked from the footer only, not the main nav or home page | n/a |
+| **Chichester** | `/areas/chichester/` | Area landing page: who it's for, the patch around Chichester, what I fix, prices, local FAQ | Get a quote |
+| **Contact** | `/contact/` | Quote form, email, "Chichester based", reply times | Get a quote |
+| **Privacy notice** | `/privacy/` | UK GDPR / PECR notice covering enquiries and cold outreach | n/a |
 | **404** | `404.html` | Friendly not-found page with links back | Home |
 | **Demo: example website** | `/demos/` | A full sample trades website for Example Plumbing Ltd (demo) | n/a |
 | **Demo: jobs dashboard** | `/demos/dashboard/` | Sample CRM / jobs dashboard used to sell the CRM product. Linked from the example website | n/a |
 
 **Trade landing pages all use the same template:**
-1. Page hero: "For [trade] in London" plus the lead line
+1. Page hero: "For [trade] in West Sussex and the South East" plus the lead line
 2. Scene band: one real-world scenario as a blockquote, ending "Is yours the one that replies first?"
 3. "What I can set up for [trade] firms": a list with price and lead time for each item
 4. Note: client approval, care plan, no VAT
@@ -105,6 +109,8 @@ Things the site deliberately does **not** do:
 7. Closing call to action
 
 To add a new trade, copy an existing trade folder (e.g. `trades/plumbers/`), change the hero, the scenario, the trade-specific chat assistant line, the `<title>`, meta description, Open Graph tags, canonical URL and JSON-LD. Then add it to the trades list on Home, the "Other trades" links on every trade page, `sitemap.xml` and `llms.txt`.
+
+**Area pages** (`/areas/<town>/`) follow the Chichester page. To add one, copy `areas/chichester/`, rewrite the patch, FAQ and meta tags for the new town, then add it to the areas hub (`/areas/`) and `sitemap.xml`. Only write a page for an area you actually serve.
 
 ---
 
@@ -146,11 +152,15 @@ quotehelm-site/
 ├── index.html                  # Home
 ├── pricing/index.html          # Prices         → /pricing/
 ├── trades/
-│   ├── plumbers/index.html     # Trade landing pages → /trades/<trade>/
-│   ├── electricians/index.html
-│   ├── roofers/index.html
+│   ├── roofers/index.html      # Trade landing pages → /trades/<trade>/
 │   ├── builders/index.html
+│   ├── electricians/index.html
+│   ├── plumbers/index.html
+│   ├── decorators/index.html
 │   └── kitchen-fitters/index.html
+├── areas/
+│   ├── index.html              # Areas hub → /areas/
+│   └── chichester/index.html   # Area landing page → /areas/chichester/
 ├── contact/index.html          # Contact        → /contact/
 ├── privacy/index.html          # Privacy notice → /privacy/
 ├── demos/
@@ -159,7 +169,7 @@ quotehelm-site/
 ├── 404.html                    # GitHub Pages serves this for any missing URL
 ├── assets/
 │   ├── site.css                # Shared styles for every page
-│   └── site.js                 # Tabs, phone demos, estimate builder
+│   └── site.js                 # Form endpoint config, tabs, phone demos, estimate builder, quote form
 ├── favicon.svg / favicon.png
 ├── og.png                      # Social share image (Open Graph)
 ├── CNAME                       # Contains: getquotehelm.co.uk
@@ -283,13 +293,18 @@ The site is light mode only (`color-scheme: light`).
 | Steps | `.steps` | Numbered 1 to 3 with brass numerals |
 | Price table | `.prices` | Turns into stacked cards under 40rem |
 | Sticky mobile CTA | `.sticky` | Fixed bottom bar on phones only |
+| Quote form | `.quote-form` | Home and contact pages. Uses `.field`, `.q-field`, `.form-status` |
+| Placeholder | `.placeholder` | Yellow "not ready yet" box. Must never be visible on the live site except the form notice, which `site.js` removes once the form is connected |
+| Area card | `.area-card` | Links on the areas hub |
+| Breadcrumbs | `.crumbs` | Area pages |
 
 ### 8.4 Layout and breakpoints
 
 - Content width: `max-width: 70rem` with 1.25rem side padding (`.wrap`)
 - 40rem: smaller section padding, price table turns into stacked cards
 - 48rem: 3-column grids (outcomes, steps)
-- 52rem: desktop nav and header button appear, sticky mobile CTA hides
+- Under 52rem: the nav wraps onto its own row under the brand mark
+- 52rem: nav sits on one line, header button appears, sticky mobile CTA hides
 - 60rem: two-column hero, product panels and estimate builder
 
 ### 8.5 Accessibility
@@ -341,6 +356,7 @@ Prices appear in **all** of these places. Search the repo for the old figure (e.
 - [ ] Prices page: estimate builder (same two spots as Home)
 - [ ] Prices page: FAQ answer "How much does it cost?" **and** its copy in the JSON-LD `FAQPage` block
 - [ ] Every trade page's "What I can set up" list
+- [ ] Every area page's "Pricing" table (currently `/areas/chichester/`)
 - [ ] Hero "Fixed prices from £225", meta descriptions and Open Graph descriptions if the cheapest price changed
 - [ ] `llms.txt`
 - [ ] Care plan only: the tier figures (59 / 79 / 99) are hard-coded in `assets/site.js`, not read from `data-monthly`. Change them there too
@@ -354,13 +370,14 @@ grep -rn "345" --include=*.html --include=*.js --include=*.txt .
 
 ### 10.2 Changing contact details
 
-Email `oscarayton@getquotehelm.co.uk` and the W6 postal address appear in:
+Email `oscarayton@getquotehelm.co.uk` and the "Chichester based" wording appear in the places below. No street address is published yet. When one is confirmed, every page has a `TODO(oscar): street address` comment marking where it goes. Publish the same name, address and phone everywhere at once:
 - [ ] Every `mailto:` link (header button, hero, closing section, contact page)
 - [ ] The estimate builder email link, which is built in `assets/site.js`
 - [ ] Contact page
-- [ ] Privacy notice ("Who we are" and postal address)
+- [ ] Privacy notice ("Who we are")
+- [ ] Quote form success and error messages in `assets/site.js`
 - [ ] Footer on every page
-- [ ] JSON-LD (`email`, `address`) and `llms.txt`
+- [ ] JSON-LD (`email`, `address`, which is currently town only) and `llms.txt`
 - [ ] Email signatures and outreach templates (outside this repo)
 
 ### 10.3 Adding a new product
@@ -379,7 +396,13 @@ Email `oscarayton@getquotehelm.co.uk` and the W6 postal address appear in:
 - [ ] Change it on every HTML page, including `404.html` and the demos
 - [ ] Click through every nav link on phone and desktop after deploying
 
-### 10.5 Changing the privacy notice
+### 10.5 Changing the quote form
+
+- [ ] The endpoint is set in one place only: `QUOTEHELM.formEndpoint` at the top of `assets/site.js`
+- [ ] If you add or remove a field, update the list of fields in the privacy notice ("If you use the enquiry form")
+- [ ] Send a test enquiry from the live site on a phone after deploying
+
+### 10.6 Changing the privacy notice
 
 - [ ] Update the "Last updated" date at the top
 - [ ] Re-check the list of processors (section 14) is complete
@@ -389,7 +412,7 @@ Email `oscarayton@getquotehelm.co.uk` and the W6 postal address appear in:
 
 ## 11. Interactive pieces (JavaScript)
 
-All plain JavaScript in `assets/site.js`, with no libraries. Every piece must still leave a usable page if JS fails.
+All plain JavaScript in `assets/site.js`, with no libraries. Every piece must still leave a usable page if JS fails. The one exception is the quote form, which needs JS to send. The email link next to it is the fallback.
 
 ### 11.1 Product tabs
 - Clicking a `[role=tab]` sets `aria-selected="true"` on it, `false` on the others, and shows the matching panel (hides the rest with `hidden`). Left and right arrow keys move between tabs.
@@ -411,8 +434,15 @@ All plain JavaScript in `assets/site.js`, with no libraries. Every piece must st
 - The **Send me this estimate** button (`[data-mail]`) rebuilds its `mailto:` link with the ticked items in the email body. Nothing is sent until the visitor presses send in their own email app.
 - Pressing **Add to my estimate** on a product tab ticks the matching box (`data-add` matches `value`) and scrolls to `#estimate`.
 
-### 11.4 Rules for any new JS
-- No third-party scripts (no analytics, chat widgets or font loaders). They would break the "no tracking" statement in the privacy notice.
+### 11.4 Quote form
+- `QUOTEHELM.formEndpoint` at the top of `assets/site.js` holds the Formspree URL (`https://formspree.io/f/<form-id>`). Both forms (`[data-quote-form]` on Home and Contact) read it.
+- While the URL still contains `PLACEHOLDER`, or isn't a valid Formspree URL, the form doesn't send. It shows the yellow `[data-form-pending]` notice and points people to email.
+- Once a real ID is set, the notice is removed and the form posts to Formspree with `fetch`, then shows a thank-you or error message in `[data-form-status]`.
+- `_gotcha` is a hidden honeypot field. Bots fill it in and real people don't, so filled-in submissions are dropped.
+- Formspree notifications go to `oscarayton@getquotehelm.co.uk`.
+
+### 11.5 Rules for any new JS
+- No third-party scripts (no analytics, chat widgets or font loaders). They would break the "no tracking" statement in the privacy notice. Posting the quote form to Formspree is the only third-party request, and only when someone sends the form.
 - No `localStorage` or cookies.
 - Test with JS turned off: the copy, prices and email links must all still work.
 
@@ -426,7 +456,8 @@ All plain JavaScript in `assets/site.js`, with no libraries. Every piece must st
   - Mobile: `07700 900000` to `07700 900999`
 - Never use a real business's name, logo, reviews or phone number in a demo.
 - Reviews in the demos are labelled "Sample reviews, made up to show how the feed looks." Keep that label.
-- **Testimonial slot:** there is no testimonial on the site yet. A `.todo` highlight style exists in `assets/site.css` for marking a placeholder while drafting. Only add a testimonial with a real quote from a real client who has agreed in writing, with their name and business, and make sure no `.todo` placeholder is left on the live site.
+- **Case studies and testimonials:** there are none on the site yet. A `TODO(oscar): case studies` comment marks where a case study section goes on the home page and the Chichester page. Only add a real job, with the client's written agreement to their name, business and any quote. Never invent client names, quotes, star ratings or results, and never leave a `.placeholder` or `.todo` box visible on the live site.
+- The demo firm's area is a made-up patch near Chichester. Keep it obviously fictional.
 
 ---
 
@@ -435,13 +466,14 @@ All plain JavaScript in `assets/site.js`, with no libraries. Every piece must st
 > Not legal advice. A summary of how the site and outreach are set up, so changes don't break them.
 
 ### 13.1 Business status
-- Sole trader trading as Quotehelm. Name and postal address are shown on the contact page and the privacy notice.
+- Sole trader trading as Quotehelm, based in Chichester. The site currently shows the town only, with no street address. A sole trader trading under a business name is expected to give a UK address on business letters and emails, and websites are generally expected to show a geographic address. Add a service address as soon as one is set up (see [10.2](#102-changing-contact-details)). When Quotehelm becomes a limited company, the company name, number and registered office address must go on the site and in emails.
 - Not VAT registered. The site says "No VAT charged" near every price. If turnover gets close to the VAT threshold, review every price and all VAT wording.
 
 ### 13.2 Privacy notice (UK GDPR)
-Covers directors and staff of UK limited companies and LLPs whose work details are used for outreach. Key points:
+Covers two groups: people who send an enquiry through the site or by email, and directors and staff of UK limited companies and LLPs whose work details are used for outreach. Key points:
 - **Controller:** Oscar Ayton
-- **Data collected:** name, job title, work email, published work phone, company name and number, public info (website, reviews, listings), email history, link clicks (not opens)
+- **Enquiries:** the form collects name, business name, email, phone, website, trade, area, products of interest and a message. Lawful basis: steps towards a contract (Article 6(1)(b)) and legitimate interests (Article 6(1)(f))
+- **Outreach data:** name, job title, work email, published work phone, company name and number, public info (website, reviews, listings), email history, link clicks (not opens)
 - **Sources:** Companies House, company websites, public listings such as Google Maps, replies
 - **Lawful basis:** legitimate interests (Article 6(1)(f)), with a written assessment available on request
 - **Retention:** non-replies deleted within 12 months of first contact. Opt-outs kept on a suppression list (email and company name only). Clients kept as long as needed for the contract and tax
@@ -473,6 +505,7 @@ Not part of the website code, but listed here so the privacy notice stays accura
 | Zoho Mail (EU data centre) | Email hosting for `@getquotehelm.co.uk` | Yes |
 | Emelia | Cold email sending, inbox warm-up, click tracking on own domain | Yes |
 | Airtable | Lead and enquiry records | Yes |
+| Formspree | Sends quote form enquiries to the Quotehelm inbox | Yes |
 | AI writing tools (currently Grok Bot) | Researching websites, drafting audits and emails | Yes |
 | Companies House | Checking a lead is a limited company or LLP | Listed as a source |
 
@@ -489,11 +522,11 @@ Not part of the website code, but listed here so the privacy notice stays accura
 
 ## 15. How a lead becomes a client
 
-1. **Find:** a London trades firm that is a limited company (check Companies House) with a weak website (no quote form, poor on phones, missing reviews, mismatched details on Google).
+1. **Find:** a trades firm in and around Chichester or the wider South East that is a limited company (check Companies House) with a weak website (no quote form, poor on phones, missing reviews, mismatched details on Google).
 2. **Audit:** review their public website and listings. Note what's missing and what each fix would cost.
 3. **Email:** short cold email with the audit and fixed prices, plus an opt-out. Sent from Emelia.
 4. **Follow up:** on day 4, follow up with a mock-up of what their fixed site or quote form would look like.
-5. **Site visit:** they click through to getquotehelm.co.uk, see the demos, build an estimate, and email back.
+5. **Site visit:** they click through to getquotehelm.co.uk, see the demos, build an estimate, and send the quote form or email back.
 6. **Quote:** confirm a fixed price in writing.
 7. **Build and approve:** build it, and the client approves anything their customers will see before it goes live.
 8. **Care plan:** offer the optional care plan (from £59 a month, see [section 4](#4-products-and-prices-source-of-truth)).
@@ -522,7 +555,7 @@ Referrals from Oscar's own network run alongside this.
 - [ ] Search Google for `site:getquotehelm.co.uk` to check pages are indexed
 
 **SEO basics each page should have:**
-- [ ] A unique `<title>` (e.g. "Website fixes for plumbers in London | Quotehelm")
+- [ ] A unique `<title>` (e.g. "Website fixes for plumbers in West Sussex | Quotehelm")
 - [ ] A unique `<meta name="description">`
 - [ ] One `<h1>`
 - [ ] Open Graph tags (`og:title`, `og:description`, `og:image`) so links look right when shared on WhatsApp and LinkedIn
@@ -542,6 +575,8 @@ Referrals from Oscar's own network run alongside this.
 | Cold emails going to spam | SPF, DKIM or DMARC broken | Re-check records in Zoho and Emelia dashboards |
 | Estimate total wrong | `data-min` / `data-max` doesn't match the label, or care plan tiers out of date in `assets/site.js` | Fix the attributes or the script (see [10.1](#101-changing-a-price)) |
 | Tabs or demos don't work | JS error | Open DevTools > Console, fix the error |
+| Form says "not connected yet" | `QUOTEHELM.formEndpoint` still has `PLACEHOLDER` or a mistyped ID | Paste the exact URL from Formspree into `assets/site.js` (see [11.4](#114-quote-form)) |
+| Form enquiries not arriving | Formspree notification email wrong, or messages in spam | Check the form's settings in Formspree and the Zoho spam folder |
 | Styles missing locally | Opened the file directly instead of serving it | Run a local server (see [6](#6-running-it-locally)) |
 | Layout broken on phone | New content wider than the screen | Check for long unbroken text or fixed widths; use `overflow-wrap:anywhere` |
 
@@ -551,6 +586,8 @@ Referrals from Oscar's own network run alongside this.
 
 **Now**
 - [ ] Win the first paying client
+- [ ] Connect the quote form to Formspree
+- [ ] Set up a postal service address and add it to the site
 - [ ] Send outreach batches using the free website audit
 - [ ] Add a real testimonial once one exists
 
@@ -562,7 +599,9 @@ Referrals from Oscar's own network run alongside this.
 **Later**
 - [ ] Automate the audit and outreach as much as possible
 - [ ] Write down repeatable delivery steps for each product, so the business could run with little input or be sold
-- [ ] Consider more trades (e.g. locksmiths, decorators, landscapers) using the trade page template
+- [ ] Add area pages for other towns in the patch, using the Chichester page as the template
+- [ ] Extend to London
+- [ ] Consider more trades (e.g. locksmiths, landscapers) using the trade page template
 - [ ] Consider cookie-free visitor stats (privacy notice update first)
 
 ---
