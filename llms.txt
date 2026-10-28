@@ -1,27 +1,53 @@
 # Quotehelm
 
-> Quotehelm is run by Oscar Ayton, a sole trader in London (26 Everington Street, London W6 8DU). It sets up quote forms, Google reviews feeds, booking links, AI chat assistants, website redesigns and enquiry tracking for London trades limited companies (plumbers, electricians, roofers, builders, kitchen fitters), so more website visitors become enquiries. Fixed prices from £225. Contact: oscarayton@getquotehelm.co.uk.
+> Quotehelm is run by Oscar Ayton, a sole trader. It adds quote forms, Google reviews feeds and AI chat to websites for trades businesses. Work starts with Chichester and West Sussex, then Sussex, Hampshire and the wider South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
 
-## Services and prices (GBP, no VAT charged, Quotehelm is not VAT registered)
-- Quote form (A quote form on your website. Every enquiry is sent to your phone by text and email straight away): £345, live in 3 working days
-- Reviews feed (Your Google reviews shown on your site, plus an automatic review request sent after each job): £345, live in 5 working days
-- Online booking link (Customers can book a site visit or call-out from your website): £225, live in 3 working days
-- Address fix (Business name, address and phone number made to match across your website, Google Business Profile and the main directories. Google and the directories can take longer to show the change): £225, done in 3 working days
-- Chat assistant (An AI chat assistant that answers common questions and takes quote requests 24/7, then sends them straight to you): £595, live in 5 working days
-- Website redesign (Up to 5 mobile-friendly pages with a quote form, your Google reviews, click-to-call, HTTPS and basic Google setup. I write the copy from your information and use your own photos. 2 rounds of changes): £1,095, live in 10 working days once I have your content and access
-- CRM and automations (A simple system to track every enquiry, with missed-call text replies, quote follow-ups and review requests that run on their own): £1,750 to £2,750
-- Care plan (optional) (I keep everything running, make small changes and check it each month): from £59 a month, 30 days’ notice to cancel
+Quotehelm does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
-Every job has a fixed price agreed in writing before work starts. No lock-in. Clients approve every message their customers will see before anything goes live.
+## Who it is for
+Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Quotehelm adds a specific fix, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses the optional care plan.
+
+## Services and prices (GBP, no VAT charged)
+- Quote form: a form on the website. Every enquiry is sent to the client’s phone by text and email straight away. £345, live in 3 working days.
+- Reviews feed: the client’s Google reviews shown on the site, plus an automatic review request after each job. £345, live in 5 working days.
+- Chat assistant: an AI chat assistant that answers common questions and takes quote requests 24/7, then sends them to the client. £595, live in 5 working days.
+- Online booking link: customers book a site visit or call-out from the website. £225, live in 3 working days.
+- Address fix: business name, address and phone number made to match across the website, Google Business Profile and the main directories. Google and the directories can take longer to show the change. £225, done in 3 working days.
+- Website redesign: up to 5 mobile-friendly pages with a quote form, Google reviews, click-to-call, HTTPS and basic Google setup. Copy is written from the client’s information. The client’s own photos are used. 2 rounds of changes. £1,095, live in 10 working days once content and access are provided.
+- CRM and automations: a simple system to track every enquiry, with missed-call text replies, quote follow-ups and review requests. £1,750 to £2,750.
+- Care plan (optional): keep the setup running, make small changes and check it each month. £59 a month for 1 or 2 products, £79 for 3 or more or a website, £99 with a chat assistant or CRM. 30 days’ notice to cancel.
+
+Every job has a fixed price agreed in writing before work starts. The client approves every message their customers will see before anything goes live.
+
+## Area served
+Chichester and West Sussex first. Then Sussex, Hampshire and the wider South East of England. London is planned later and is not the current focus. No street address is published.
+
+## How to enquire
+Quote form: https://getquotehelm.co.uk/contact/#quote
+Email: oscarayton@getquotehelm.co.uk
+Replies are on weekdays, usually within one working day. If the form cannot send, email works.
 
 ## Pages
 - [Home](https://getquotehelm.co.uk/)
 - [Prices](https://getquotehelm.co.uk/pricing/)
-- [Plumbers](https://getquotehelm.co.uk/trades/plumbers/)
-- [Electricians](https://getquotehelm.co.uk/trades/electricians/)
+- [Get a quote](https://getquotehelm.co.uk/contact/)
+- [Areas we cover](https://getquotehelm.co.uk/areas/)
+- [Chichester](https://getquotehelm.co.uk/areas/chichester/)
 - [Roofers](https://getquotehelm.co.uk/trades/roofers/)
 - [Builders](https://getquotehelm.co.uk/trades/builders/)
+- [Electricians](https://getquotehelm.co.uk/trades/electricians/)
+- [Plumbers](https://getquotehelm.co.uk/trades/plumbers/)
+- [Decorators](https://getquotehelm.co.uk/trades/decorators/)
 - [Kitchen fitters](https://getquotehelm.co.uk/trades/kitchen-fitters/)
-- [Contact](https://getquotehelm.co.uk/contact/)
 - [Privacy notice](https://getquotehelm.co.uk/privacy/)
 - [Example website (demo, fictional company)](https://getquotehelm.co.uk/demos/)
+
+## URL plan, not all published
+- /areas/ and /areas/chichester/ are published.
+- /trades/<trade>/ is published for the trades listed above.
+- /trades/<trade>/<place>/ (for example /trades/roofers/chichester/) is not published yet.
+- /services/ is not published yet. Current prices are at /pricing/.
+- /guides/ is not published yet.
+
+## Demo pages
+https://getquotehelm.co.uk/demos/ and https://getquotehelm.co.uk/demos/dashboard/ show a made-up firm, Example Plumbing Ltd. Sample reviews, staff and customers on those pages are fictional. They are not Quotehelm clients.

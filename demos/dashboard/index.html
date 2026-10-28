@@ -5,7 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Jobs dashboard (demo) | Example Plumbing Ltd | Built by Quotehelm</title>
 <meta name="description" content="A demo jobs dashboard for a trades firm: track enquiries, quotes, jobs in progress and which engineer is on each one. Example Plumbing Ltd is a made-up company.">
+<link rel="canonical" href="https://getquotehelm.co.uk/demos/dashboard/">
 <meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quotehelm">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Jobs dashboard (demo) | Example Plumbing Ltd | Built by Quotehelm">
+<meta property="og:description" content="A demo jobs dashboard for a trades firm: track enquiries, quotes, jobs in progress and which engineer is on each one. Example Plumbing Ltd is a made-up company.">
+<meta property="og:url" content="https://getquotehelm.co.uk/demos/dashboard/">
+<meta property="og:image" content="https://getquotehelm.co.uk/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
 :root{--navy:#14325A;--navy-2:#0E2544;--orange:#C2500F;--text:#1F2933;--muted:#56616D;--line:#DDE3EA;--soft:#F3F6F9;--bg:#EEF2F6;
@@ -146,16 +155,16 @@ footer a{color:var(--navy)}
     tom:{name:'Tom',role:'Apprentice',color:'#1F7A4D'}
   };
   var jobs = [
-    {id:1,t:'Boiler not firing',area:'Fulham',stage:'New enquiry',eng:'',val:0,urgent:true,when:'Came in 18 min ago via chat',prog:0},
-    {id:2,t:'Dripping kitchen tap',area:'Acton',stage:'New enquiry',eng:'',val:0,when:'Came in 2 hours ago via quote form',prog:0},
-    {id:3,t:'Bathroom refit',area:'Chiswick',stage:'Quoted',eng:'priya',val:6400,chase:true,when:'Quote sent 4 days ago',prog:0},
-    {id:4,t:'Radiator swap x3',area:'Ealing',stage:'Quoted',eng:'tom',val:780,when:'Quote sent yesterday',prog:0},
-    {id:5,t:'Annual boiler service',area:'Hammersmith',stage:'Booked',eng:'dave',val:95,today:true,when:'Today 2pm',prog:0},
-    {id:6,t:'Outside tap fitted',area:'Shepherd’s Bush',stage:'Booked',eng:'tom',val:180,when:'Thursday 9am',prog:0},
-    {id:7,t:'Leak under floor',area:'Fulham',stage:'In progress',eng:'priya',val:420,urgent:true,today:true,when:'On site since 9:10am',prog:60},
-    {id:8,t:'New combi boiler',area:'Chiswick',stage:'In progress',eng:'dave',val:2850,today:true,when:'Day 2 of 2',prog:80},
-    {id:9,t:'Shower valve replaced',area:'Ealing',stage:'Done',eng:'tom',val:240,when:'Finished yesterday, review request sent',prog:100},
-    {id:10,t:'Blocked sink',area:'Acton',stage:'Done',eng:'priya',val:110,when:'Finished Monday, invoice paid',prog:100}
+    {id:1,t:'Boiler not firing',area:'Chichester',stage:'New enquiry',eng:'',val:0,urgent:true,when:'Came in 18 min ago via chat',prog:0},
+    {id:2,t:'Dripping kitchen tap',area:'Tangmere',stage:'New enquiry',eng:'',val:0,when:'Came in 2 hours ago via quote form',prog:0},
+    {id:3,t:'Bathroom refit',area:'Bosham',stage:'Quoted',eng:'priya',val:6400,chase:true,when:'Quote sent 4 days ago',prog:0},
+    {id:4,t:'Radiator swap x3',area:'Selsey',stage:'Quoted',eng:'tom',val:780,when:'Quote sent yesterday',prog:0},
+    {id:5,t:'Annual boiler service',area:'Fishbourne',stage:'Booked',eng:'dave',val:95,today:true,when:'Today 2pm',prog:0},
+    {id:6,t:'Outside tap fitted',area:'East Wittering',stage:'Booked',eng:'tom',val:180,when:'Thursday 9am',prog:0},
+    {id:7,t:'Leak under floor',area:'Chichester',stage:'In progress',eng:'priya',val:420,urgent:true,today:true,when:'On site since 9:10am',prog:60},
+    {id:8,t:'New combi boiler',area:'Bosham',stage:'In progress',eng:'dave',val:2850,today:true,when:'Day 2 of 2',prog:80},
+    {id:9,t:'Shower valve replaced',area:'Selsey',stage:'Done',eng:'tom',val:240,when:'Finished yesterday, review request sent',prog:100},
+    {id:10,t:'Blocked sink',area:'Tangmere',stage:'Done',eng:'priya',val:110,when:'Finished Monday, invoice paid',prog:100}
   ];
   var filter = 'all', openId = null, lastFocus = null;
   var $ = function(id){ return document.getElementById(id); };
