@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jobs dashboard (demo) | Example Plumbing Ltd | Built by Quotehelm</title>
+<meta name="description" content="A demo jobs dashboard for a trades firm: track enquiries, quotes, jobs in progress and which engineer is on each one. Example Plumbing Ltd is a made-up company.">
+<link rel="canonical" href="https://getquotehelm.co.uk/demos/dashboard/">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quotehelm">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Jobs dashboard (demo) | Example Plumbing Ltd | Built by Quotehelm">
+<meta property="og:description" content="A demo jobs dashboard for a trades firm: track enquiries, quotes, jobs in progress and which engineer is on each one. Example Plumbing Ltd is a made-up company.">
+<meta property="og:url" content="https://getquotehelm.co.uk/demos/dashboard/">
+<meta property="og:image" content="https://getquotehelm.co.uk/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{--navy:#14325A;--navy-2:#0E2544;--orange:#C2500F;--text:#1F2933;--muted:#56616D;--line:#DDE3EA;--soft:#F3F6F9;--bg:#EEF2F6;
+  --ok:#1F7A4D;--warn:#9A3A0B;--font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);font-size:1rem;line-height:1.5}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+button,select,input{font:inherit}
+.banner{background:#FFF4D6;color:#5A4200;font-size:.88rem;text-align:center;padding:.55rem 1rem;border-bottom:1px solid #F0DFA8}
+.banner a{color:#5A4200;font-weight:700}
+.wrap{max-width:84rem;margin:0 auto;padding:0 1rem}
+
+.top{background:var(--navy);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;min-height:3.75rem;gap:1rem}
+.top b{font-size:1.05rem}
+.top span{color:#BFD0E6;font-size:.9rem}
+
+h1{font-size:1.5rem;color:var(--navy);margin:1.5rem 0 .25rem}
+.sub{color:var(--muted);margin:0 0 1.25rem}
+
+/* summary */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:1.25rem}
+@media(min-width:56rem){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:#fff;border-radius:10px;padding:1rem;border:1px solid var(--line)}
+.stat small{color:var(--muted);display:block;font-size:.85rem}
+.stat b{font-size:1.7rem;color:var(--navy);font-variant-numeric:tabular-nums}
+.stat.alert b{color:var(--warn)}
+
+/* layout */
+.main{display:grid;gap:1.25rem;padding-bottom:3rem}
+@media(min-width:70rem){.main{grid-template-columns:minmax(0,1fr) 17rem}}
+.main>div{min-width:0}
+
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.9rem}
+.chip{min-height:2.5rem;padding:.3rem .9rem;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search{min-height:2.5rem;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--line);min-width:12rem;flex:1;max-width:18rem}
+.hint{font-size:.85rem;color:var(--muted);margin:0 0 .5rem}
+@media(min-width:70rem){.hint{display:none}}
+
+/* board */
+.board{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(13.5rem,1fr);gap:.75rem;overflow-x:auto;padding-bottom:.5rem;scroll-snap-type:x mandatory}
+.col{background:#E3E9F0;border-radius:10px;padding:.6rem;scroll-snap-align:start;min-height:12rem}
+.col h2{font-size:.95rem;margin:.2rem .3rem .6rem;color:var(--navy);display:flex;justify-content:space-between}
+.col h2 span{color:var(--muted);font-weight:500}
+.job{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:8px;padding:.7rem;margin-bottom:.5rem;cursor:pointer}
+.job:hover{border-color:var(--navy)}
+.job .t{font-weight:700;color:var(--navy);display:block;margin-bottom:.15rem}
+.job .meta{font-size:.85rem;color:var(--muted);display:block}
+.job .row{display:flex;justify-content:space-between;align-items:center;margin-top:.55rem;gap:.5rem}
+.val{font-weight:700;font-variant-numeric:tabular-nums}
+.av{display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;font-size:.75rem;font-weight:800;color:#fff;flex:none}
+.av.none{background:#fff;color:var(--muted);border:1.5px dashed #9AA6B2}
+.bar{height:.4rem;background:var(--soft);border-radius:999px;overflow:hidden;margin-top:.5rem}
+.bar i{display:block;height:100%;background:var(--ok)}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;padding:.05rem .45rem;border-radius:999px;margin-right:.3rem}
+.tag.urgent{background:#FBE3D6;color:var(--warn)}
+.tag.chase{background:#FFF1C2;color:#5A4200}
+.empty{font-size:.85rem;color:var(--muted);padding:.5rem}
+
+/* team */
+.team{background:#fff;border-radius:10px;border:1px solid var(--line);padding:1rem;align-self:start}
+.team h2{font-size:1.05rem;color:var(--navy);margin:0 0 .75rem}
+.person{display:flex;gap:.7rem;align-items:flex-start;padding:.7rem 0;border-top:1px solid var(--line)}
+.person b{display:block}
+.person small{color:var(--muted);display:block}
+.dot{display:inline-block;width:.55rem;height:.55rem;border-radius:50%;margin-right:.3rem}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(14,37,68,.4);z-index:40}
+.drawer{position:fixed;z-index:41;background:#fff;right:0;bottom:0;left:0;max-height:88vh;overflow:auto;border-radius:16px 16px 0 0;padding:1.25rem 1.25rem calc(1.25rem + env(safe-area-inset-bottom,0px))}
+@media(min-width:56rem){.drawer{left:auto;top:0;width:26rem;max-height:none;border-radius:0}}
+.drawer[hidden],.scrim[hidden]{display:none}
+.drawer h2{margin:0 2.5rem .2rem 0;color:var(--navy);font-size:1.3rem}
+.close{position:absolute;top:.75rem;right:.75rem;min-width:2.75rem;min-height:2.75rem;border:0;background:var(--soft);border-radius:50%;font-size:1.3rem;cursor:pointer}
+.drawer label{display:block;font-weight:600;font-size:.9rem;margin:1rem 0 .3rem}
+.drawer select,.drawer input[type=range]{width:100%}
+.drawer select{min-height:2.75rem;padding:.4rem .6rem;border:1px solid #B9C3CF;border-radius:6px;background:#fff}
+.timeline{list-style:none;margin:1rem 0 0;padding:0;border-left:2px solid var(--line)}
+.timeline li{padding:0 0 .8rem 1rem;position:relative;font-size:.92rem}
+.timeline li::before{content:"";position:absolute;left:-.4rem;top:.4rem;width:.65rem;height:.65rem;border-radius:50%;background:var(--navy)}
+.timeline small{color:var(--muted);display:block}
+.saved{color:var(--ok);font-weight:700;font-size:.9rem;min-height:1.4em;margin-top:.75rem}
+
+footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 2.5rem;border-top:1px solid var(--line)}
+footer a{color:var(--navy)}
+</style>
+</head>
+<body>
+<div class="banner">Demo only. Example Plumbing Ltd, its staff and its customers are made up. Built by <a href="/">Quotehelm</a> to show what’s possible.</div>
+
+<header class="top"><div class="wrap"><b>Example Plumbing Ltd (demo)</b><span>Jobs dashboard</span></div></header>
+
+<main class="wrap">
+  <h1>Today’s jobs</h1>
+  <p class="sub">Every enquiry, quote and job in one place, with who’s on what. Tap a job to update it.</p>
+
+  <div class="stats" aria-live="polite">
+    <div class="stat"><small>New enquiries</small><b id="s-new">0</b></div>
+    <div class="stat alert"><small>Quotes to chase</small><b id="s-chase">0</b></div>
+    <div class="stat"><small>Jobs on today</small><b id="s-today">0</b></div>
+    <div class="stat"><small>Work booked in (demo)</small><b id="s-value">£0</b></div>
+  </div>
+
+  <div class="main">
+    <div>
+      <div class="filters" role="group" aria-label="Filter by engineer" id="filters"></div>
+      <p class="hint">Swipe sideways to see every stage.</p>
+      <div class="board" id="board"></div>
+    </div>
+    <aside class="team" aria-labelledby="team-h"><h2 id="team-h">Team</h2><div id="team"></div></aside>
+  </div>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden>
+  <button class="close" id="d-close" aria-label="Close">×</button>
+  <h2 id="d-title"></h2>
+  <div id="d-meta" style="color:var(--muted)"></div>
+  <label for="d-status">Stage</label><select id="d-status"></select>
+  <label for="d-eng">Engineer</label><select id="d-eng"></select>
+  <label for="d-prog">Progress: <span id="d-prog-v"></span></label><input type="range" id="d-prog" min="0" max="100" step="10">
+  <div class="saved" id="d-saved" aria-live="polite"></div>
+  <ul class="timeline" id="d-time"></ul>
+</div>
+
+<footer><div class="wrap">
+  <p>This demo was built by <a href="/">Quotehelm</a> to show what a simple job tracker could look like. Nothing here is saved or sent anywhere. <a href="/demos/">Back to the example website</a></p>
+</div></footer>
+
+<script>
+(function(){
+  var STAGES = ['New enquiry','Quoted','Booked','In progress','Done'];
+  var TEAM = {
+    dave:{name:'Dave',role:'Gas engineer',color:'#1F6FB2'},
+    priya:{name:'Priya',role:'Plumber',color:'#8A4FBF'},
+    tom:{name:'Tom',role:'Apprentice',color:'#1F7A4D'}
+  };
+  var jobs = [
+    {id:1,t:'Boiler not firing',area:'Chichester',stage:'New enquiry',eng:'',val:0,urgent:true,when:'Came in 18 min ago via chat',prog:0},
+    {id:2,t:'Dripping kitchen tap',area:'Tangmere',stage:'New enquiry',eng:'',val:0,when:'Came in 2 hours ago via quote form',prog:0},
+    {id:3,t:'Bathroom refit',area:'Bosham',stage:'Quoted',eng:'priya',val:6400,chase:true,when:'Quote sent 4 days ago',prog:0},
+    {id:4,t:'Radiator swap x3',area:'Selsey',stage:'Quoted',eng:'tom',val:780,when:'Quote sent yesterday',prog:0},
+    {id:5,t:'Annual boiler service',area:'Fishbourne',stage:'Booked',eng:'dave',val:95,today:true,when:'Today 2pm',prog:0},
+    {id:6,t:'Outside tap fitted',area:'East Wittering',stage:'Booked',eng:'tom',val:180,when:'Thursday 9am',prog:0},
+    {id:7,t:'Leak under floor',area:'Chichester',stage:'In progress',eng:'priya',val:420,urgent:true,today:true,when:'On site since 9:10am',prog:60},
+    {id:8,t:'New combi boiler',area:'Bosham',stage:'In progress',eng:'dave',val:2850,today:true,when:'Day 2 of 2',prog:80},
+    {id:9,t:'Shower valve replaced',area:'Selsey',stage:'Done',eng:'tom',val:240,when:'Finished yesterday, review request sent',prog:100},
+    {id:10,t:'Blocked sink',area:'Tangmere',stage:'Done',eng:'priya',val:110,when:'Finished Monday, invoice paid',prog:100}
+  ];
+  var filter = 'all', openId = null, lastFocus = null;
+  var $ = function(id){ return document.getElementById(id); };
+  var gbp = function(n){ return '£' + n.toLocaleString('en-GB'); };
+  function av(key){
+    if (!key) return '<span class="av none" title="Not assigned">?</span>';
+    var p = TEAM[key]; return '<span class="av" style="background:'+p.color+'" title="'+p.name+'">'+p.name[0]+'</span>';
+  }
+
+  /* filters */
+  var opts = [['all','Everyone']].concat(Object.keys(TEAM).map(function(k){ return [k, TEAM[k].name]; })).concat([['none','Not assigned']]);
+  $('filters').innerHTML = opts.map(function(o){ return '<button class="chip" data-f="'+o[0]+'" aria-pressed="'+(o[0]==='all')+'">'+(TEAM[o[0]]?av(o[0]):'')+o[1]+'</button>'; }).join('');
+  [].forEach.call(document.querySelectorAll('[data-f]'), function(b){
+    b.addEventListener('click', function(){
+      filter = b.dataset.f;
+      [].forEach.call(document.querySelectorAll('[data-f]'), function(o){ o.setAttribute('aria-pressed', o===b); });
+      render();
+    });
+  });
+
+  function visible(j){
+    if (filter==='all') return true;
+    if (filter==='none') return !j.eng;
+    return j.eng===filter;
+  }
+
+  function render(){
+    /* stats */
+    $('s-new').textContent = jobs.filter(function(j){return j.stage==='New enquiry';}).length;
+    $('s-chase').textContent = jobs.filter(function(j){return j.chase && j.stage==='Quoted';}).length;
+    $('s-today').textContent = jobs.filter(function(j){return j.today && j.stage!=='Done';}).length;
+    $('s-value').textContent = gbp(jobs.filter(function(j){return j.stage==='Booked'||j.stage==='In progress';}).reduce(function(a,j){return a+j.val;},0));
+
+    /* board */
+    $('board').innerHTML = STAGES.map(function(s){
+      var list = jobs.filter(function(j){ return j.stage===s && visible(j); });
+      return '<section class="col" aria-label="'+s+'"><h2>'+s+'<span>'+list.length+'</span></h2>' +
+        (list.length ? list.map(function(j){
+          return '<button class="job" data-id="'+j.id+'"><span class="t">'+
+            (j.urgent&&j.stage!=='Done'?'<span class="tag urgent">Urgent</span>':'')+
+            (j.chase&&j.stage==='Quoted'?'<span class="tag chase">Chase</span>':'')+j.t+'</span>'+
+            '<span class="meta">'+j.area+'. '+j.when+'</span>'+
+            (j.stage==='In progress'?'<span class="bar" aria-label="'+j.prog+'% done"><i style="width:'+j.prog+'%"></i></span>':'')+
+            '<span class="row">'+av(j.eng)+'<span class="val">'+(j.val?gbp(j.val):'No quote yet')+'</span></span></button>';
+        }).join('') : '<div class="empty">Nothing here</div>') + '</section>';
+    }).join('');
+    [].forEach.call(document.querySelectorAll('.job'), function(b){ b.addEventListener('click', function(){ openJob(+b.dataset.id, b); }); });
+
+    /* team */
+    $('team').innerHTML = Object.keys(TEAM).map(function(k){
+      var p = TEAM[k];
+      var active = jobs.filter(function(j){ return j.eng===k && j.stage==='In progress'; })[0];
+      var next = jobs.filter(function(j){ return j.eng===k && j.stage==='Booked'; })[0];
+      var open = jobs.filter(function(j){ return j.eng===k && j.stage!=='Done'; }).length;
+      var status = active ? ['On site: '+active.t+', '+active.area,'#1F7A4D'] : next ? ['Next: '+next.t+', '+next.when,'#E8641C'] : ['Free','#9AA6B2'];
+      return '<div class="person">'+av(k)+'<div><b>'+p.name+'</b><small>'+p.role+'. '+open+' open job'+(open===1?'':'s')+'</small><small><span class="dot" style="background:'+status[1]+'"></span>'+status[0]+'</small></div></div>';
+    }).join('');
+  }
+
+  /* drawer */
+  $('d-status').innerHTML = STAGES.map(function(s){ return '<option>'+s+'</option>'; }).join('');
+  $('d-eng').innerHTML = '<option value="">Not assigned</option>' + Object.keys(TEAM).map(function(k){ return '<option value="'+k+'">'+TEAM[k].name+' ('+TEAM[k].role+')</option>'; }).join('');
+
+  function openJob(id, from){
+    var j = jobs.filter(function(x){return x.id===id;})[0]; openId = id; if (from) lastFocus = from;
+    $('d-title').textContent = j.t;
+    $('d-meta').textContent = j.area + '. ' + (j.val ? gbp(j.val) : 'No quote yet') + '. ' + j.when;
+    $('d-status').value = j.stage; $('d-eng').value = j.eng; $('d-prog').value = j.prog; $('d-prog-v').textContent = j.prog + '%';
+    $('d-saved').textContent = '';
+    var steps = [['Enquiry received', j.urgent ? 'Flagged urgent by the chat assistant' : 'From the website']];
+    if (STAGES.indexOf(j.stage) >= 1) steps.push(['Quote sent', 'Fixed price, sent by text and email']);
+    if (j.chase && j.stage==='Quoted') steps.push(['Follow-up due', 'Automatic reminder goes out tomorrow']);
+    if (STAGES.indexOf(j.stage) >= 2) steps.push(['Booked in', 'Customer chose a slot online']);
+    if (STAGES.indexOf(j.stage) >= 3) steps.push(['Work started', (TEAM[j.eng]||{name:'Engineer'}).name + ' on site']);
+    if (j.stage==='Done') steps.push(['Job done', 'Review request sent automatically']);
+    $('d-time').innerHTML = steps.map(function(s){ return '<li>'+s[0]+'<small>'+s[1]+'</small></li>'; }).join('');
+    $('scrim').hidden = false; $('drawer').hidden = false; $('d-close').focus();
+  }
+  function closeJob(){ $('scrim').hidden = true; $('drawer').hidden = true; openId = null; if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus(); }
+  function save(msg){
+    var j = jobs.filter(function(x){return x.id===openId;})[0]; if (!j) return;
+    j.stage = $('d-status').value; j.eng = $('d-eng').value; j.prog = +$('d-prog').value;
+    if (j.stage==='Done') j.prog = 100;
+    if (j.stage==='In progress' && !j.prog) j.prog = 10;
+    $('d-prog').value = j.prog; $('d-prog-v').textContent = j.prog + '%';
+    $('d-saved').textContent = msg + ' (demo, not saved anywhere)';
+    render(); openJob(j.id, null); $('d-saved').textContent = msg + ' (demo, not saved anywhere)';
+  }
+  $('d-status').addEventListener('change', function(){ save('Moved to ' + this.value); });
+  $('d-eng').addEventListener('change', function(){ save(this.value ? 'Assigned to ' + TEAM[this.value].name : 'Unassigned'); });
+  $('d-prog').addEventListener('input', function(){ $('d-prog-v').textContent = this.value + '%'; });
+  $('d-prog').addEventListener('change', function(){ save('Progress updated'); });
+  $('d-close').addEventListener('click', closeJob);
+  $('scrim').addEventListener('click', closeJob);
+  document.addEventListener('keydown', function(e){ if (e.key==='Escape' && !$('drawer').hidden) closeJob(); });
+
+  render();
+})();
+</script>
+</body>
+</html>
