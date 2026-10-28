@@ -1,3 +1,11 @@
+/* Quotehelm config. One place only.
+   formEndpoint is the Formspree form "Quotehelm quote form", which emails enquiries to
+   oscarayton@getquotehelm.co.uk. The home page and the contact page both read it.
+   Formspree's honeypot field is _gotcha. */
+var QUOTEHELM = {
+  formEndpoint: "https://formspree.io/f/mkjjbyyr"
+};
+
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $ = function(s){ return document.querySelector(s); };
@@ -33,8 +41,8 @@
   var chatBtn = $('[data-demo=chat]'), chat = $('[data-chat]');
   if (chatBtn && chat) {
     var script = [
-      ['me','Hi, no hot water since this morning. Do you cover W6?'],
-      ['them','Yes, we cover W6. Is anyone vulnerable in the house, or is there a leak?'],
+      ['me','Hi, no hot water since this morning. Do you cover PO19?'],
+      ['them','Yes, we cover PO19 and Chichester. Is anyone vulnerable in the house, or is there a leak?'],
       ['me','No leak, but I\u2019ve got a baby at home.'],
       ['them','Thanks. I\u2019ve marked this as urgent and sent it to the team. What\u2019s the best number to call you on?'],
       ['me','07700 900654'],
@@ -67,7 +75,7 @@
   /* address fix demo */
   var fix = $('[data-demo=fix]');
   if (fix) fix.addEventListener('click', function(){
-    $$('[data-fix]').forEach(function(el){ el.textContent = '020 7946 0001'; el.className = 'good'; });
+    $$('[data-fix]').forEach(function(el){ el.textContent = '01632 960001'; el.className = 'good'; });
     fix.textContent = 'All matching';
   });
 
@@ -104,4 +112,46 @@
       });
     });
   }
+
+  /* quote forms: endpoint comes only from QUOTEHELM.formEndpoint */
+  var endpoint = (window.QUOTEHELM && QUOTEHELM.formEndpoint) || "";
+  var configured = endpoint.indexOf("PLACEHOLDER") === -1 && /^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(endpoint);
+  $$("[data-form-pending]").forEach(function(note){ if (configured) note.remove(); });
+  $$("[data-quote-form]").forEach(function(form){
+    if (configured) form.setAttribute("action", endpoint);
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var status = form.querySelector("[data-form-status]");
+      var button = form.querySelector("[type=submit]");
+      var honey = form.querySelector("[data-honeypot]");
+      var show = function(kind, text){
+        status.className = "form-status " + kind;
+        status.setAttribute("role", kind === "err" ? "alert" : "status");
+        status.textContent = text;
+        status.focus();
+      };
+      if (honey && honey.value) {
+        show("ok", "Thanks. If you meant to enquire, please email oscarayton@getquotehelm.co.uk as well.");
+        return;
+      }
+      if (!configured) {
+        show("err", "This form is not connected yet. Please email oscarayton@getquotehelm.co.uk and I will reply.");
+        return;
+      }
+      button.disabled = true;
+      status.className = "form-status";
+      status.textContent = "Sending.";
+      fetch(endpoint, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      }).then(function(res){
+        if (!res.ok) throw new Error("form");
+        form.reset();
+        show("ok", "Thanks. I\u2019ve got it, and I\u2019ll reply on weekdays, usually within one working day.");
+      }).catch(function(){
+        show("err", "That didn\u2019t send. Please email oscarayton@getquotehelm.co.uk instead.");
+      }).then(function(){ button.disabled = false; });
+    });
+  });
 })();

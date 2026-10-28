@@ -27,11 +27,15 @@ section{padding:4.5rem 0}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:4.25rem;gap:1rem}
 .mark{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:.55rem}
 .mark span{display:block;width:.55rem;height:.55rem;background:var(--brass);transform:rotate(45deg)}
-.nav{display:none;gap:1.75rem;font-size:.97rem}
-.nav a{text-decoration:none;color:var(--text)}
+.nav{display:flex;flex-wrap:wrap;gap:.35rem 1.15rem;font-size:.97rem}
+.nav a{text-decoration:none;color:var(--text);display:inline-flex;align-items:center;min-height:2.75rem}
 .nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 .top .btn.small{display:none}
-@media(min-width:52rem){.nav{display:flex}.top .btn.small{display:inline-flex}}
+@media(max-width:51.99rem){
+  .top .wrap{flex-wrap:wrap;align-items:center;padding-top:.7rem;padding-bottom:.55rem}
+  .nav{flex:1 0 100%;gap:.15rem 1rem}
+}
+@media(min-width:52rem){.nav{flex-wrap:nowrap;gap:1.75rem}.top .btn.small{display:inline-flex}}
 /* hero */
 .hero{padding:3rem 0 4rem}
 .hero .wrap{display:grid;gap:3rem;align-items:center}
@@ -198,3 +202,48 @@ footer.site a{overflow-wrap:anywhere}
 .privacy ul{padding-left:1.2rem}
 .privacy li{margin:.35rem 0}
 .privacy p:first-of-type{color:var(--muted)}
+/* three lead fixes */
+.fixes{list-style:none;margin:0 0 1.5rem;padding:0;display:grid;gap:1.25rem}
+@media(min-width:48rem){.fixes{grid-template-columns:repeat(3,1fr)}}
+.fixes li{border:1px solid var(--line);border-radius:6px;padding:1.25rem 1.2rem}
+.fixes h3{margin:0 0 .5rem;font-size:1.45rem}
+.fixes p{margin:0}
+.fixes .cost{margin-top:1rem;font-family:var(--serif);font-size:1.6rem;color:var(--ink);font-weight:600;line-height:1.1}
+.fixes .cost span{display:block;font-family:var(--sans);font-size:.92rem;font-weight:400;color:var(--muted);margin-top:.35rem}
+/* quote form */
+.quote-form{max-width:40rem}
+.q-field{margin:0 0 1.05rem}
+.q-field label,.checks legend{font-weight:600;color:var(--ink)}
+.req{font-weight:500;color:var(--muted);font-size:.85rem}
+.hint{display:block;color:var(--muted);font-size:.9rem;margin-top:.35rem}
+.q-field input,.q-field select,.q-field textarea{display:block;width:100%;margin-top:.35rem;min-height:3.1rem;padding:.65rem .75rem;font:inherit;color:var(--text);background:#fff;border:1px solid #B7C4BF;border-radius:4px}
+.q-field textarea{min-height:8rem;resize:vertical;line-height:1.5}
+.checks{border:0;margin:0 0 1.05rem;padding:0}
+.checks legend{margin:0 0 .35rem;padding:0}
+.checkline{display:flex;align-items:flex-start;gap:.65rem;margin:.45rem 0}
+.checkline input{width:1.25rem;height:1.25rem;margin-top:.25rem;accent-color:var(--ink);flex:none}
+.form-actions{margin-top:.4rem}
+.form-status:empty{display:none}
+.form-status.ok{background:#E5F4EC;color:#0E3D28;padding:.85rem 1rem;border-radius:4px;margin-top:1rem}
+.form-status.err{background:#FBE8E0;color:#6E2610;padding:.85rem 1rem;border-radius:4px;margin-top:1rem}
+.hp{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.placeholder{background:#FFF1C2;color:#5A4200;border:1px solid #E6D48A;border-radius:4px;padding:1rem 1.15rem;max-width:46rem;margin:0 0 1.25rem}
+.placeholder p{margin:0}
+.placeholder strong{font-weight:700}
+.placeholder code{font-size:.9em}
+.crumbs{font-size:.95rem;margin:0 0 1rem;color:var(--muted)}
+.crumbs a{color:var(--ink)}
+.crumbs [aria-current="page"]{color:var(--text)}
+.plain{max-width:42rem;padding-left:1.2rem}
+.plain li{margin:.4rem 0}
+.area-list{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+@media(min-width:48rem){.area-list{grid-template-columns:1fr 1fr}}
+.area-card{display:block;border:1px solid var(--line);border-radius:6px;padding:1.2rem 1.25rem;text-decoration:none;color:inherit;height:100%}
+.area-card:hover{border-color:var(--ink)}
+.area-card h3{margin:0 0 .4rem;font-size:1.4rem}
+.area-card p{margin:0;color:var(--muted)}
+.planned{margin-top:1.5rem;max-width:40rem}
+.planned h3{font-size:1.2rem;margin:0 0 .3rem}
+.planned p{margin:0 0 1rem;color:var(--muted)}
+.scene-band p{margin:0;font-family:var(--serif);font-size:clamp(1.4rem,3.6vw,2rem);line-height:1.3;color:#fff;max-width:44rem}
+code{font-size:.95em}
