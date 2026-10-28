@@ -78,6 +78,11 @@ else:
     print('LIMIT: Node unavailable; JavaScript syntax not checked.')
 
 git = shutil.which('git')
+# Deliberate fixes to the live root site since the snapshot; the archive copy stays unchanged.
+LIVE_FIXES = {
+    'robots.txt',      # keep docs/, archive/, site/ and scripts/ out of search
+    'assets/site.js',  # send every ticked product in the quote form
+}
 has_base = git and subprocess.run([git, 'cat-file', '-e', BASE + '^{commit}'], cwd=ROOT, capture_output=True).returncode == 0
 if has_base:
     files = subprocess.check_output([git, 'ls-tree', '-r', '--name-only', BASE], cwd=ROOT, text=True).splitlines()
@@ -86,7 +91,7 @@ if has_base:
         archived = ROOT / 'archive/quotehelm-2026-10-28' / name
         if not archived.exists() or archived.read_bytes() != original:
             errors.append('Archive mismatch: ' + name)
-        if name != 'README.md' and (ROOT / name).read_bytes() != original:
+        if name != 'README.md' and name not in LIVE_FIXES and (ROOT / name).read_bytes() != original:
             errors.append('Unexpected original root file change: ' + name)
     print(f'Checked {len(files)} archived files against the original commit.')
 else:
