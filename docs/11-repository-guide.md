@@ -32,9 +32,10 @@ python3 -m http.server 8001 --directory archive/quotehelm-2026-10-28
 1. Pull the latest agreed base branch and create a new branch for a single change.
 2. Tell the coding assistant what should change, what should remain, and how success will be checked.
 3. Inspect the diff. Check wording, prices, links and data destinations.
-4. Run the validation script; use a browser for interaction and mobile checks.
-5. Commit the change and open a pull request explaining the problem, result and checks.
-6. Review before merging. Understand whether a merge triggers deployment.
+4. Add a [progress log](log/README.md) entry for the change.
+5. Run the validation script; use a browser for interaction and mobile checks.
+6. Commit the change and open a pull request explaining the problem, result and checks.
+7. Review before merging. Understand whether a merge triggers deployment.
 
 Example after the starter has been merged:
 

@@ -10,7 +10,8 @@ Tandem is Oscar Ayton’s selected working brand for practical websites and busi
 | --- | --- |
 | [`site/`](site/) | Tandem website concept: static HTML, CSS and an illustrative workflow demo |
 | [`docs/`](docs/) | Business plan, operating playbooks, learning path and next steps |
-| [`docs/templates/`](docs/templates/) | Reusable discovery, scope, pilot-result and decision templates |
+| [`docs/log/`](docs/log/) | Progress log: one entry per merged pull request, plus a current-state summary |
+| [`docs/templates/`](docs/templates/) | Reusable discovery, scope, pilot-result, decision and log entry templates |
 | [`archive/`](archive/) | Preservation notes and an exact dated snapshot of Quotehelm |
 | Existing root HTML, assets and domain files | Current Quotehelm site, retained during refinement |
 | [`scripts/check_starter.py`](scripts/check_starter.py) | Dependency-free checks for links, brand, JavaScript syntax and archive integrity |
@@ -31,6 +32,7 @@ This uses ordinary folders in one repository. No nested Git repository or submod
 10. [Competitors and sources](docs/09-competition-and-sources.md)
 11. [Brand and unresolved decisions](docs/10-decisions.md)
 12. [Using this repository and launching safely](docs/11-repository-guide.md)
+13. [Progress log and current state](docs/log/README.md)
 
 ## Preview the Tandem site
 

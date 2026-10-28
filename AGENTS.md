@@ -1,6 +1,8 @@
 # Tandem working instructions
 
 - Read README.md and docs/10-decisions.md before changing the offer or site.
+- At the start of each session, read the current state and latest entries in docs/log/README.md and docs/log/. Then compare recently merged pull requests with the log and backfill an entry, in your own pull request, for any merge without one.
+- Every pull request adds one progress log entry in docs/log/ (template: docs/templates/log-entry.md), so every merge is logged. After opening the pull request, set its link in the entry and push. Update the log's current-state summary when the overall picture changes. Log Oscar's work outside the repository only when Oscar reports it, sanitised.
 - New website work belongs in site/. Business guidance belongs in docs/.
 - archive/quotehelm-2026-10-28 is an immutable snapshot. Preserve it exactly.
 - The root legacy website remains in place until a separate production migration.
