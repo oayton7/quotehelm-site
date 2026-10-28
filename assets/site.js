@@ -1,11 +1,9 @@
 /* Quotehelm config. One place only.
-   TODO(oscar): form endpoint. Replace PLACEHOLDER_FORM_ID with your Formspree form id.
-   Create a form at https://formspree.io, set the notification email to oscarayton@getquotehelm.co.uk,
-   then set formEndpoint to the URL Formspree gives you, for example "https://formspree.io/f/abcdwxyz".
-   The home page and the contact page both read this value. Formspree's honeypot field is _gotcha.
-   Until PLACEHOLDER is gone from this URL, the forms do not send and the mailto fallback is used. */
+   formEndpoint is the Formspree form "Quotehelm quote form", which emails enquiries to
+   oscarayton@getquotehelm.co.uk. The home page and the contact page both read it.
+   Formspree's honeypot field is _gotcha. */
 var QUOTEHELM = {
-  formEndpoint: "https://formspree.io/f/PLACEHOLDER_FORM_ID"
+  formEndpoint: "https://formspree.io/f/mkjjbyyr"
 };
 
 (function(){
