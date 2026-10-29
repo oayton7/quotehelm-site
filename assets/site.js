@@ -91,15 +91,11 @@ var QUOTEHELM = {
         if (!b.checked) return;
         if (hasSite && b.value === 'quote') { names.push(b.dataset.name + ' (included with the website)'); return; }
         names.push(b.dataset.name);
-        if (b.dataset.monthly) monthly = 1;
+        if (b.dataset.monthly) monthly = +b.dataset.monthly;
         else { min += +b.dataset.min; max += +b.dataset.max; }
       });
-      if (monthly) {
-        var picked = boxes.filter(function(b){ return b.checked && !b.dataset.monthly; }).map(function(b){ return b.value; });
-        monthly = (picked.indexOf('crm') > -1 || picked.indexOf('chat') > -1) ? 99 : (picked.indexOf('site') > -1 || picked.length >= 3) ? 79 : 59;
-      }
       $('[data-sum]').textContent = min === max ? fmt(min) : fmt(min) + ' to ' + fmt(max);
-      $('[data-per]').textContent = monthly ? 'Plus ' + fmt(monthly) + ' a month' : '';
+      $('[data-per]').textContent = monthly ? 'Plus ' + fmt(monthly) + ' a month, first month free' : '';
       $('[data-list]').innerHTML = names.length ? names.map(function(n){ return '<li>' + n + '</li>'; }).join('') : '<li>Nothing ticked yet</li>';
       var body = 'Business name:\nWebsite:\n\nI\u2019m interested in:\n' + (names.length ? names.map(function(n){ return '- ' + n; }).join('\n') : '- Not sure yet');
       $('[data-mail]').href = 'mailto:oscarayton@getquotehelm.co.uk?subject=' + encodeURIComponent('Free website check') + '&body=' + encodeURIComponent(body);

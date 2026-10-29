@@ -12,7 +12,7 @@ A possible future naming structure is Tandem Enquiries, Tandem Booking, Tandem R
 | --- | --- | --- | --- |
 | D01 | Working parent name: Tandem | Conflict found 29 Oct 2026; replacement name needed | Oscar: shortlist alternatives; check domain, Companies House and trademarks |
 | D02 | First segment: scheduled plumbing/heating work in West Sussex | Hypothesis | Oscar: ten discovery conversations |
-| D03 | First product: enquiry capture and notifications | Proposed | Oscar: repeated pain and paid pilot |
+| D03 | Live offer: enquiry capture, Google details fix and new website | Approved 29 Oct 2026 | Oscar: conversations and paid pilots; review which of the three sells |
 | D04 | Pilot setup price £345 | Approved for pilot 29 Oct 2026 | Oscar: record hours, costs and client responses; review after first pilots |
 | D05 | Client-paid vendors + optional support | Approved for pilot 29 Oct 2026 | Oscar: confirm handover steps and decline/cancel scenarios in first pilot |
 | D06 | Supported platforms and tools | Open | Technical test results and actual supplier terms |
@@ -38,6 +38,19 @@ When resolving a decision, add the date, owner, choice, evidence and consequence
 - Documents or code that must change: [first pilot pack](13-first-pilot-pack.md) (done); private scope copies for each client
 - Review trigger or date: after the first two paid pilots, or if delivery or support time exceeds the fee
 - Status: approved for pilot
+
+### D03: live site offer narrowed to three services
+
+- Decision ID and date: D03; 29 October 2026
+- Owner: Oscar Ayton
+- Question: The live site listed eight products, which is too broad to sell and deliver at 10 to 20 hours a week. What should it offer?
+- Options considered: enquiry capture alone (the plan’s proposed first product); enquiry capture with a Google details fix, with Google reviews, or with a new website
+- Evidence and remaining uncertainty: enquiry capture is the only service with a tested build (see [first test build results](14-first-test-results.md)). The Google details fix needs no automation. A website is the largest job, at an estimated 20 to 30 hours. Demand for each is unproven
+- Choice and reason: offer enquiries to your phone (£345), right details on Google (£225) and a new website including the quote form (£1,095), with optional £59 a month maintenance. Remove AI chat, reviews feed, booking links and CRM from the live site. Take on one website at a time
+- Commercial/technical consequences: the quote-form lead time is agreed per job rather than promised, until compatibility and timings are proven; a website job ties up most of a week’s capacity
+- Documents or code that must change: root site pages, structured data, `llms.txt`, share image and estimate builder (done)
+- Review trigger or date: after ten owner conversations, or when one offer clearly sells better than the others
+- Status: approved
 
 ### D01: brand clearance check
 

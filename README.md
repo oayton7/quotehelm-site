@@ -8,6 +8,7 @@ Tandem is Oscar Ayton’s selected working brand for practical websites and busi
 
 | Date | Milestone |
 | --- | --- |
+| 29 October 2026 | Pilot terms approved (£345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance) and the live Quotehelm site narrowed to three offers: enquiries to your phone, right details on Google and a new website. See the [decision register](docs/10-decisions.md). |
 | 29 October 2026 | Stage 1 test flow working with synthetic enquiries: Tally form → Make → duplicate check → Airtable record → email to Oscar → marked Sent, with failed emails marked Failed. SMS and the wider test suite are next. See the [first test build results](docs/14-first-test-results.md). |
 
 ## What is where

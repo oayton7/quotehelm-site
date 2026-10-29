@@ -1,21 +1,22 @@
 # Quotehelm
 
-> Quotehelm is run by Oscar Ayton, a sole trader. It is Chichester based. It adds quote forms, Google reviews feeds and AI chat to websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
+> Quotehelm is run by Oscar Ayton, a sole trader. It is Chichester based. It sets up quote forms that send every enquiry to the owner’s phone, fixes business details on Google and builds small websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
 
 Quotehelm does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
 ## Who it is for
-Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Quotehelm adds a specific fix, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses the optional care plan.
+Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Quotehelm adds a quote form to it or fixes the business details on Google, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses optional maintenance.
 
 ## Services and prices (GBP, no VAT charged)
-- Quote form: a form on the website. Every enquiry is sent to the client’s phone by text and email straight away. £345, live in 3 working days.
-- Reviews feed: the client’s Google reviews shown on the site, plus an automatic review request after each job. £345, live in 5 working days.
-- Chat assistant: an AI chat assistant that answers common questions and takes quote requests 24/7, then sends them to the client. £595, live in 5 working days.
-- Online booking link: customers book a site visit or call-out from the website. £225, live in 3 working days.
-- Address fix: business name, address and phone number made to match across the website, Google Business Profile and the main directories. Google and the directories can take longer to show the change. £225, done in 3 working days.
-- Website redesign: up to 5 mobile-friendly pages with a quote form, Google reviews, click-to-call, HTTPS and basic Google setup. Copy is written from the client’s information. The client’s own photos are used. 2 rounds of changes. £1,095, live in 10 working days once content and access are provided.
-- CRM and automations: a simple system to track every enquiry, with missed-call text replies, quote follow-ups and review requests. £1,750 to £2,750.
-- Care plan (optional): keep the setup running, make small changes and check it each month. £59 a month for 1 or 2 products, £79 for 3 or more or a website, £99 with a chat assistant or CRM. 30 days’ notice to cancel.
+Quotehelm currently offers three services, plus optional maintenance.
+- Enquiries to your phone (quote form): a form on the client’s existing website. Every enquiry is saved and sent to the client’s phone by text and email straight away. £345. Timing is agreed after a quick check of the client’s website.
+- Right details on Google (address fix): business name, address and phone number made to match across the website, Google and the main directories. Google and the directories can take longer to show the change. £225, usually done in 3 working days.
+- New website (website redesign): up to 5 mobile-friendly pages with the quote form built in, Google reviews shown, click-to-call, HTTPS and basic Google setup. Copy is written from the client’s information. The client’s own photos are used. 2 rounds of changes. £1,095, usually 10 working days once content and access are provided.
+- Maintenance (optional): a monthly check with a test enquiry, fixes when something breaks, up to 30 minutes of small changes a month, and a reply within one working day on weekdays. £59 a month, first month free, 30 days’ notice to cancel. If maintenance stops, the setup keeps working.
+
+Payment is half when the client says yes and half before go-live, once the client has approved the work. What Quotehelm sets up belongs to the client once it is paid for. Problems with the agreed work are fixed free for 30 days after go-live.
+
+Quotehelm does not currently offer AI chat assistants, online booking links, reviews feeds with automatic review requests, or CRM systems.
 
 Every job has a fixed price agreed in writing before work starts. The client approves every message their customers will see before anything goes live.
 
