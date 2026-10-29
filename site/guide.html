@@ -423,19 +423,43 @@
 <p>A possible future naming structure is Tandem Enquiries, Tandem Booking, Tandem Reviews and Tandem Sites. These are product labels, not a requirement to create separate brands or repositories. Start with one reputation and one clear service.</p>
 <h3>Decisions to resolve</h3>
 <div class="table-scroll"><table><thead><tr><th>ID</th><th>Decision</th><th>Status</th><th>Evidence required / owner</th></tr></thead><tbody>
-<tr><td>D01</td><td>Working parent name: Tandem</td><td>Selected; clearance pending</td><td>Oscar: trademark/domain checks and final identity</td></tr>
+<tr><td>D01</td><td>Working parent name: Tandem</td><td>Conflict found 29 Oct 2026; replacement name needed</td><td>Oscar: shortlist alternatives; check domain, Companies House and trademarks</td></tr>
 <tr><td>D02</td><td>First segment: scheduled plumbing/heating work in West Sussex</td><td>Hypothesis</td><td>Oscar: ten discovery conversations</td></tr>
 <tr><td>D03</td><td>First product: enquiry capture and notifications</td><td>Proposed</td><td>Oscar: repeated pain and paid pilot</td></tr>
-<tr><td>D04</td><td>Pilot setup price £345</td><td>Hypothesis based on current offer</td><td>Oscar: total effort, costs and willingness to pay</td></tr>
-<tr><td>D05</td><td>Client-paid vendors + optional support</td><td>Proposed change</td><td>Oscar: quote terms and decline/cancel scenarios</td></tr>
+<tr><td>D04</td><td>Pilot setup price £345</td><td>Approved for pilot 29 Oct 2026</td><td>Oscar: record hours, costs and client responses; review after first pilots</td></tr>
+<tr><td>D05</td><td>Client-paid vendors + optional support</td><td>Approved for pilot 29 Oct 2026</td><td>Oscar: confirm handover steps and decline/cancel scenarios in first pilot</td></tr>
 <tr><td>D06</td><td>Supported platforms and tools</td><td>Open</td><td>Technical test results and actual supplier terms</td></tr>
-<tr><td>D07</td><td>Support allowance and response hours</td><td>Open</td><td>Oscar: availability and observed support workload</td></tr>
+<tr><td>D07</td><td>Support allowance and response hours</td><td>Approved for pilot 29 Oct 2026</td><td>Oscar: observed support workload against the allowance</td></tr>
 <tr><td>D08</td><td>New domain/email</td><td>Open</td><td>Clearance, ownership and DNS plan</td></tr>
 <tr><td>D09</td><td>Commercial hosting and launch path</td><td>Open</td><td>Appropriate host and migration rehearsal</td></tr>
 <tr><td>D10</td><td>Production deployment</td><td>Not authorised by this starter</td><td>Separate reviewed release after launch gates</td></tr>
 <tr><td>D11</td><td>Case-study claims</td><td>Not yet available</td><td>Actual results and permission</td></tr>
 </tbody></table></div>
 <p>When resolving a decision, add the date, owner, choice, evidence and consequences using the <a href="#doc-templates-decision">decision template</a>. Keep private evidence in a controlled location and use a sanitised reference here if appropriate.</p>
+<h3>Resolved decisions</h3>
+<h4>D04, D05 and D07: pilot commercial terms</h4>
+<ul>
+<li>Decision ID and date: D04, D05, D07; 29 October 2026</li>
+<li>Owner: Oscar Ayton</li>
+<li>Question: Pilot setup price, who pays running costs and owns the accounts, and what support is offered</li>
+<li>Options considered: £295, £345 or £395 setup; client-paid vendors or a managed monthly fee; no support, optional paid support or free support during the pilot; 14, 30 or 60 days of free fixes</li>
+<li>Evidence and remaining uncertainty: £345 is the existing Quotehelm price; Stage 1 test build costs about 6 to 7 Make credits per enquiry (see <a href="#doc-14-first-test-results">first test build results</a>). Willingness to pay, real delivery hours and support workload are not yet known</li>
+<li>Choice and reason: £345 setup, 50% deposit and 50% before go-live; built in Oscar’s accounts and handed to client-owned accounts on full payment; client pays tools directly; free fixes for 30 days; optional maintenance at £59 a month with the first month free, 30 days’ notice, up to 30 minutes of changes a month and a reply within one working day. Payment before handover protects the setup fee without needing to disable a client’s system later</li>
+<li>Commercial/technical consequences: recurring income only from clients who opt in; handover needs a documented export and import of the form, automation and records</li>
+<li>Documents or code that must change: <a href="#doc-13-first-pilot-pack">first pilot pack</a> (done); private scope copies for each client</li>
+<li>Review trigger or date: after the first two paid pilots, or if delivery or support time exceeds the fee</li>
+<li>Status: approved for pilot</li>
+</ul>
+<h4>D01: brand clearance check</h4>
+<ul>
+<li>Decision ID and date: D01; 29 October 2026</li>
+<li>Owner: Oscar Ayton</li>
+<li>Question: Is “Tandem” usable as the trading brand, with a matching domain and email?</li>
+<li>Evidence and remaining uncertainty: tandem.co.uk is listed as the website of Tandem Bank Limited; TANDEM and TANDEM BANK trademark applications are held by Tandem Money Limited for financial services; many other UK companies use the name, including Tandem Group plc. A full trademark search in the relevant classes has not been done</li>
+<li>Choice and reason: do not adopt oscar@tandem.co.uk or present Tandem as the brand; keep the Quotehelm site and email until a replacement is cleared</li>
+<li>Review trigger or date: when Oscar provides a shortlist of alternative names</li>
+<li>Status: conflict found; replacement pending</li>
+</ul>
 <h3>Confirmed implementation facts</h3>
 <ul>
 <li>The original site snapshot is pinned to commit <code>267929a5eeaf0849224d72a9597a4b9646a7ce15</code>.</li>
@@ -586,20 +610,23 @@ git push -u origin improve-tandem-offer</code></pre>
 <section id="doc-13-first-pilot-pack"><h2>First pilot pack</h2>
 <p>Working material for days 1 to 3 of <a href="#doc-00-start-here">Start here</a>: approve the pilot offer, line up conversations and run the first one. Everything here is a draft for Oscar to approve. Tandem is still a working name, so drafts use Oscar’s own name and the existing Quotehelm contact address.</p>
 <p>Drafts are not permission to send. Each message needs Oscar’s explicit approval and a lawful contact route, as described in the <a href="#doc-04-sales-playbook">sales playbook</a>.</p>
-<h3>1. Pilot offer for approval</h3>
-<p>Based on the proposed pilot in <a href="#doc-02-offer-and-pricing">first offer and pricing</a>.</p>
-<p><strong>Two-sentence version (draft):</strong> I set up a quote form on your existing website that saves every enquiry and texts and emails it to you straight away, so nothing gets lost while you are on a job. It is a fixed-price pilot: one website, one form, tested with you before it goes live.</p>
-<p><strong>Decisions Oscar needs to make:</strong></p>
-<div class="table-scroll"><table><thead><tr><th>Question</th><th>Options</th><th>Suggested starting point</th></tr></thead><tbody>
-<tr><td>Setup price</td><td>£345 (current Quotehelm price) or another figure</td><td>Keep £345 as the pilot hypothesis (D04) and record actual hours</td></tr>
-<tr><td>Who pays software and texts</td><td>Client pays vendors directly, or Oscar charges a managed monthly fee</td><td>Client owns the accounts and pays vendors directly; support is optional (D05)</td></tr>
-<tr><td>Support after the defect period</td><td>None, optional monthly support, or included for the pilot period</td><td>Optional; define hours, response times and what stops if cancelled before offering it</td></tr>
-<tr><td>Correction period</td><td>For example 14 or 30 days</td><td>30 days for agreed scope only</td></tr>
-<tr><td>Lead time</td><td>Fixed days, or &quot;agreed after the compatibility check&quot;</td><td>Agree per job until the test build shows real timings</td></tr>
+<h3>1. Approved pilot offer</h3>
+<p>Approved by Oscar on 29 October 2026 as the pilot offer (decisions D04, D05 and D07). These are pilot terms to test with the first clients, not proven prices; review them after the first pilots using recorded hours, costs and client responses. Based on the proposed pilot in <a href="#doc-02-offer-and-pricing">first offer and pricing</a>.</p>
+<p><strong>Two-sentence version:</strong> I set up a quote form on your existing website that saves every enquiry and texts and emails it to you straight away, so nothing gets lost while you are on a job. It is a fixed-price setup for one website and one form, tested with you before it goes live.</p>
+<div class="table-scroll"><table><thead><tr><th>Term</th><th>Approved pilot terms</th></tr></thead><tbody>
+<tr><td>Setup price</td><td>£345, no VAT charged</td></tr>
+<tr><td>Payment</td><td>50% deposit before work starts, 50% before go-live once the client has approved the test</td></tr>
+<tr><td>Accounts and ownership</td><td>Built and tested in Oscar’s accounts. Handed over to client-owned accounts when the full fee is paid; ownership passes on full payment. Unpaid work stays in Oscar’s accounts</td></tr>
+<tr><td>Running costs</td><td>Client owns the accounts and pays tool and text charges directly. Oscar keeps admin access to support them</td></tr>
+<tr><td>Free fixes</td><td>30 days after go-live, for defects in the agreed scope only. New requests are charged separately</td></tr>
+<tr><td>Maintenance</td><td>Optional, £59 a month, first month free, cancel with 30 days’ notice</td></tr>
+<tr><td>Maintenance includes</td><td>Monthly check with a test enquiry; fixing breakages such as expired connections or tool changes; up to 30 minutes of small changes a month (unused time does not roll over); watching for failed notifications and bounces; a reply within one working day, weekdays</td></tr>
+<tr><td>If maintenance is declined or cancelled</td><td>The system keeps running. Checks, fixes and changes stop; later work is charged per job</td></tr>
+<tr><td>Lead time</td><td>Agreed per job after a compatibility check, until the test build shows reliable timings</td></tr>
 </tbody></table></div>
-<p><strong>Included (draft):</strong> one website, one enquiry form, a saved record of each enquiry, a text and email to one agreed number and inbox, client-approved wording, a controlled live test and a short handover.</p>
-<p><strong>Excluded (draft):</strong> multiple sites or branches, automatic price calculations, emergency answering, follow-up or marketing sequences, a bespoke CRM, unlimited changes.</p>
-<p>Once approved, copy the <a href="#doc-templates-scope">scope template</a> privately for each client and fill it in.</p>
+<p><strong>Included:</strong> one website, one enquiry form, a saved record of each enquiry, a text and email to one agreed number and inbox, client-approved wording, a controlled live test and a short handover.</p>
+<p><strong>Excluded:</strong> multiple sites or branches, automatic price calculations, emergency answering, follow-up or marketing sequences, a bespoke CRM, unlimited changes, and guaranteed delivery of notifications (a provider accepting an email or text is not proof the owner received it; see the <a href="#doc-14-first-test-results">first test build results</a>).</p>
+<p>Do not switch off a client’s system for non-payment unless that is written into a signed managed-service agreement; under these terms the client owns the system once paid. Copy the <a href="#doc-templates-scope">scope template</a> privately for each client and fill it in with these terms.</p>
 <h3>2. Who to talk to</h3>
 <p>Aim for five conversations with owners of small plumbing and heating firms around Chichester. In order of preference:</p>
 <ol>

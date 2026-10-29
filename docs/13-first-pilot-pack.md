@@ -4,27 +4,29 @@ Working material for days 1 to 3 of [Start here](00-start-here.md): approve the 
 
 Drafts are not permission to send. Each message needs Oscar’s explicit approval and a lawful contact route, as described in the [sales playbook](04-sales-playbook.md).
 
-## 1. Pilot offer for approval
+## 1. Approved pilot offer
 
-Based on the proposed pilot in [first offer and pricing](02-offer-and-pricing.md).
+Approved by Oscar on 29 October 2026 as the pilot offer (decisions D04, D05 and D07). These are pilot terms to test with the first clients, not proven prices; review them after the first pilots using recorded hours, costs and client responses. Based on the proposed pilot in [first offer and pricing](02-offer-and-pricing.md).
 
-**Two-sentence version (draft):** I set up a quote form on your existing website that saves every enquiry and texts and emails it to you straight away, so nothing gets lost while you are on a job. It is a fixed-price pilot: one website, one form, tested with you before it goes live.
+**Two-sentence version:** I set up a quote form on your existing website that saves every enquiry and texts and emails it to you straight away, so nothing gets lost while you are on a job. It is a fixed-price setup for one website and one form, tested with you before it goes live.
 
-**Decisions Oscar needs to make:**
+| Term | Approved pilot terms |
+| --- | --- |
+| Setup price | £345, no VAT charged |
+| Payment | 50% deposit before work starts, 50% before go-live once the client has approved the test |
+| Accounts and ownership | Built and tested in Oscar’s accounts. Handed over to client-owned accounts when the full fee is paid; ownership passes on full payment. Unpaid work stays in Oscar’s accounts |
+| Running costs | Client owns the accounts and pays tool and text charges directly. Oscar keeps admin access to support them |
+| Free fixes | 30 days after go-live, for defects in the agreed scope only. New requests are charged separately |
+| Maintenance | Optional, £59 a month, first month free, cancel with 30 days’ notice |
+| Maintenance includes | Monthly check with a test enquiry; fixing breakages such as expired connections or tool changes; up to 30 minutes of small changes a month (unused time does not roll over); watching for failed notifications and bounces; a reply within one working day, weekdays |
+| If maintenance is declined or cancelled | The system keeps running. Checks, fixes and changes stop; later work is charged per job |
+| Lead time | Agreed per job after a compatibility check, until the test build shows reliable timings |
 
-| Question | Options | Suggested starting point |
-| --- | --- | --- |
-| Setup price | £345 (current Quotehelm price) or another figure | Keep £345 as the pilot hypothesis (D04) and record actual hours |
-| Who pays software and texts | Client pays vendors directly, or Oscar charges a managed monthly fee | Client owns the accounts and pays vendors directly; support is optional (D05) |
-| Support after the defect period | None, optional monthly support, or included for the pilot period | Optional; define hours, response times and what stops if cancelled before offering it |
-| Correction period | For example 14 or 30 days | 30 days for agreed scope only |
-| Lead time | Fixed days, or "agreed after the compatibility check" | Agree per job until the test build shows real timings |
+**Included:** one website, one enquiry form, a saved record of each enquiry, a text and email to one agreed number and inbox, client-approved wording, a controlled live test and a short handover.
 
-**Included (draft):** one website, one enquiry form, a saved record of each enquiry, a text and email to one agreed number and inbox, client-approved wording, a controlled live test and a short handover.
+**Excluded:** multiple sites or branches, automatic price calculations, emergency answering, follow-up or marketing sequences, a bespoke CRM, unlimited changes, and guaranteed delivery of notifications (a provider accepting an email or text is not proof the owner received it; see the [first test build results](14-first-test-results.md)).
 
-**Excluded (draft):** multiple sites or branches, automatic price calculations, emergency answering, follow-up or marketing sequences, a bespoke CRM, unlimited changes.
-
-Once approved, copy the [scope template](templates/scope.md) privately for each client and fill it in.
+Do not switch off a client’s system for non-payment unless that is written into a signed managed-service agreement; under these terms the client owns the system once paid. Copy the [scope template](templates/scope.md) privately for each client and fill it in with these terms.
 
 ## 2. Who to talk to
 
