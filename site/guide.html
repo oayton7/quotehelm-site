@@ -525,16 +525,31 @@ git push -u origin improve-tandem-offer</code></pre>
 <li>Publish it. Do not embed it on any website yet.</li>
 </ol>
 <h4>3. Automation (Make)</h4>
-<p>Create a scenario called <strong>Test enquiry flow</strong> with these modules in order:</p>
+<p>Create a scenario called <strong>Test enquiry flow</strong> with these modules in order. Save often (Cmd+S); a new scenario that has not been saved is lost if the tab closes.</p>
 <ol>
-<li><strong>Tally: Watch new responses.</strong> Copy the webhook address Make provides and connect it in the form’s Tally integrations.</li>
-<li><strong>Airtable: Search records</strong> where <strong>Enquiry ID</strong> equals the Tally response ID.</li>
-<li><strong>Filter:</strong> continue only when the search returned no records. This stops one submission being saved or notified twice (tests T07 and T08).</li>
-<li><strong>Airtable: Create a record.</strong> Map the answers, set <strong>Source</strong> to <code>Tally test form</code>, <strong>Status</strong> to New, <strong>Email notification</strong> to Pending and <strong>SMS notification</strong> to Not set up.</li>
+<li><strong>Webhooks: Custom webhook.</strong> Create a webhook, copy its address and paste it into the form’s Tally <strong>Integrations → Webhooks</strong> as the endpoint URL. Keep the address private. Click <strong>Run once</strong> and submit a test so Make learns the data structure. Tally sends the answers as a list under <code>data.fields</code>, each with a <code>label</code> (the question) and a <code>value</code> (the answer), and a unique <code>data.responseId</code>.</li>
+<li><strong>Airtable: Search records</strong> (connection type Airtable OAuth, with access to the test base only). Filter type <strong>Airtable formula</strong>, formula <code>{Enquiry ID} = &quot;{{1.data.responseId}}&quot;</code>, limit 1.</li>
+<li><strong>Filter</strong> on the link to the next module: label <code>New enquiries only</code>, condition <strong>Total number of bundles</strong> (from Search records) <strong>Numeric: Equal to</strong> <code>0</code>. When nothing matches, Make’s Airtable search still passes on one summary bundle with that total, so filter on the total rather than on whether a bundle arrived. An aggregator is not needed and would count the summary bundle as 1. This stops one submission being saved or notified twice (tests T07 and T08).</li>
+<li><strong>Airtable: Create a record.</strong> Map:</li>
+</ol>
+<div class="table-scroll"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Enquiry ID</td><td><code>{{1.data.responseId}}</code></td></tr>
+<tr><td>Submitted at</td><td><code>{{1.createdAt}}</code> (time zone Europe/London)</td></tr>
+<tr><td>Name</td><td><code>{{get(map(1.data.fields; &quot;value&quot;; &quot;label&quot;; &quot;Name&quot;); 1)}}</code></td></tr>
+<tr><td>Phone</td><td><code>{{get(map(1.data.fields; &quot;value&quot;; &quot;label&quot;; &quot;Phone&quot;); 1)}}</code></td></tr>
+<tr><td>Email</td><td><code>{{get(map(1.data.fields; &quot;value&quot;; &quot;label&quot;; &quot;Email&quot;); 1)}}</code></td></tr>
+<tr><td>Postcode</td><td><code>{{get(map(1.data.fields; &quot;value&quot;; &quot;label&quot;; &quot;Postcode&quot;); 1)}}</code></td></tr>
+<tr><td>Job description</td><td><code>{{get(map(1.data.fields; &quot;value&quot;; &quot;label&quot;; &quot;What do you need?&quot;); 1)}}</code></td></tr>
+<tr><td>Source</td><td><code>Tally test form</code></td></tr>
+<tr><td>Status, Email notification, SMS notification</td><td>Switch <strong>Map</strong> on and type <code>New</code>, <code>Pending</code> and <code>Not set up</code></td></tr>
+</tbody></table></div>
+<p>Pasted <code>{{…}}</code> expressions turn into coloured tags; Make drops the quote marks inside functions. Do not start a typed value with <code>/</code>, which opens Make’s keyword menu. Looking answers up by question label keeps the mapping working if the question order changes, but the labels in Tally must match exactly.</p>
+<ol>
 <li><strong>Email: Send an email</strong> to Oscar’s own inbox, using the Zoho Mail module or an SMTP connection. Suggested subject: <code>New enquiry: {Name}, {Postcode}</code>. Include the job description, phone and email in the body.</li>
 <li><strong>Airtable: Update a record.</strong> Set <strong>Email notification</strong> to Sent.</li>
 <li>Add an <strong>error handler</strong> to the email module that updates the record to <strong>Email notification: Failed</strong> and writes the error into <strong>Notes</strong>. The record must survive an email failure (test T11).</li>
 </ol>
+<p>The webhook, search, filter and create steps were confirmed working on 29 October 2026 (one submission produced one record). Each run used about 1 credit per module.</p>
 <p>Turn the scenario on and submit one enquiry, for example: *Test Person, Oscar’s own phone and email, PO19 1AA, &quot;Replace bath with walk-in shower, flexible on dates.&quot;*</p>
 <h3>Stage 2: add SMS (Twilio)</h3>
 <p><strong>Finished when:</strong> the same submission also sends one text to Oscar’s own mobile and the record shows the SMS as sent.</p>
