@@ -2,7 +2,7 @@
 
 - **Date:** 2026-10-30
 - **Author:** Claude Code
-- **Pull request:** link to follow
+- **Pull request:** [oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9)
 - **What changed:** Recorded Pillion Web as the replacement for the working name Tandem, and the purchase of pillionweb.co.uk (reported by Oscar; bought outside the repository on GoDaddy). No site files changed.
 - **Why:** Tandem conflicts with Tandem Bank. Leadout is shared with at least five UK businesses. No business was found trading as Pillion, which makes it easier to own in search and AI answers.
 - **Decisions affected:** D01 and D08.
