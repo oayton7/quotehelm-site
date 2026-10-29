@@ -1,5 +1,5 @@
-/* Quotehelm config. One place only.
-   formEndpoint is the Formspree form "Quotehelm quote form", which emails enquiries to
+/* Pillion Web config. One place only.
+   formEndpoint is the Formspree form "Pillion Web quote form", which emails enquiries to
    oscarayton@getquotehelm.co.uk. The home page and the contact page both read it.
    Formspree's honeypot field is _gotcha. */
 var QUOTEHELM = {
