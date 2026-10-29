@@ -10,14 +10,14 @@ A possible future naming structure is Tandem Enquiries, Tandem Booking, Tandem R
 
 | ID | Decision | Status | Evidence required / owner |
 | --- | --- | --- | --- |
-| D01 | Working parent name: Tandem | Conflict found 29 Oct 2026; replacement name needed | Oscar: shortlist alternatives; check domain, Companies House and trademarks |
+| D01 | Brand: Pillion Web (replaces working name Tandem) | Selected 30 Oct 2026; Companies House and trademark checks to confirm | Oscar: Companies House and UK IPO searches (classes 35 and 42) |
 | D02 | First segment: scheduled plumbing/heating work in West Sussex | Hypothesis | Oscar: ten discovery conversations |
 | D03 | Live offer: enquiry capture, Google details fix and new website | Approved 29 Oct 2026 | Oscar: conversations and paid pilots; review which of the three sells |
 | D04 | Pilot setup price £345 | Approved for pilot 29 Oct 2026 | Oscar: record hours, costs and client responses; review after first pilots |
 | D05 | Client-paid vendors + optional support | Approved for pilot 29 Oct 2026 | Oscar: confirm handover steps and decline/cancel scenarios in first pilot |
 | D06 | Supported platforms and tools | Open | Technical test results and actual supplier terms |
 | D07 | Support allowance and response hours | Approved for pilot 29 Oct 2026 | Oscar: observed support workload against the allowance |
-| D08 | New domain/email | Open | Clearance, ownership and DNS plan |
+| D08 | New domain/email | Domain pillionweb.co.uk bought 30 Oct 2026; email and DNS plan open | Oscar and Claude: Zoho email on the new domain, DNS that keeps current email working, redirect from getquotehelm.co.uk |
 | D09 | Commercial hosting and launch path | Open | Appropriate host and migration rehearsal |
 | D10 | Production deployment | Not authorised by this starter | Separate reviewed release after launch gates |
 | D11 | Case-study claims | Not yet available | Actual results and permission |
@@ -51,6 +51,19 @@ When resolving a decision, add the date, owner, choice, evidence and consequence
 - Documents or code that must change: root site pages, structured data, `llms.txt`, share image and estimate builder (done)
 - Review trigger or date: after ten owner conversations, or when one offer clearly sells better than the others
 - Status: approved
+
+### D01 and D08: Pillion Web chosen as the brand
+
+- Decision ID and date: D01, D08; 30 October 2026
+- Owner: Oscar Ayton
+- Question: Which name replaces Tandem, with a domain and email that help search and AI visibility?
+- Options considered: Leadout, Pillion, Tandeo, Twinlead and others. Ruled out: Lockstep (an existing digital agency), Jobmate and Tradesmate (similar trade apps), Domestique (several UK businesses), Alongside and Duo (too generic)
+- Evidence and remaining uncertainty: searches found at least five UK businesses called Leadout, plus a lead-tracking plugin, so the name would be shared in search and AI answers. No business was found trading as Pillion; results were the common word (motorcycle seats and insurance), a dormant PILLON Ltd and an unrelated motorcycle dog-carrier brand. pillion.co.uk and pillion.uk are taken; pillionweb.co.uk was available and has been bought (registrar: GoDaddy). Companies House and the UK IPO register could not be searched directly from this session and still need checking by Oscar
+- Choice and reason: trade as **Pillion Web**, used identically everywhere, on pillionweb.co.uk. A name not shared with other businesses is easier to own in brand searches and AI answers, and "Web" states the service in the trading name and Google listing
+- Commercial/technical consequences: Quotehelm stays live until the move. Cold email stays on getquotehelm.co.uk while the new domain warms up, because a new domain has no sending reputation. The move needs Zoho email on the new domain, DNS records, a site rebrand, redirects from getquotehelm.co.uk and Search Console's change of address
+- Documents or code that must change: root site, privacy notice, structured data, `llms.txt`, share image, Formspree notification address, README and plan documents that say Tandem
+- Review trigger or date: if the Companies House or trademark checks find a conflict
+- Status: selected; checks pending
 
 ### D01: brand clearance check
 
