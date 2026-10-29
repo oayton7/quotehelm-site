@@ -10,7 +10,10 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-FILES = sorted(DOCS.glob("*.md")) + sorted((DOCS / "templates").glob("*.md"))
+LOG = DOCS / "log"
+# The log reads newest first after its README; templates stay last.
+LOG_ENTRIES = sorted((p for p in LOG.glob("*.md") if p.name != "README.md"), reverse=True)
+FILES = sorted(DOCS.glob("*.md")) + [LOG / "README.md", *LOG_ENTRIES] + sorted((DOCS / "templates").glob("*.md"))
 
 
 def doc_id(path):

@@ -56,6 +56,24 @@ for path in [ROOT / 'README.md', *ROOT.glob('docs/**/*.md'), ROOT / 'archive/REA
             if not (path.parent / unquote(u.path)).exists():
                 errors.append(f'{path.relative_to(ROOT)}: missing link {target}')
 
+LOG_FIELDS = ['Date', 'Author', 'Pull request', 'What changed', 'Why', 'Decisions affected', 'Open items / next steps']
+for path in sorted((ROOT / 'docs/log').glob('*.md')):
+    if path.name == 'README.md':
+        continue
+    name = 'docs/log/' + path.name
+    date = re.match(r'(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.md$', path.name)
+    if not date:
+        errors.append(f'{name}: file name must be YYYY-MM-DD-short-description.md')
+    text = path.read_text()
+    if not text.startswith('# '):
+        errors.append(f'{name}: must start with a "# " title')
+    for field in LOG_FIELDS:
+        value = re.search(r'^- \*\*' + re.escape(field) + r':\*\* *(.*)$', text, re.M)
+        if not value or not value[1].strip():
+            errors.append(f'{name}: missing or empty field "{field}"')
+        elif field == 'Date' and date and value[1].strip() != date[1]:
+            errors.append(f'{name}: Date field does not match the file name')
+
 home = (ROOT / 'site/index.html').read_text()
 if 'Tandem' not in home or 'trading as Tandem' in home:
     errors.append('Brand must be Tandem concept, without claiming cleared trading identity')
@@ -110,4 +128,4 @@ assert 345-20-4*40 == 165 and 345-20-8*40 == 5 and 59-20-.5*40 == 19 and 59-20-4
 if errors:
     print('\n'.join('FAIL: ' + e for e in errors))
     sys.exit(1)
-print('PASS: local links, fragments, concept boundaries, guide freshness, available syntax/archive checks and planning arithmetic.')
+print('PASS: local links, fragments, concept boundaries, guide freshness, progress log entries, available syntax/archive checks and planning arithmetic.')
