@@ -4,12 +4,14 @@ This log records how the project has progressed so that every person and AI agen
 
 ## Current state
 
-Last updated 2026-10-28. Update this section when a merge changes the overall picture.
+Last updated 2026-10-29. Update this section when a merge changes the overall picture.
 
-- **Live site:** the root Quotehelm site at getquotehelm.co.uk, positioned for Chichester and the South East, with quote forms sent to Formspree.
-- **Tandem:** a working brand with a static concept in `site/` and a business plan in `docs/`. Brand clearance, offer terms and production deployment are not done.
+- **Live site:** the root Quotehelm site at getquotehelm.co.uk, positioned for Chichester and the South East, offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance. Quote forms go to Formspree.
+- **Pilot terms:** approved (D04, D05, D07). Setup is 50% upfront and 50% before go-live, built in Oscar's accounts and handed over on full payment.
+- **Test build:** Stage 1 works with synthetic enquiries (form, duplicate check, Airtable record, email, Sent or Failed). SMS and most acceptance tests are still to do.
+- **Brand:** Tandem conflicts with Tandem Bank (D01). Quotehelm stays live until a replacement name is cleared.
 - **Deployment:** GitHub Pages serves the whole repository. `robots.txt` keeps internal folders out of search until deployment publishes only the website.
-- **Next:** build and test the first enquiry-capture workflow, hold discovery conversations and resolve the open decisions in the register.
+- **Next:** owner conversations, Search Console and Bing verification, a replacement name, then Stage 2 (SMS).
 
 ## Rules
 

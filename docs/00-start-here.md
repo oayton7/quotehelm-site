@@ -46,4 +46,4 @@ Useful early questions are “will someone pay?”, “can I deliver this twice?
 
 ## How to use this pack
 
-Use [the roadmap](08-roadmap.md) to choose the next task. Use [the delivery plan](03-delivery-and-test-plan.md) during builds. Use the [templates](templates/) in private client folders, never for real customer records in this public repository. Update the decision register when a hypothesis is accepted, changed or rejected.
+For days 1 to 3, use the [first pilot pack](13-first-pilot-pack.md). For days 4 to 6, follow the [test build guide](12-test-build-guide.md) and record results in the [test log template](templates/test-log.md). Use [the roadmap](08-roadmap.md) to choose the next task. Use [the delivery plan](03-delivery-and-test-plan.md) during builds. Use the [templates](templates/) in private client folders, never for real customer records in this public repository. Update the decision register when a hypothesis is accepted, changed or rejected.

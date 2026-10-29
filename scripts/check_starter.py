@@ -100,6 +100,12 @@ git = shutil.which('git')
 LIVE_FIXES = {
     'robots.txt',      # keep docs/, archive/, site/ and scripts/ out of search
     'assets/site.js',  # send every ticked product in the quote form
+    # Live site refocused on the three approved offers, 29 October 2026 (decision D03).
+    'index.html', 'pricing/index.html', 'contact/index.html', 'privacy/index.html', '404.html',
+    'areas/index.html', 'areas/chichester/index.html',
+    'trades/builders/index.html', 'trades/decorators/index.html', 'trades/electricians/index.html',
+    'trades/kitchen-fitters/index.html', 'trades/plumbers/index.html', 'trades/roofers/index.html',
+    'llms.txt', 'og.png', 'sitemap.xml',
 }
 has_base = git and subprocess.run([git, 'cat-file', '-e', BASE + '^{commit}'], cwd=ROOT, capture_output=True).returncode == 0
 if has_base:
