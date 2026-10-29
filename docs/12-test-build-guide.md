@@ -59,13 +59,15 @@ Create a scenario called **Test enquiry flow** with these modules in order. Save
 
 Pasted `{{…}}` expressions turn into coloured tags; Make drops the quote marks inside functions. Do not start a typed value with `/`, which opens Make’s keyword menu. Looking answers up by question label keeps the mapping working if the question order changes, but the labels in Tally must match exactly.
 
-5. **Email: Send an email** to Oscar’s own inbox, using the Zoho Mail module or an SMTP connection. Suggested subject: `New enquiry: {Name}, {Postcode}`. Include the job description, phone and email in the body.
-6. **Airtable: Update a record.** Set **Email notification** to Sent.
-7. Add an **error handler** to the email module that updates the record to **Email notification: Failed** and writes the error into **Notes**. The record must survive an email failure (test T11).
+5. **Zoho Mail: Send an Email** (connection to Oscar’s Zoho account, EU data centre). Choose the **Account ID**, set **From** and **To** to Oscar’s own address, **Mail Format** to Plain text, and map the subject and body from the created record, for example subject `New enquiry: {{9.Name}}, {{9.Postcode}}` and a body listing the phone, email, postcode, job description and enquiry ID, for example `{{9.Phone}}`. For field names containing spaces, such as Job description, put the name in backticks inside the braces, or click the field in Make’s data panel instead of pasting. The module number (9 here) is whatever Make assigned to the Create a record step.
+6. **Airtable: Update a record** after the email, with **Record ID** mapped from the created record’s ID and only **Email notification** set to `Sent`. Leave every other field empty so nothing is overwritten.
+7. **Error handler on the email step.** Right-click the email module, choose **Add error handler** and add **Airtable: Update a record** with the same Record ID, **Email notification** `Failed` and a note in **Notes**. An error route without a directive is treated as handled, so the scenario keeps running. The record survives an email failure (test T11).
 
-The webhook, search, filter and create steps were confirmed working on 29 October 2026 (one submission produced one record). Each run used about 1 credit per module.
+To test T11, make the email step fail outright, for example by temporarily mapping a wrong **Account ID**. Make rejects an invalid To address in the form, and an undeliverable but valid address is accepted by Zoho and only bounces later, so it does not trigger the error route. Restore the settings afterwards.
 
-Turn the scenario on and submit one enquiry, for example: *Test Person, Oscar’s own phone and email, PO19 1AA, "Replace bath with walk-in shower, flexible on dates."*
+Once the steps pass, switch the scenario **on** (run immediately as data arrives) so enquiries are processed without **Run once**. The free plan allows two active scenarios.
+
+Results of the first build are in [first test build results](14-first-test-results.md).
 
 ## Stage 2: add SMS (Twilio)
 

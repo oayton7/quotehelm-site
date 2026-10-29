@@ -4,6 +4,12 @@ Tandem is Oscar Ayton’s selected working brand for practical websites and busi
 
 **Oscar: start with [START HERE](docs/00-start-here.md).** The first milestone is one paid, tightly scoped enquiry-capture installation that works reliably and has documented costs. Brand clearance, final commercial terms and production delivery are still to be completed.
 
+## Progress
+
+| Date | Milestone |
+| --- | --- |
+| 29 October 2026 | Stage 1 test flow working with synthetic enquiries: Tally form → Make → duplicate check → Airtable record → email to Oscar → marked Sent, with failed emails marked Failed. SMS and the wider test suite are next. See the [first test build results](docs/14-first-test-results.md). |
+
 ## What is where
 
 | Location | Purpose |
@@ -33,6 +39,7 @@ This uses ordinary folders in one repository. No nested Git repository or submod
 12. [Using this repository and launching safely](docs/11-repository-guide.md)
 13. [Build the test enquiry flow](docs/12-test-build-guide.md)
 14. [First pilot pack: offer, messages and first conversation](docs/13-first-pilot-pack.md)
+15. [First test build results](docs/14-first-test-results.md)
 
 ## Preview the Tandem site
 
