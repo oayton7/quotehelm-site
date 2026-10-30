@@ -9,7 +9,7 @@ Pillion Web is Oscar Ayton’s business for practical websites and enquiry syste
 Last updated 30 October 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
 
 - **Brand:** Pillion Web chosen (decision D01). Companies House and UK IPO trademark checks still to do.
-- **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place, and oscar@pillionweb.co.uk added to Oscar’s mailbox. Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
+- **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place and mail reaching Zoho. The oscar@pillionweb.co.uk alias is not created yet (a test on 30 October bounced with "user does not exist"). Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
 - **Live site:** getquotehelm.co.uk, trading as Quotehelm, offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance (D03).
 - **Rebrand:** prepared in draft pull request [oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9). It goes live once pillionweb.co.uk points at GitHub Pages, followed by a redirect from getquotehelm.co.uk and Search Console’s change of address.
 - **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
@@ -22,7 +22,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
-| 30 October 2026 | Zoho Mail set up on pillionweb.co.uk and oscar@pillionweb.co.uk added. The rebrand to Pillion Web, with the new contact email, is prepared in draft pull request [#9](https://github.com/oayton7/quotehelm-site/pull/9). |
+| 30 October 2026 | Zoho Mail set up on pillionweb.co.uk; the oscar@pillionweb.co.uk alias is still to be added. The rebrand to Pillion Web, with the new contact email, is prepared in draft pull request [#9](https://github.com/oayton7/quotehelm-site/pull/9). |
 | 30 October 2026 | Pillion Web chosen as the brand, replacing Tandem, and pillionweb.co.uk bought. See the [decision register](docs/10-decisions.md). |
 | 29 October 2026 | Pilot terms approved (£345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance) and the live Quotehelm site narrowed to three offers: enquiries to your phone, right details on Google and a new website. See the [decision register](docs/10-decisions.md). |
 | 29 October 2026 | Stage 1 test flow working with synthetic enquiries: Tally form → Make → duplicate check → Airtable record → email to Oscar → marked Sent, with failed emails marked Failed. SMS and the wider test suite are next. See the [first test build results](docs/14-first-test-results.md). |
