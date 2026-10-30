@@ -6,7 +6,7 @@ This log records how the project has progressed so that every person and AI agen
 
 Last updated 2026-10-30. Update this section when a merge changes the overall picture.
 
-- **Live site:** the root Quotehelm site at getquotehelm.co.uk, positioned for Chichester and the South East, offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance. Quote forms go to Formspree.
+- **Live site:** pillionweb.co.uk, trading as Pillion Web (previously Quotehelm), offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance. Quote forms go to Formspree. Contact: oscar@pillionweb.co.uk. getquotehelm.co.uk is to forward to it.
 - **Pilot terms:** approved (D04, D05, D07). Setup is 50% upfront and 50% before go-live, built in Oscar's accounts and handed over on full payment.
 - **Test build:** Stage 1 works with synthetic enquiries (form, duplicate check, Airtable record, email, Sent or Failed). SMS and most acceptance tests are still to do.
 - **Brand:** Pillion Web chosen to replace the working name Tandem (D01), and pillionweb.co.uk bought (D08). Companies House and trademark checks are pending. Quotehelm stays live until the move.
