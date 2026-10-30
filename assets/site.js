@@ -1,6 +1,6 @@
-/* Quotehelm config. One place only.
-   formEndpoint is the Formspree form "Quotehelm quote form", which emails enquiries to
-   oscarayton@getquotehelm.co.uk. The home page and the contact page both read it.
+/* Pillion Web config. One place only.
+   formEndpoint is the Formspree form "Pillion Web quote form", which emails enquiries to
+   oscar@pillionweb.co.uk. The home page and the contact page both read it.
    Formspree's honeypot field is _gotcha. */
 var QUOTEHELM = {
   formEndpoint: "https://formspree.io/f/mkjjbyyr"
@@ -98,7 +98,7 @@ var QUOTEHELM = {
       $('[data-per]').textContent = monthly ? 'Plus ' + fmt(monthly) + ' a month, first month free' : '';
       $('[data-list]').innerHTML = names.length ? names.map(function(n){ return '<li>' + n + '</li>'; }).join('') : '<li>Nothing ticked yet</li>';
       var body = 'Business name:\nWebsite:\n\nI\u2019m interested in:\n' + (names.length ? names.map(function(n){ return '- ' + n; }).join('\n') : '- Not sure yet');
-      $('[data-mail]').href = 'mailto:oscarayton@getquotehelm.co.uk?subject=' + encodeURIComponent('Free website check') + '&body=' + encodeURIComponent(body);
+      $('[data-mail]').href = 'mailto:oscar@pillionweb.co.uk?subject=' + encodeURIComponent('Free website check') + '&body=' + encodeURIComponent(body);
     };
     boxes.forEach(function(b){ b.addEventListener('change', update); });
     $$('[data-add]').forEach(function(btn){
@@ -130,11 +130,11 @@ var QUOTEHELM = {
         status.focus();
       };
       if (honey && honey.value) {
-        show("ok", "Thanks. If you meant to enquire, please email oscarayton@getquotehelm.co.uk as well.");
+        show("ok", "Thanks. If you meant to enquire, please email oscar@pillionweb.co.uk as well.");
         return;
       }
       if (!configured) {
-        show("err", "This form is not connected yet. Please email oscarayton@getquotehelm.co.uk and I will reply.");
+        show("err", "This form is not connected yet. Please email oscar@pillionweb.co.uk and I will reply.");
         return;
       }
       button.disabled = true;
@@ -154,7 +154,7 @@ var QUOTEHELM = {
         form.reset();
         show("ok", "Thanks. I\u2019ve got it, and I\u2019ll reply on weekdays, usually within one working day.");
       }).catch(function(){
-        show("err", "That didn\u2019t send. Please email oscarayton@getquotehelm.co.uk instead.");
+        show("err", "That didn\u2019t send. Please email oscar@pillionweb.co.uk instead.");
       }).then(function(){ button.disabled = false; });
     });
   });

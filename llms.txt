@@ -1,22 +1,22 @@
-# Quotehelm
+# Pillion Web
 
-> Quotehelm is run by Oscar Ayton, a sole trader. It is Chichester based. It sets up quote forms that send every enquiry to the owner’s phone, fixes business details on Google and builds small websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Quotehelm is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
+> Pillion Web (previously called Quotehelm) is run by Oscar Ayton, a sole trader. It is Chichester based. It sets up quote forms that send every enquiry to the owner’s phone, fixes business details on Google and builds small websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Pillion Web is not VAT registered. No street address or phone number is published. Contact: oscar@pillionweb.co.uk.
 
-Quotehelm does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
+Pillion Web does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
 ## Who it is for
-Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Quotehelm adds a quote form to it or fixes the business details on Google, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses optional maintenance.
+Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Pillion Web adds a quote form to it or fixes the business details on Google, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses optional maintenance.
 
 ## Services and prices (GBP, no VAT charged)
-Quotehelm currently offers three services, plus optional maintenance.
+Pillion Web currently offers three services, plus optional maintenance.
 - Enquiries to your phone (quote form): a form on the client’s existing website. Every enquiry is saved and sent to the client’s phone by text and email straight away. £345. Timing is agreed after a quick check of the client’s website.
 - Right details on Google (address fix): business name, address and phone number made to match across the website, Google and the main directories. Google and the directories can take longer to show the change. £225, usually done in 3 working days.
 - New website (website redesign): up to 5 mobile-friendly pages with the quote form built in, Google reviews shown, click-to-call, HTTPS and basic Google setup. Copy is written from the client’s information. The client’s own photos are used. 2 rounds of changes. £1,095, usually 10 working days once content and access are provided.
 - Maintenance (optional): a monthly check with a test enquiry, fixes when something breaks, up to 30 minutes of small changes a month, and a reply within one working day on weekdays. £59 a month, first month free, 30 days’ notice to cancel. If maintenance stops, the setup keeps working.
 
-Payment is half when the client says yes and half before go-live, once the client has approved the work. What Quotehelm sets up belongs to the client once it is paid for. Problems with the agreed work are fixed free for 30 days after go-live.
+Payment is half when the client says yes and half before go-live, once the client has approved the work. What Pillion Web sets up belongs to the client once it is paid for. Problems with the agreed work are fixed free for 30 days after go-live.
 
-Quotehelm does not currently offer AI chat assistants, online booking links, reviews feeds with automatic review requests, or CRM systems.
+Pillion Web does not currently offer AI chat assistants, online booking links, reviews feeds with automatic review requests, or CRM systems.
 
 Every job has a fixed price agreed in writing before work starts. The client approves every message their customers will see before anything goes live.
 
@@ -24,24 +24,24 @@ Every job has a fixed price agreed in writing before work starts. The client app
 Chichester based. No street address is published. Serves West Sussex, Sussex, Hampshire and the South East of England. London is planned later and is not the current focus.
 
 ## How to enquire
-Quote form: https://getquotehelm.co.uk/contact/#quote
-Email: oscarayton@getquotehelm.co.uk
+Quote form: https://pillionweb.co.uk/contact/#quote
+Email: oscar@pillionweb.co.uk
 Replies are on weekdays, usually within one working day. If the form cannot send, email works.
 
 ## Pages
-- [Home](https://getquotehelm.co.uk/)
-- [Prices](https://getquotehelm.co.uk/pricing/)
-- [Get a quote](https://getquotehelm.co.uk/contact/)
-- [Areas we cover](https://getquotehelm.co.uk/areas/)
-- [Chichester](https://getquotehelm.co.uk/areas/chichester/)
-- [Roofers](https://getquotehelm.co.uk/trades/roofers/)
-- [Builders](https://getquotehelm.co.uk/trades/builders/)
-- [Electricians](https://getquotehelm.co.uk/trades/electricians/)
-- [Plumbers](https://getquotehelm.co.uk/trades/plumbers/)
-- [Decorators](https://getquotehelm.co.uk/trades/decorators/)
-- [Kitchen fitters](https://getquotehelm.co.uk/trades/kitchen-fitters/)
-- [Privacy notice](https://getquotehelm.co.uk/privacy/)
-- [Example website (demo, fictional company)](https://getquotehelm.co.uk/demos/)
+- [Home](https://pillionweb.co.uk/)
+- [Prices](https://pillionweb.co.uk/pricing/)
+- [Get a quote](https://pillionweb.co.uk/contact/)
+- [Areas we cover](https://pillionweb.co.uk/areas/)
+- [Chichester](https://pillionweb.co.uk/areas/chichester/)
+- [Roofers](https://pillionweb.co.uk/trades/roofers/)
+- [Builders](https://pillionweb.co.uk/trades/builders/)
+- [Electricians](https://pillionweb.co.uk/trades/electricians/)
+- [Plumbers](https://pillionweb.co.uk/trades/plumbers/)
+- [Decorators](https://pillionweb.co.uk/trades/decorators/)
+- [Kitchen fitters](https://pillionweb.co.uk/trades/kitchen-fitters/)
+- [Privacy notice](https://pillionweb.co.uk/privacy/)
+- [Example website (demo, fictional company)](https://pillionweb.co.uk/demos/)
 
 ## URL plan, not all published
 - /areas/ and /areas/chichester/ are published.
@@ -51,4 +51,4 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 - /guides/ is not published yet.
 
 ## Demo pages
-https://getquotehelm.co.uk/demos/ and https://getquotehelm.co.uk/demos/dashboard/ show a made-up firm, Example Plumbing Ltd. Sample reviews, staff and customers on those pages are fictional. They are not Quotehelm clients.
+https://pillionweb.co.uk/demos/ and https://pillionweb.co.uk/demos/dashboard/ show a made-up firm, Example Plumbing Ltd. Sample reviews, staff and customers on those pages are fictional. They are not Pillion Web clients.

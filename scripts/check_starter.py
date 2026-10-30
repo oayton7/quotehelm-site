@@ -106,6 +106,8 @@ LIVE_FIXES = {
     'trades/builders/index.html', 'trades/decorators/index.html', 'trades/electricians/index.html',
     'trades/kitchen-fitters/index.html', 'trades/plumbers/index.html', 'trades/roofers/index.html',
     'llms.txt', 'og.png', 'sitemap.xml',
+    # Rebrand to Pillion Web on pillionweb.co.uk (decisions D01 and D08).
+    'CNAME', 'demos/index.html', 'demos/dashboard/index.html',
 }
 has_base = git and subprocess.run([git, 'cat-file', '-e', BASE + '^{commit}'], cwd=ROOT, capture_output=True).returncode == 0
 if has_base:

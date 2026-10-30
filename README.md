@@ -1,13 +1,30 @@
-# Tandem business and website starting point
+# Pillion Web business and website
 
-Tandem is Oscar Ayton’s selected working brand for practical websites and business systems. This repository contains a proposed website, the business plan and delivery guidance, and a preserved copy of the original Quotehelm site.
+Pillion Web is Oscar Ayton’s business for practical websites and enquiry systems for trades firms. It replaces the earlier working name Tandem, which conflicts with Tandem Bank. The live site still trades as Quotehelm at getquotehelm.co.uk until the move to pillionweb.co.uk is complete. This repository contains the live site, a website concept, the business plan and delivery guidance, and a preserved copy of the original Quotehelm site.
 
-**Oscar: start with [START HERE](docs/00-start-here.md).** The first milestone is one paid, tightly scoped enquiry-capture installation that works reliably and has documented costs. Brand clearance, final commercial terms and production delivery are still to be completed.
+**Oscar: start with [START HERE](docs/00-start-here.md).** The first milestone is one paid, tightly scoped enquiry-capture installation that works reliably and has documented costs.
+
+## Current status
+
+Last updated 30 October 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
+
+- **Brand:** Pillion Web chosen (decision D01) and live. Companies House and UK IPO trademark checks are still to do.
+- **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place and mail reaching Zoho. oscar@pillionweb.co.uk is set up as an alias on Oscar’s mailbox and a test email arrived on 30 October. The main mailbox address stays oscarayton@getquotehelm.co.uk for now, because Emelia and logins use it. Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
+- **Live site:** pillionweb.co.uk, trading as Pillion Web (previously Quotehelm), offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance (D03). Contact: oscar@pillionweb.co.uk.
+- **Rebrand:** merged 30 October 2026 in [oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9). Follow-ups: enforce HTTPS in GitHub Pages, forward getquotehelm.co.uk to pillionweb.co.uk at Porkbun (301, keeping paths), and use Search Console’s change of address.
+- **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
+- **Test build:** Stage 1 works with synthetic enquiries. SMS (Stage 2) and most acceptance tests are still to do.
+- **Next:** HTTPS, the Porkbun forward and Search Console (above), the Companies House and trademark checks, then owner conversations.
+
+The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
 
 ## Progress
 
 | Date | Milestone |
 | --- | --- |
+| 30 October 2026 | Site rebranded to Pillion Web and moved to pillionweb.co.uk ([#9](https://github.com/oayton7/quotehelm-site/pull/9)). |
+| 30 October 2026 | Zoho Mail set up on pillionweb.co.uk and oscar@pillionweb.co.uk working (test email received). The rebrand to Pillion Web, with the new contact email, is prepared in draft pull request [#9](https://github.com/oayton7/quotehelm-site/pull/9). |
+| 30 October 2026 | Pillion Web chosen as the brand, replacing Tandem, and pillionweb.co.uk bought. See the [decision register](docs/10-decisions.md). |
 | 29 October 2026 | Pilot terms approved (£345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance) and the live Quotehelm site narrowed to three offers: enquiries to your phone, right details on Google and a new website. See the [decision register](docs/10-decisions.md). |
 | 29 October 2026 | Stage 1 test flow working with synthetic enquiries: Tally form → Make → duplicate check → Airtable record → email to Oscar → marked Sent, with failed emails marked Failed. SMS and the wider test suite are next. See the [first test build results](docs/14-first-test-results.md). |
 
