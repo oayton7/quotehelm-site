@@ -1,6 +1,6 @@
 # Pillion Web
 
-> Pillion Web (previously called Quotehelm) is run by Oscar Ayton, a sole trader. It is Chichester based. It sets up quote forms that send every enquiry to the owner’s phone, fixes business details on Google and builds small websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Pillion Web is not VAT registered. No street address or phone number is published. Contact: oscarayton@getquotehelm.co.uk.
+> Pillion Web (previously called Quotehelm) is run by Oscar Ayton, a sole trader. It is Chichester based. It sets up quote forms that send every enquiry to the owner’s phone, fixes business details on Google and builds small websites for trades businesses across West Sussex, Sussex, Hampshire and the South East of England. London is a later extension, not the current focus. Fixed prices from £225. No VAT is charged, because Pillion Web is not VAT registered. No street address or phone number is published. Contact: oscar@pillionweb.co.uk.
 
 Pillion Web does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
@@ -25,7 +25,7 @@ Chichester based. No street address is published. Serves West Sussex, Sussex, Ha
 
 ## How to enquire
 Quote form: https://pillionweb.co.uk/contact/#quote
-Email: oscarayton@getquotehelm.co.uk
+Email: oscar@pillionweb.co.uk
 Replies are on weekdays, usually within one working day. If the form cannot send, email works.
 
 ## Pages
