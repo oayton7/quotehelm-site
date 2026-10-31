@@ -108,6 +108,8 @@ LIVE_FIXES = {
     'llms.txt', 'og.png', 'sitemap.xml',
     # Rebrand to Pillion Web on pillionweb.co.uk (decisions D01 and D08).
     'CNAME', 'demos/index.html', 'demos/dashboard/index.html',
+    # Guides section and header link (SEO and GEO build, 31 October 2026).
+    'assets/site.css',
 }
 has_base = git and subprocess.run([git, 'cat-file', '-e', BASE + '^{commit}'], cwd=ROOT, capture_output=True).returncode == 0
 if has_base:

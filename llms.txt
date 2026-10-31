@@ -40,6 +40,10 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 - [Plumbers](https://pillionweb.co.uk/trades/plumbers/)
 - [Decorators](https://pillionweb.co.uk/trades/decorators/)
 - [Kitchen fitters](https://pillionweb.co.uk/trades/kitchen-fitters/)
+- [Guides for trades businesses](https://pillionweb.co.uk/guides/)
+- [Stop losing enquiries while you are on a job](https://pillionweb.co.uk/guides/missed-enquiries-checklist/)
+- [How to check your business details on Google](https://pillionweb.co.uk/guides/check-your-google-details/)
+- [How much does a website for a trades business cost?](https://pillionweb.co.uk/guides/trades-website-cost/)
 - [Privacy notice](https://pillionweb.co.uk/privacy/)
 - [Example website (demo, fictional company)](https://pillionweb.co.uk/demos/)
 
@@ -48,7 +52,7 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 - /trades/<trade>/ is published for the trades listed above.
 - /trades/<trade>/<place>/ (for example /trades/roofers/chichester/) is not published yet.
 - /services/ is not published yet. Current prices are at /pricing/.
-- /guides/ is not published yet.
+- /guides/ is published with three guides.
 
 ## Demo pages
 https://pillionweb.co.uk/demos/ and https://pillionweb.co.uk/demos/dashboard/ show a made-up firm, Example Plumbing Ltd. Sample reviews, staff and customers on those pages are fictional. They are not Pillion Web clients.
