@@ -16,7 +16,7 @@ Do not add pages that only swap a trade or town name. Add a guide only when it a
 
 | Task | Why | Status |
 | --- | --- | --- |
-| Verify pillionweb.co.uk in Google Search Console and submit the sitemap | See indexing and real search queries | To do |
+| Verify pillionweb.co.uk in Google Search Console and submit the sitemap | See indexing and real search queries | Done 31 October 2026 (domain property) |
 | Use Change of address from the getquotehelm.co.uk property | Moves Google’s signals to the new domain | To do, after the redirect is confirmed |
 | Import the site into Bing Webmaster Tools | Bing feeds ChatGPT search and Copilot | To do |
 | Check Google Business Profile eligibility as a service-area business | Maps visibility; Google excludes online-only businesses | To check |
