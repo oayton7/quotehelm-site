@@ -6,15 +6,16 @@ Pillion Web is Oscar Ayton’s business for practical websites and enquiry syste
 
 ## Current status
 
-Last updated 30 October 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
+Last updated 31 October 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
 
 - **Brand:** Pillion Web chosen (decision D01) and live. Companies House and UK IPO trademark checks are still to do.
 - **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place and mail reaching Zoho. oscar@pillionweb.co.uk is set up as an alias on Oscar’s mailbox and a test email arrived on 30 October. The main mailbox address stays oscarayton@getquotehelm.co.uk for now, because Emelia and logins use it. Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
 - **Live site:** pillionweb.co.uk, trading as Pillion Web (previously Quotehelm), offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance (D03). Contact: oscar@pillionweb.co.uk.
-- **Rebrand:** merged 30 October 2026 in [oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9). Follow-ups: enforce HTTPS in GitHub Pages, forward getquotehelm.co.uk to pillionweb.co.uk at Porkbun (301, keeping paths), and use Search Console’s change of address.
+- **Rebrand:** live since 30 October 2026 ([oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9)). getquotehelm.co.uk forwards to pillionweb.co.uk at Porkbun (permanent 301, keeping paths, wildcard on), with a free Porkbun certificate for https links. Redirect confirmed working by Oscar on 31 October. Still to do: check Enforce HTTPS in GitHub Pages, and verify pillionweb.co.uk in Search Console then use Change of address.
 - **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
 - **Test build:** Stage 1 works with synthetic enquiries. SMS (Stage 2) and most acceptance tests are still to do.
-- **Next:** HTTPS, the Porkbun forward and Search Console (above), the Companies House and trademark checks, then owner conversations.
+- **Search and AI visibility:** guides section live at /guides/ with three articles, the Guides link in the menu, sharper page titles, and a tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). Off-site tasks (Search Console, Bing, LinkedIn, directories) are Oscar’s.
+- **Next:** Search Console for pillionweb.co.uk and change of address, Bing and LinkedIn, the Companies House and trademark checks, owner conversations (10 local firms), then Stage 2 (SMS) of the test build.
 
 The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
 
@@ -22,6 +23,8 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
+| 31 October 2026 | Guides section added (missed enquiries, Google details, website costs), better page titles, and SEO and GEO tracking set up. |
+| 31 October 2026 | getquotehelm.co.uk set to forward to pillionweb.co.uk at Porkbun, with a certificate for https links. |
 | 30 October 2026 | Site rebranded to Pillion Web and moved to pillionweb.co.uk ([#9](https://github.com/oayton7/quotehelm-site/pull/9)). |
 | 30 October 2026 | Zoho Mail set up on pillionweb.co.uk and oscar@pillionweb.co.uk working (test email received). The rebrand to Pillion Web, with the new contact email, is prepared in draft pull request [#9](https://github.com/oayton7/quotehelm-site/pull/9). |
 | 30 October 2026 | Pillion Web chosen as the brand, replacing Tandem, and pillionweb.co.uk bought. See the [decision register](docs/10-decisions.md). |
@@ -60,6 +63,7 @@ This uses ordinary folders in one repository. No nested Git repository or submod
 14. [Build the test enquiry flow](docs/12-test-build-guide.md)
 15. [First pilot pack: offer, messages and first conversation](docs/13-first-pilot-pack.md)
 16. [First test build results](docs/14-first-test-results.md)
+17. [SEO and GEO tracking](docs/15-seo-geo-tracking.md)
 
 ## Preview the Tandem site
 
