@@ -2,7 +2,7 @@
 
 - **Date:** 2026-10-31
 - **Author:** Claude Code
-- **Pull request:** link to follow
+- **Pull request:** [oayton7/quotehelm-site#10](https://github.com/oayton7/quotehelm-site/pull/10)
 - **What changed:** Recorded Oscar's work outside the repository: a permanent (301) forward from getquotehelm.co.uk to https://pillionweb.co.uk at Porkbun, keeping paths and covering subdomains, and a free Porkbun certificate so https links to the old domain also redirect. Email records on the old domain were left in place. README status and Progress updated.
 - **Why:** Old links, search results and past emails point at getquotehelm.co.uk; the forward keeps them working and passes search signals to the new domain.
 - **Decisions affected:** D08.
