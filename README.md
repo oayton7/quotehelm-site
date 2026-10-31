@@ -14,8 +14,8 @@ Last updated 31 October 2026. Every pull request updates this section and adds a
 - **Rebrand:** live since 30 October 2026 ([oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9)). getquotehelm.co.uk forwards to pillionweb.co.uk at Porkbun (permanent 301, keeping paths, wildcard on), with a free Porkbun certificate for https links. Redirect confirmed working by Oscar on 31 October. HTTPS is enforced in GitHub Pages, pillionweb.co.uk is verified in Google Search Console (domain property) and the sitemap is submitted. Still to do: Change of address from the getquotehelm.co.uk property, if it was verified.
 - **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
 - **Test build:** Stage 1 works with synthetic enquiries. SMS (Stage 2) and most acceptance tests are still to do.
-- **Search and AI visibility:** guides section live at /guides/ with three articles, the Guides link in the menu, sharper page titles, and a tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). Off-site tasks (Search Console, Bing, LinkedIn, directories) are Oscar’s.
-- **Next:** Change of address in Search Console, Bing Webmaster Tools, LinkedIn page and directories, the Companies House and trademark checks, the first GEO check, then owner conversations.
+- **Search and AI visibility:** guides section live at /guides/ with three articles, sharper page titles, and a tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). The site is in Google Search Console and Bing Webmaster Tools with the sitemap submitted, and the LinkedIn company page ([linkedin.com/company/146921031](https://www.linkedin.com/company/146921031/)) is linked from the structured data. Still to do: directory listings and the first GEO check.
+- **Next:** directory listings (Yell, FreeIndex, Bing Places), the Companies House and trademark checks, the first GEO check, then owner conversations.
 
 The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
 
@@ -23,6 +23,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
+| 31 October 2026 | Site added to Bing Webmaster Tools and a LinkedIn company page created, linked from the site’s structured data. |
 | 31 October 2026 | HTTPS enforced; pillionweb.co.uk verified in Google Search Console and sitemap submitted. |
 | 31 October 2026 | Guides section added (missed enquiries, Google details, website costs), better page titles, and SEO and GEO tracking set up. |
 | 31 October 2026 | getquotehelm.co.uk set to forward to pillionweb.co.uk at Porkbun, with a certificate for https links. |
