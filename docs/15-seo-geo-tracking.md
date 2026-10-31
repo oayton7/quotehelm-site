@@ -16,11 +16,11 @@ Do not add pages that only swap a trade or town name. Add a guide only when it a
 
 | Task | Why | Status |
 | --- | --- | --- |
-| Verify pillionweb.co.uk in Google Search Console and submit the sitemap | See indexing and real search queries | To do |
+| Verify pillionweb.co.uk in Google Search Console and submit the sitemap | See indexing and real search queries | Done 31 October 2026 (domain property) |
 | Use Change of address from the getquotehelm.co.uk property | Moves Google’s signals to the new domain | To do, after the redirect is confirmed |
-| Import the site into Bing Webmaster Tools | Bing feeds ChatGPT search and Copilot | To do |
+| Import the site into Bing Webmaster Tools | Bing feeds ChatGPT search and Copilot | Done 31 October 2026 |
 | Check Google Business Profile eligibility as a service-area business | Maps visibility; Google excludes online-only businesses | To check |
-| Create a LinkedIn company page for Pillion Web | A consistent third-party profile that search engines and AI tools can find | To do |
+| Create a LinkedIn company page for Pillion Web | A consistent third-party profile that search engines and AI tools can find | Done 31 October 2026; linked from the site’s structured data (`sameAs`) |
 | List on two or three free UK directories with identical name, email and website | Consistent mentions across the web | To do |
 | Ask each real client for a Google review and permission for a case study | The strongest trust signal | After first jobs |
 
