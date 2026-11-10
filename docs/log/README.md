@@ -12,7 +12,7 @@ Last updated 2026-11-10. Update this section when a merge changes the overall pi
 - **Test build:** Stage 1 works with synthetic enquiries (form, duplicate check, Airtable record, email, Sent or Failed). SMS and most acceptance tests are still to do.
 - **Brand:** Pillion Web chosen to replace the working name Tandem (D01), and pillionweb.co.uk bought (D08). Companies House and trademark checks are pending. Quotehelm stays live until the move.
 - **Deployment:** GitHub Pages serves the whole repository. `robots.txt` keeps internal folders out of search until deployment publishes only the website.
-- **Next:** owner conversations; Business Profile eligibility decision and directory listings; Search Console change of address; Stage 2 (SMS).
+- **Next:** Oscar’s [to-do list](../17-oscar-to-do.md): listings and LinkedIn, Business Profile verification video, then Bing Places and Apple; owner conversations; Stage 2 (SMS). Google Ads is parked.
 
 ## Rules
 
