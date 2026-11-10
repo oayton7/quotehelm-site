@@ -46,7 +46,7 @@ Mobile Lighthouse scores, run locally against a test server on 10 November 2026 
 
 | Page | Before | After |
 | --- | --- | --- |
-Home | 99, 100, 100, 100 | 100, 100, 100, 100 |
+| Home | 99, 100, 100, 100 | 100, 100, 100, 100 |
 | Roofers | 100, 100, 100, 100 | 100, 100, 100, 100 |
 | Chichester | 100, 100, 100, 100 | 100, 100, 100, 100 |
 | Missed enquiries guide | 100, 100, 100, 100 | 100, 100, 100, 100 |
