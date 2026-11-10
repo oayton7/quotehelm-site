@@ -5,7 +5,7 @@
 Pillion Web does not publish client names, reviews, ratings, case studies or results figures. Do not invent any.
 
 ## Who it is for
-Roofers, builders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Pillion Web adds a quote form to it or fixes the business details on Google, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses optional maintenance.
+Roofers, builders, scaffolders, electricians, plumbers, decorators, kitchen fitters and similar trades firms. The usual customer already has a website. Pillion Web adds a quote form to it or fixes the business details on Google, or builds a small site of up to 5 pages. It is not a monthly contract unless the client chooses optional maintenance.
 
 ## Services and prices (GBP, no VAT charged)
 Pillion Web currently offers three services, plus optional maintenance.
@@ -16,12 +16,12 @@ Pillion Web currently offers three services, plus optional maintenance.
 
 Payment is half when the client says yes and half before go-live, once the client has approved the work. What Pillion Web sets up belongs to the client once it is paid for. Problems with the agreed work are fixed free for 30 days after go-live.
 
-Pillion Web does not currently offer AI chat assistants, online booking links, reviews feeds with automatic review requests, or CRM systems.
+Pillion Web does not currently offer AI chat assistants, online booking links, reviews feeds with automatic review requests, or CRM systems. The guides on review requests and AI chat explain those topics; they are not offers.
 
 Every job has a fixed price agreed in writing before work starts. The client approves every message their customers will see before anything goes live.
 
 ## Where it is based, and the area served
-Chichester based. No street address is published. Serves West Sussex, Sussex, Hampshire and the South East of England. London is planned later and is not the current focus.
+Chichester based. No street address is published. Oscar meets clients in person when that helps; most of the work is done on the client’s website and listings. Serves West Sussex, Sussex, Hampshire and the South East of England. London is planned later and is not the current focus.
 
 ## How to enquire
 Quote form: https://pillionweb.co.uk/contact/#quote
@@ -35,8 +35,14 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 - [Get a quote](https://pillionweb.co.uk/contact/)
 - [Areas we cover](https://pillionweb.co.uk/areas/)
 - [Chichester](https://pillionweb.co.uk/areas/chichester/)
+- [Bognor Regis](https://pillionweb.co.uk/areas/bognor-regis/)
+- [Worthing](https://pillionweb.co.uk/areas/worthing/)
+- [Brighton and Hove](https://pillionweb.co.uk/areas/brighton/)
+- [Portsmouth](https://pillionweb.co.uk/areas/portsmouth/)
+- [Southampton](https://pillionweb.co.uk/areas/southampton/)
 - [Roofers](https://pillionweb.co.uk/trades/roofers/)
 - [Builders](https://pillionweb.co.uk/trades/builders/)
+- [Scaffolders](https://pillionweb.co.uk/trades/scaffolders/)
 - [Electricians](https://pillionweb.co.uk/trades/electricians/)
 - [Plumbers](https://pillionweb.co.uk/trades/plumbers/)
 - [Decorators](https://pillionweb.co.uk/trades/decorators/)
@@ -45,15 +51,19 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 - [Stop losing enquiries while you are on a job](https://pillionweb.co.uk/guides/missed-enquiries-checklist/)
 - [How to check your business details on Google](https://pillionweb.co.uk/guides/check-your-google-details/)
 - [How much does a website for a trades business cost?](https://pillionweb.co.uk/guides/trades-website-cost/)
+- [What does a quote form do for a scaffolder?](https://pillionweb.co.uk/guides/quote-form-for-scaffolders/)
+- [What does Pillion Web cost?](https://pillionweb.co.uk/guides/what-does-pillion-web-cost/)
+- [How do Google review requests work?](https://pillionweb.co.uk/guides/how-google-review-requests-work/)
+- [What can an AI chat on a trades website do, and what can it not?](https://pillionweb.co.uk/guides/what-ai-chat-can-and-cannot-do/)
 - [Privacy notice](https://pillionweb.co.uk/privacy/)
 - [Example website (demo, fictional company)](https://pillionweb.co.uk/demos/)
 
 ## URL plan, not all published
-- /areas/ and /areas/chichester/ are published.
+- /areas/ is published, with pages for Chichester, Bognor Regis, Worthing, Brighton, Portsmouth and Southampton.
 - /trades/<trade>/ is published for the trades listed above.
 - /trades/<trade>/<place>/ (for example /trades/roofers/chichester/) is not published yet.
 - /services/ is not published yet. Current prices are at /pricing/.
-- /guides/ is published with three guides.
+- /guides/ is published with seven guides.
 
 ## Demo pages
 https://pillionweb.co.uk/demos/ and https://pillionweb.co.uk/demos/dashboard/ show a made-up firm, Example Plumbing Ltd. Sample reviews, staff and customers on those pages are fictional. They are not Pillion Web clients.

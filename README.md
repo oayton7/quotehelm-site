@@ -6,7 +6,7 @@ Pillion Web is Oscar Ayton’s business for practical websites and enquiry syste
 
 ## Current status
 
-Last updated 31 October 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
+Last updated 10 November 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
 
 - **Brand:** Pillion Web chosen (decision D01) and live. Companies House and UK IPO trademark checks are still to do.
 - **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place and mail reaching Zoho. oscar@pillionweb.co.uk is set up as an alias on Oscar’s mailbox and a test email arrived on 30 October. The main mailbox address stays oscarayton@getquotehelm.co.uk for now, because Emelia and logins use it. Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
@@ -14,8 +14,8 @@ Last updated 31 October 2026. Every pull request updates this section and adds a
 - **Rebrand:** live since 30 October 2026 ([oayton7/quotehelm-site#9](https://github.com/oayton7/quotehelm-site/pull/9)). getquotehelm.co.uk forwards to pillionweb.co.uk at Porkbun (permanent 301, keeping paths, wildcard on), with a free Porkbun certificate for https links. Redirect confirmed working by Oscar on 31 October. HTTPS is enforced in GitHub Pages, pillionweb.co.uk is verified in Google Search Console (domain property) and the sitemap is submitted. Still to do: Change of address from the getquotehelm.co.uk property, if it was verified.
 - **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
 - **Test build:** Stage 1 works with synthetic enquiries. SMS (Stage 2) and most acceptance tests are still to do.
-- **Search and AI visibility:** guides section live at /guides/ with three articles, sharper page titles, and a tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). The site is in Google Search Console and Bing Webmaster Tools with the sitemap submitted, and the LinkedIn company page ([linkedin.com/company/146921031](https://www.linkedin.com/company/146921031/)) is linked from the structured data. Still to do: directory listings and the first GEO check.
-- **Next:** directory listings (Yell, FreeIndex, Bing Places), the Companies House and trademark checks, the first GEO check, then owner conversations.
+- **Search and AI visibility:** seven guides at /guides/, seven trade pages (scaffolders added) and six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), each with question headings, answer-first copy and matching structured data. Tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). The site is in Google Search Console and Bing Webmaster Tools with the sitemap submitted, and the LinkedIn company page ([linkedin.com/company/146921031](https://www.linkedin.com/company/146921031/)) is linked from the structured data. The Business Profile draft, standard wording, listings and LinkedIn checklist are in [docs/16](docs/16-local-search-pack.md). Oscar meets clients in person when needed, so Pillion Web is eligible for a Business Profile. Still to do: create and verify it, directory listings and the first GEO check.
+- **Next:** Oscar creates and verifies the Google Business Profile, then directory listings (Bing Places, Apple Business Connect, Yell, FreeIndex), the Companies House and trademark checks, the first GEO check, then owner conversations.
 
 The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
 
@@ -23,6 +23,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
+| 10 November 2026 | Scaffolders page, five new town pages and four question guides added, with FAQ structured data; local search pack (Business Profile draft, listings, LinkedIn checklist) in [docs/16](docs/16-local-search-pack.md). |
 | 31 October 2026 | Site added to Bing Webmaster Tools and a LinkedIn company page created, linked from the site’s structured data. |
 | 31 October 2026 | HTTPS enforced; pillionweb.co.uk verified in Google Search Console and sitemap submitted. |
 | 31 October 2026 | Guides section added (missed enquiries, Google details, website costs), better page titles, and SEO and GEO tracking set up. |
@@ -66,6 +67,7 @@ This uses ordinary folders in one repository. No nested Git repository or submod
 15. [First pilot pack: offer, messages and first conversation](docs/13-first-pilot-pack.md)
 16. [First test build results](docs/14-first-test-results.md)
 17. [SEO and GEO tracking](docs/15-seo-geo-tracking.md)
+18. [Local search pack: Business Profile, listings and LinkedIn](docs/16-local-search-pack.md)
 
 ## Preview the Tandem site
 
