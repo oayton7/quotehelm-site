@@ -17,8 +17,9 @@ Last updated 10 November 2026. Every pull request updates this section and adds 
 - **Search and AI visibility:** seven guides at /guides/, seven trade pages (scaffolders added) and six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), each with question headings, answer-first copy and matching structured data. Tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). The site is in Google Search Console and Bing Webmaster Tools with the sitemap submitted, and the LinkedIn company page ([linkedin.com/company/146921031](https://www.linkedin.com/company/146921031/)) is linked from the structured data. The Business Profile draft, standard wording, listings and LinkedIn checklist are in [docs/16](docs/16-local-search-pack.md). Oscar meets clients in person when needed, so Pillion Web is eligible for a Business Profile. Still to do: create and verify it, directory listings and the first GEO check.
 - **Google Business Profile:** created as a service business (West Sussex, East Sussex, Hampshire; category Website designer). Waiting for Oscar’s verification video, which must be recorded at the Chichester address.
 - **Google Ads:** a Smart campaign draft exists but is not published and has no payment details. Parked: ads are paid and do not help normal search or AI answers. Conditions before any launch are in [docs/17](docs/17-oscar-to-do.md).
-- **Yell:** free listing created and waiting for Yell’s approval. The street address must be hidden and the phone number decided before it goes public (see the [to-do list](docs/17-oscar-to-do.md)).
-- **Next:** Oscar’s [to-do list](docs/17-oscar-to-do.md): finish Yell, then FreeIndex and LinkedIn; the Business Profile video back in Chichester; then Bing Places and Apple Business Connect; then the first GEO check.
+- **Yell:** free listing created and waiting for Yell’s approval. The street address must be hidden before it goes public (see the [to-do list](docs/17-oscar-to-do.md)).
+- **Phone and LinkedIn:** Oscar’s mobile, 07825 254268, is published on the site, Google and Yell so every listing matches. The LinkedIn company page has the tagline, services and About filled in.
+- **Next:** Oscar’s [to-do list](docs/17-oscar-to-do.md): finish Yell, then FreeIndex; the Business Profile video back in Chichester; then Bing Places and Apple Business Connect; then the first GEO check.
 
 The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
 
@@ -26,6 +27,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
+| 10 November 2026 | Phone number added to the site footer, contact page, structured data and `llms.txt`; LinkedIn company page completed. |
 | 10 November 2026 | Yell listing created, awaiting approval; address and phone number to resolve first. Tagline chosen (“Quote forms, websites and Google listings that help trades firms win more work”) and added to the structured data and `llms.txt`. |
 | 10 November 2026 | Google Business Profile created (verification pending); Google Ads draft parked; Oscar’s [to-do list](docs/17-oscar-to-do.md) and a refreshed Grok brief added. |
 | 10 November 2026 | Scaffolders page, five new town pages and four question guides added, with FAQ structured data; local search pack (Business Profile draft, listings, LinkedIn checklist) in [docs/16](docs/16-local-search-pack.md). |

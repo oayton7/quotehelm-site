@@ -15,7 +15,7 @@ Search engines and AI tools trust a business more when the same details appear i
 | Email | oscar@pillionweb.co.uk |
 | Location | Chichester based. No street address shown |
 | Area | Working across West Sussex, Sussex, Hampshire and the South East (chosen by Oscar, 10 November 2026) |
-| Phone | None published (as on the website) |
+| Phone | 07825 254268 (Oscar’s mobile, approved for publication by Oscar on 10 November 2026). Use the same number on every listing |
 | Price wording | Fixed prices from £225 |
 | Tagline (chosen by Oscar, 10 November 2026) | Quote forms, websites and Google listings that help trades firms win more work |
 
@@ -45,7 +45,7 @@ Check Google's current [Business Profile guidelines](https://support.google.com/
 | Address | Enter the real address for verification, then choose not to show it. Customers see only the service area |
 | Service area | West Sussex, East Sussex, Hampshire. Google allows up to 20 areas; towns such as Chichester, Bognor Regis, Worthing, Brighton, Portsmouth and Southampton can be added instead of counties. Guides suggest keeping it within about two hours' drive |
 | Hours | The weekday hours Oscar actually replies in. Do not list hours when nobody answers |
-| Phone | Optional. Leave blank unless a business number is ready to publish everywhere |
+| Phone | 07825 254268, the same number as the website and other listings |
 | Website | https://pillionweb.co.uk/ |
 | Description | The longer description above. No links, no prices and no offers in this field |
 | Opening date | The month Oscar started trading, if known |
