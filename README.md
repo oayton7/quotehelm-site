@@ -26,7 +26,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
-| 10 November 2026 | Yell listing created, awaiting approval; address and phone number to resolve first. |
+| 10 November 2026 | Yell listing created, awaiting approval; address and phone number to resolve first. Tagline chosen (“Quote forms, websites and Google listings that help trades firms win more work”) and added to the structured data and `llms.txt`. |
 | 10 November 2026 | Google Business Profile created (verification pending); Google Ads draft parked; Oscar’s [to-do list](docs/17-oscar-to-do.md) and a refreshed Grok brief added. |
 | 10 November 2026 | Scaffolders page, five new town pages and four question guides added, with FAQ structured data; local search pack (Business Profile draft, listings, LinkedIn checklist) in [docs/16](docs/16-local-search-pack.md). |
 | 31 October 2026 | Site added to Bing Webmaster Tools and a LinkedIn company page created, linked from the site’s structured data. |
