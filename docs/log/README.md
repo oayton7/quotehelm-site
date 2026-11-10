@@ -4,14 +4,15 @@ This log records how the project has progressed so that every person and AI agen
 
 ## Current state
 
-Last updated 2026-10-30. Update this section when a merge changes the overall picture.
+Last updated 2026-11-10. Update this section when a merge changes the overall picture.
 
-- **Live site:** pillionweb.co.uk, trading as Pillion Web (previously Quotehelm), offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance. Quote forms go to Formspree. Contact: oscar@pillionweb.co.uk. getquotehelm.co.uk is to forward to it.
+- **Live site:** pillionweb.co.uk, trading as Pillion Web (previously Quotehelm), offering three services: enquiries to your phone (£345), right details on Google (£225) and a new website (£1,095), with optional £59 a month maintenance. Quote forms go to Formspree. Contact: oscar@pillionweb.co.uk. getquotehelm.co.uk forwards to it.
+- **Search and AI visibility:** seven trade pages, six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton) and seven guides, with structured data, sitemap and `llms.txt`. Search Console and Bing are set up. The off-site plan (Business Profile, listings, LinkedIn) is in [docs/16](../16-local-search-pack.md).
 - **Pilot terms:** approved (D04, D05, D07). Setup is 50% upfront and 50% before go-live, built in Oscar's accounts and handed over on full payment.
 - **Test build:** Stage 1 works with synthetic enquiries (form, duplicate check, Airtable record, email, Sent or Failed). SMS and most acceptance tests are still to do.
 - **Brand:** Pillion Web chosen to replace the working name Tandem (D01), and pillionweb.co.uk bought (D08). Companies House and trademark checks are pending. Quotehelm stays live until the move.
 - **Deployment:** GitHub Pages serves the whole repository. `robots.txt` keeps internal folders out of search until deployment publishes only the website.
-- **Next:** owner conversations; Zoho email on pillionweb.co.uk, then the site rebrand, redirects and Search Console change of address; Stage 2 (SMS).
+- **Next:** owner conversations; Business Profile eligibility decision and directory listings; Search Console change of address; Stage 2 (SMS).
 
 ## Rules
 
