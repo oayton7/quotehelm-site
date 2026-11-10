@@ -736,7 +736,7 @@ git push -u origin improve-tandem-offer</code></pre>
 <tr><td>Verify pillionweb.co.uk in Google Search Console and submit the sitemap</td><td>See indexing and real search queries</td><td>Done 31 October 2026 (domain property)</td></tr>
 <tr><td>Use Change of address from the getquotehelm.co.uk property</td><td>Moves Google’s signals to the new domain</td><td>To do, after the redirect is confirmed</td></tr>
 <tr><td>Import the site into Bing Webmaster Tools</td><td>Bing feeds ChatGPT search and Copilot</td><td>Done 31 October 2026</td></tr>
-<tr><td>Check Google Business Profile eligibility as a service-area business</td><td>Maps visibility; Google excludes online-only businesses</td><td>To check: needs in-person contact with customers. Draft in <a href="#doc-16-local-search-pack">docs/16</a></td></tr>
+<tr><td>Check Google Business Profile eligibility as a service-area business</td><td>Maps visibility; Google excludes online-only businesses</td><td>Eligible: Oscar meets clients in person when needed (confirmed 10 November 2026). To create and verify, using the draft in <a href="#doc-16-local-search-pack">docs/16</a></td></tr>
 <tr><td>Create a LinkedIn company page for Pillion Web</td><td>A consistent third-party profile that search engines and AI tools can find</td><td>Done 31 October 2026; linked from the site’s structured data (<code>sameAs</code>)</td></tr>
 <tr><td>List on two or three free UK directories with identical name, email and website</td><td>Consistent mentions across the web</td><td>To do: prioritised list in <a href="#doc-16-local-search-pack">docs/16</a></td></tr>
 <tr><td>Ask each real client for a Google review and permission for a case study</td><td>The strongest trust signal</td><td>After first jobs</td></tr>
@@ -787,20 +787,16 @@ git push -u origin improve-tandem-offer</code></pre>
 <tr><td>Website</td><td>https://pillionweb.co.uk/</td></tr>
 <tr><td>Email</td><td>oscar@pillionweb.co.uk</td></tr>
 <tr><td>Location</td><td>Chichester based. No street address shown</td></tr>
-<tr><td>Area</td><td>Working across West Sussex, Sussex and Hampshire</td></tr>
+<tr><td>Area</td><td>Working across West Sussex, Sussex, Hampshire and the South East (chosen by Oscar, 10 November 2026)</td></tr>
 <tr><td>Phone</td><td>None published (as on the website)</td></tr>
 <tr><td>Price wording</td><td>Fixed prices from £225</td></tr>
 </tbody></table></div>
 <p><strong>One-line description (up to 160 characters):</strong> Pillion Web is Chichester based and helps trades businesses get more from their websites: quote forms, the right details on Google and small websites.</p>
-<p><strong>Longer description (about 600 characters):</strong> Pillion Web is run by Oscar Ayton and is Chichester based, working across West Sussex, Sussex and Hampshire. It helps roofers, builders, scaffolders, plumbers and other trades firms with three fixed-price jobs: a quote form on their existing website that sends every enquiry to their phone by text and email, making their business name, address and phone number match on Google and the main directories, and small mobile-friendly websites with the quote form built in. Every job has a fixed price agreed in writing before work starts. Pillion Web was previously called Quotehelm.</p>
-<p><strong>Open question for Oscar:</strong> the website currently says &quot;West Sussex, Sussex, Hampshire and the South East of England&quot;. The brief says &quot;West Sussex, Sussex and Hampshire&quot;. Pick one and the site, <code>llms.txt</code> and structured data will be changed to match in one pull request.</p>
+<p><strong>Longer description (about 600 characters):</strong> Pillion Web is run by Oscar Ayton and is Chichester based, working across West Sussex, Sussex, Hampshire and the South East. It helps roofers, builders, scaffolders, plumbers and other trades firms with three fixed-price jobs: a quote form on their existing website that sends every enquiry to their phone by text and email, making their business name, address and phone number match on Google and the main directories, and small mobile-friendly websites with the quote form built in. Every job has a fixed price agreed in writing before work starts. Pillion Web was previously called Quotehelm.</p>
 <h3>Google Business Profile draft</h3>
 <h4>Check eligibility first</h4>
-<p>Google only allows a Business Profile for businesses that make <strong>in-person contact with customers</strong> during their stated hours. Online-only businesses are not eligible. Pillion Web&#x27;s site says the work is done remotely and no visit is needed. If Oscar does not meet customers in person (for example at their yard, office or home), a profile is likely to be refused or suspended, and creating one anyway risks the account.</p>
-<ul>
-<li>If Oscar does meet customers in person, set Pillion Web up as a <strong>service-area business</strong> with the address hidden.</li>
-<li>If not, skip the Business Profile for now. Bing Places, Apple Business Connect and the directories below still help. Revisit if face-to-face meetings become part of how Pillion Web works.</li>
-</ul>
+<p>Google only allows a Business Profile for businesses that make <strong>in-person contact with customers</strong> during their stated hours. Online-only businesses are not eligible.</p>
+<p>Oscar confirmed on 10 November 2026 that he meets clients in person when needed. That makes Pillion Web eligible as a <strong>service-area business</strong> with the address hidden. The site now says the same: most of the work is done on the client&#x27;s website and listings, and Oscar is happy to meet in person. Keep it true: if a client asks to meet, meet them, and only list hours when that is possible.</p>
 <p>Check Google&#x27;s current <a href="https://support.google.com/business/answer/3038177">Business Profile guidelines</a> before starting, because the rules change.</p>
 <h4>Fields</h4>
 <div class="table-scroll"><table><thead><tr><th>Field</th><th>Draft</th></tr></thead><tbody>
@@ -885,11 +881,10 @@ git push -u origin improve-tandem-offer</code></pre>
 </ul>
 <h3>Only Oscar can do</h3>
 <ul>
-<li>Decide whether Pillion Web meets customers in person, then create and verify the Google Business Profile (or skip it).</li>
+<li>Create and verify the Google Business Profile as a service-area business with the address hidden (eligible: Oscar meets clients in person when needed).</li>
 <li>Create Bing Places, Apple Business Connect, Yell and FreeIndex listings.</li>
 <li>Join or visit any chamber, networking group or association.</li>
 <li>Update LinkedIn using the checklist.</li>
-<li>Choose the area wording (see the open question above).</li>
 <li>Supply any real reviews, with the reviewer&#x27;s permission, if they are to appear on the site.</li>
 </ul>
 <h3>Not possible on the current static site</h3>
@@ -929,7 +924,7 @@ python3 scripts/check_starter.py</code></pre>
 <li><strong>What changed:</strong> Added a scaffolders page, five town pages (Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), and four question guides (what a quote form does for a scaffolder, what Pillion Web costs, how Google review requests work, what AI chat can and cannot do). Each page has unique local or trade detail, question headings with the answer first, and FAQ, breadcrumb and business structured data. Added question sections to the roofer, builder and plumber pages. Footers on every live page now link scaffolders and the six towns. The areas index, guides index, home trades list, sitemap and <code>llms.txt</code> list the new pages. Added <code>docs/16-local-search-pack.md</code>: standard wording, a Google Business Profile draft with an eligibility warning, prioritised listings and groups, and a LinkedIn checklist.</li>
 <li><strong>Why:</strong> Oscar&#x27;s brief to make Pillion Web findable for local searches and quotable by AI answer tools, without ranking promises or invented claims.</li>
 <li><strong>Decisions affected:</strong> None. The pages keep the D03 offer. The review request and AI chat guides explain the topics and say Pillion Web does not currently offer them. New pages say &quot;from £225&quot; and link to the prices page.</li>
-<li><strong>Open items / next steps:</strong> Oscar to decide whether Pillion Web meets customers in person (Google Business Profile eligibility), choose the area wording, make the listings and LinkedIn updates, and send any real reviews with permission. If review requests or AI chat become services, record a decision replacing D03 first.</li>
+<li><strong>Open items / next steps:</strong> Oscar confirmed he meets clients in person when needed, so Pillion Web is eligible for a Google Business Profile; the area and home pages and <code>llms.txt</code> now say in-person meetings are available. Oscar chose &quot;West Sussex, Sussex, Hampshire and the South East&quot; as the area wording, now used on every new page and in the standard wording. Oscar is not yet sure whether to add review requests or AI chat, so D03 stands. Oscar to create and verify the profile, make the listings and LinkedIn updates, and send any real reviews with permission. If review requests or AI chat become services, record a decision replacing D03 first.</li>
 </ul><p class="fine"><a href="#contents">Back to contents ↑</a></p></section>
 <section id="doc-log-2026-10-31-search-console"><h2>2026-10-31 · HTTPS, Search Console, Bing and LinkedIn for pillionweb.co.uk</h2>
 <ul>

@@ -14,24 +14,21 @@ Search engines and AI tools trust a business more when the same details appear i
 | Website | https://pillionweb.co.uk/ |
 | Email | oscar@pillionweb.co.uk |
 | Location | Chichester based. No street address shown |
-| Area | Working across West Sussex, Sussex and Hampshire |
+| Area | Working across West Sussex, Sussex, Hampshire and the South East (chosen by Oscar, 10 November 2026) |
 | Phone | None published (as on the website) |
 | Price wording | Fixed prices from £225 |
 
 **One-line description (up to 160 characters):** Pillion Web is Chichester based and helps trades businesses get more from their websites: quote forms, the right details on Google and small websites.
 
-**Longer description (about 600 characters):** Pillion Web is run by Oscar Ayton and is Chichester based, working across West Sussex, Sussex and Hampshire. It helps roofers, builders, scaffolders, plumbers and other trades firms with three fixed-price jobs: a quote form on their existing website that sends every enquiry to their phone by text and email, making their business name, address and phone number match on Google and the main directories, and small mobile-friendly websites with the quote form built in. Every job has a fixed price agreed in writing before work starts. Pillion Web was previously called Quotehelm.
-
-**Open question for Oscar:** the website currently says "West Sussex, Sussex, Hampshire and the South East of England". The brief says "West Sussex, Sussex and Hampshire". Pick one and the site, `llms.txt` and structured data will be changed to match in one pull request.
+**Longer description (about 600 characters):** Pillion Web is run by Oscar Ayton and is Chichester based, working across West Sussex, Sussex, Hampshire and the South East. It helps roofers, builders, scaffolders, plumbers and other trades firms with three fixed-price jobs: a quote form on their existing website that sends every enquiry to their phone by text and email, making their business name, address and phone number match on Google and the main directories, and small mobile-friendly websites with the quote form built in. Every job has a fixed price agreed in writing before work starts. Pillion Web was previously called Quotehelm.
 
 ## Google Business Profile draft
 
 ### Check eligibility first
 
-Google only allows a Business Profile for businesses that make **in-person contact with customers** during their stated hours. Online-only businesses are not eligible. Pillion Web's site says the work is done remotely and no visit is needed. If Oscar does not meet customers in person (for example at their yard, office or home), a profile is likely to be refused or suspended, and creating one anyway risks the account.
+Google only allows a Business Profile for businesses that make **in-person contact with customers** during their stated hours. Online-only businesses are not eligible.
 
-- If Oscar does meet customers in person, set Pillion Web up as a **service-area business** with the address hidden.
-- If not, skip the Business Profile for now. Bing Places, Apple Business Connect and the directories below still help. Revisit if face-to-face meetings become part of how Pillion Web works.
+Oscar confirmed on 10 November 2026 that he meets clients in person when needed. That makes Pillion Web eligible as a **service-area business** with the address hidden. The site now says the same: most of the work is done on the client's website and listings, and Oscar is happy to meet in person. Keep it true: if a client asks to meet, meet them, and only list hours when that is possible.
 
 Check Google's current [Business Profile guidelines](https://support.google.com/business/answer/3038177) before starting, because the rules change.
 
@@ -127,11 +124,10 @@ These are bodies for Pillion Web's customers rather than for Pillion Web. Some h
 
 ## Only Oscar can do
 
-- Decide whether Pillion Web meets customers in person, then create and verify the Google Business Profile (or skip it).
+- Create and verify the Google Business Profile as a service-area business with the address hidden (eligible: Oscar meets clients in person when needed).
 - Create Bing Places, Apple Business Connect, Yell and FreeIndex listings.
 - Join or visit any chamber, networking group or association.
 - Update LinkedIn using the checklist.
-- Choose the area wording (see the open question above).
 - Supply any real reviews, with the reviewer's permission, if they are to appear on the site.
 
 ## Not possible on the current static site
