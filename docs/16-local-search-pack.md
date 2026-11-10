@@ -17,6 +17,9 @@ Search engines and AI tools trust a business more when the same details appear i
 | Area | Working across West Sussex, Sussex, Hampshire and the South East (chosen by Oscar, 10 November 2026) |
 | Phone | None published (as on the website) |
 | Price wording | Fixed prices from £225 |
+| Tagline (chosen by Oscar, 10 November 2026) | Quote forms, websites and Google listings that help trades firms win more work |
+
+**Tagline** (LinkedIn tagline, Yell strapline, and the opening line where a profile has no tagline field): Quote forms, websites and Google listings that help trades firms win more work
 
 **One-line description (up to 160 characters):** Pillion Web is Chichester based and helps trades businesses get more from their websites: quote forms, the right details on Google and small websites.
 

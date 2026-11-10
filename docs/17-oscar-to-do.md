@@ -1,12 +1,16 @@
 # Oscar's to-do list
 
-Things only Oscar can do, in order. Agents: keep this list current. Tick items off when Oscar reports them done, and add new ones as they come up. Last updated 10 November 2026.
+Things only Oscar can do, in order. Agents: keep this list current. Tick items off when Oscar reports them done, and add new ones as they come up. Last updated 10 November 2026 (Yell).
 
 ## Now (can be done from anywhere)
 
-- [ ] Yell free listing, with the address hidden. Use the standard wording in [docs/16](16-local-search-pack.md)
+- [ ] Yell free listing: created 10 November 2026 and waiting for Yell to approve it (1 to 2 days). Before it goes public:
+  - [ ] Hide the street address. The Essential details page has no hide option, so look further down the page, or ask Yell support to show only "Chichester" for a home-based service business. If Yell will not hide it, delete the listing
+  - [ ] Decide on the phone number. Yell requires one and shows it publicly. Either accept that and use the same number on Google and the website, or get a separate business number
+  - [ ] Fill in the profile sections (strapline: the tagline in [docs/16](16-local-search-pack.md), summary, description, services, categories, areas, website and LinkedIn, logo, payment methods, hours). Leave awards, accreditations, qualifications and associations empty
+  - [ ] Yell's emails landed outside the Zoho inbox: mark them as not spam so later emails arrive
 - [ ] FreeIndex free listing, same wording
-- [ ] LinkedIn: update the personal profile and the company page using the checklist in [docs/16](16-local-search-pack.md)
+- [ ] LinkedIn: update the personal profile and the company page using the checklist in [docs/16](16-local-search-pack.md). Company page tagline: "Quote forms, websites and Google listings that help trades firms win more work". Add Chichester as the location and verify the pillionweb.co.uk email domain. Cancel the Premium free trial before it ends unless choosing to pay
 
 ## When back in Chichester
 
