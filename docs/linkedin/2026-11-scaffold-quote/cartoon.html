@@ -1,0 +1,117 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>Scaffold cartoon</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{width:1080px;height:1350px;overflow:hidden;font-family:Inter,sans-serif;background:#12302B}
+#cap{position:absolute;left:0;right:0;top:1020px;height:330px;background:#12302B;color:#fff;padding:0 70px;display:flex;align-items:center}
+#capt{font-family:"Source Serif 4",Georgia,serif;font-size:62px;line-height:1.15;font-weight:700}
+#capt em{font-style:normal;color:#C8963E}
+svg{position:absolute;left:0;top:0}</style></head><body>
+<svg id="st" width="1080" height="1020" viewBox="0 0 1080 1020"></svg>
+<div id="cap"><div id="capt"></div></div>
+<script>
+const SK='#EDB48C',SKD='#D9966A',VEST='#F28C28',HAT='#F6C431',INK='#12302B',BR='#C8963E';
+const cl=v=>Math.max(0,Math.min(1,v)), ease=v=>v<.5?2*v*v:1-Math.pow(-2*v+2,2)/2, lerp=(a,b,k)=>a+(b-a)*k;
+function mouth(e,t,y=-182){
+ if(e==='shock')return `<ellipse cx="0" cy="${y+4}" rx="15" ry="20" fill="#5a1f1f"/><ellipse cx="0" cy="${y+14}" rx="9" ry="6" fill="#e06b6b"/>`;
+ if(e==='grin')return `<path d="M-28 ${y-6} Q0 ${y+30} 28 ${y-6} Z" fill="#5a1f1f"/><path d="M-24 ${y-4} L24 ${y-4} L20 ${y+4} L-20 ${y+4}Z" fill="#fff"/>`;
+ if(e==='worried')return `<path d="M-18 ${y+6} Q0 ${y-8} 18 ${y+6}" fill="none" stroke="#3b1d1d" stroke-width="5" stroke-linecap="round"/>`;
+ if(e==='cross')return `<path d="M-20 ${y+4} Q-10 ${y-4} 0 ${y+4} Q10 ${y-4} 20 ${y+4}" fill="none" stroke="#3b1d1d" stroke-width="5" stroke-linecap="round"/>`;
+ if(e==='talk')return Math.sin(t*22)>0?`<ellipse cx="0" cy="${y}" rx="13" ry="10" fill="#5a1f1f"/>`:`<path d="M-16 ${y-2} Q0 ${y+10} 16 ${y-2}" fill="none" stroke="#3b1d1d" stroke-width="5" stroke-linecap="round"/>`;
+ return `<path d="M-22 ${y-4} Q0 ${y+16} 22 ${y-4}" fill="none" stroke="#3b1d1d" stroke-width="5" stroke-linecap="round"/>`;
+}
+function eyes(e,lx=0,ly=0,y=-222,glasses=false){
+ const ry=e==='shock'?22:15,rx=e==='shock'?17:13,p=e==='shock'?5:7;
+ let brow=e==='worried'||e==='cross'?(e==='cross'?`<path d="M-36 ${y-26} L-8 ${y-16} M36 ${y-26} L8 ${y-16}"`:`<path d="M-36 ${y-16} L-8 ${y-26} M36 ${y-16} L8 ${y-26}"`):(e==='shock'?`<path d="M-36 ${y-38} Q-22 ${y-48} -8 ${y-38} M36 ${y-38} Q22 ${y-48} 8 ${y-38}"`:`<path d="M-34 ${y-26} Q-21 ${y-33} -8 ${y-26} M34 ${y-26} Q21 ${y-33} 8 ${y-26}"`);
+ brow+=' fill="none" stroke="#4a2f22" stroke-width="7" stroke-linecap="round"/>';
+ let s=`<ellipse cx="-21" cy="${y}" rx="${rx}" ry="${ry}" fill="#fff"/><ellipse cx="21" cy="${y}" rx="${rx}" ry="${ry}" fill="#fff"/><circle cx="${-21+lx}" cy="${y+ly}" r="${p}" fill="#1b1f22"/><circle cx="${21+lx}" cy="${y+ly}" r="${p}" fill="#1b1f22"/>`;
+ if(glasses)s+=`<circle cx="-21" cy="${y}" r="22" fill="none" stroke="#1b1f22" stroke-width="6"/><circle cx="21" cy="${y}" r="22" fill="none" stroke="#1b1f22" stroke-width="6"/><line x1="-1" y1="${y}" x2="1" y2="${y}" stroke="#1b1f22" stroke-width="6"/>`;
+ return s+brow;
+}
+const armP=(sx,sy,ex,ey,c=VEST,w=24)=>{const mx=(sx+ex)/2+(ey-sy)*.15,my=(sy+ey)/2-(ex-sx)*.15;return `<path d="M${sx} ${sy} Q${mx} ${my} ${ex} ${ey}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/><circle cx="${ex}" cy="${ey}" r="14" fill="${SK}"/>`};
+function scaff(o){const {x,y,s=1,e='smile',t=0,L=[-55,-80],R=[55,-80],hat=[0,0,0],look=[0,0],extra=''}=o;
+ return `<g transform="translate(${x} ${y}) scale(${s})">
+ <rect x="-28" y="-75" width="22" height="66" rx="8" fill="#2F3B45"/><rect x="6" y="-75" width="22" height="66" rx="8" fill="#2F3B45"/>
+ <ellipse cx="-20" cy="-6" rx="26" ry="13" fill="#3a2b20"/><ellipse cx="20" cy="-6" rx="26" ry="13" fill="#3a2b20"/>
+ <rect x="-48" y="-165" width="96" height="100" rx="34" fill="${VEST}"/>
+ <rect x="-48" y="-128" width="96" height="10" fill="#EEF2F3"/><rect x="-48" y="-104" width="96" height="10" fill="#EEF2F3"/><rect x="-12" y="-165" width="24" height="100" fill="#2F3B45" opacity=".18"/>
+ ${armP(-42,-145,L[0],L[1])}${armP(42,-145,R[0],R[1])}
+ <circle cx="-60" cy="-212" r="14" fill="${SK}"/><circle cx="60" cy="-212" r="14" fill="${SK}"/>
+ <circle cx="0" cy="-212" r="62" fill="${SK}"/><path d="M-50 -190 Q0 -140 50 -190 Q30 -160 0 -158 Q-30 -160 -50 -190Z" fill="#6b4a3a" opacity=".22"/>
+ ${eyes(e,look[0],look[1])}<ellipse cx="0" cy="-200" rx="15" ry="12" fill="${SKD}"/>${mouth(e,t,-176)}
+ <g transform="translate(${hat[0]} ${hat[1]}) rotate(${hat[2]} 0 -262)"><path d="M-54 -248 Q-54 -305 0 -308 Q54 -305 54 -248Z" fill="${HAT}"/><rect x="-66" y="-254" width="132" height="14" rx="7" fill="${HAT}"/><rect x="-7" y="-307" width="14" height="56" rx="5" fill="#e0aa1c"/></g>
+ ${extra}</g>`;}
+function home(o){const {x,y,s=1,e='smile',t=0,phone=true,look=[0,0],R=null}=o;
+ const arm=phone?armP(40,-140,52,-212,'#7B5EA7',22)+`<rect x="38" y="-262" width="34" height="58" rx="7" fill="#1b1f22"/>`:armP(40,-140,R?R[0]:58,R?R[1]:-80,'#7B5EA7',22);
+ return `<g transform="translate(${x} ${y}) scale(${s})">
+ <rect x="-24" y="-70" width="18" height="62" fill="#4D6FA3"/><rect x="6" y="-70" width="18" height="62" fill="#4D6FA3"/>
+ <ellipse cx="-18" cy="-6" rx="24" ry="12" fill="#F29BB0"/><ellipse cx="18" cy="-6" rx="24" ry="12" fill="#F29BB0"/>
+ <path d="M-46 -60 L-40 -160 Q0 -172 40 -160 L46 -60Z" fill="#7B5EA7"/><path d="M0 -165 L0 -60" stroke="#5f468a" stroke-width="5"/>
+ ${armP(-40,-140,-58,-78,'#7B5EA7',22)}
+ <circle cx="0" cy="-212" r="58" fill="${SK}"/>
+ <g fill="#8A4B2A">${[-60,-40,-15,15,40,60,-52,52].map((d,i)=>`<circle cx="${d}" cy="${-250+(Math.abs(d)>45?25:0)+(i>5?40:0)}" r="${i>5?20:26}"/>`).join('')}</g>
+ ${eyes(e,look[0],look[1],-218,true)}<ellipse cx="0" cy="-196" rx="11" ry="9" fill="${SKD}"/>${mouth(e,t,-174)}
+ ${arm}</g>`;}
+function van(x,y,sh=0,label=true){return `<g transform="translate(${x+sh} ${y})"><rect x="0" y="30" width="400" height="170" rx="24" fill="${INK}"/><path d="M290 30 L340 30 L400 110 L400 200 L290 200Z" fill="#1d4a41"/><path d="M302 46 L334 46 L382 106 L302 106Z" fill="#cfe0e8"/>
+ ${label?`<text x="26" y="130" font-family="'Source Serif 4',Georgia" font-weight="700" font-size="30" fill="#fff">Your Scaffolding</text>`:''}
+ <circle cx="85" cy="200" r="34" fill="#1b1f22"/><circle cx="85" cy="200" r="13" fill="#8A9399"/><circle cx="315" cy="200" r="34" fill="#1b1f22"/><circle cx="315" cy="200" r="13" fill="#8A9399"/></g>`}
+function bubble(x,y,w,h,txt,size=34,tailX=null){return `<g><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="28" fill="#fff" stroke="${INK}" stroke-width="5"/>${tailX!==null?`<path d="M${tailX-18} ${y+h-3} L${tailX} ${y+h+34} L${tailX+18} ${y+h-3}" fill="#fff" stroke="${INK}" stroke-width="5"/><rect x="${tailX-16}" y="${y+h-8}" width="32" height="10" fill="#fff"/>`:''}${txt.split('|').map((l,i)=>`<text x="${x+w/2}" y="${y+h/2+size*.36+(i-(txt.split('|').length-1)/2)*size*1.2}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="${size}" fill="${INK}">${l}</text>`).join('')}</g>`}
+const rings=(x,y,on)=>on?`<g fill="none" stroke="${BR}" stroke-width="7" stroke-linecap="round"><path d="M${x} ${y-30} Q${x+22} ${y} ${x} ${y+30}"/><path d="M${x+18} ${y-48} Q${x+52} ${y} ${x+18} ${y+48}"/></g>`:'';
+function scaffolding(){let s=`<rect x="560" y="140" width="520" height="840" fill="#B8664A"/>`;for(let r=0;r<38;r++)for(let c=0;c<12;c++)s+=`<rect x="${560+c*48+(r%2?24:0)-24}" y="${142+r*22}" width="44" height="18" fill="#C2735A" opacity=".55"/>`;
+ s+=`<polygon points="530,150 820,30 1110,150" fill="#4A3F3A"/><rect x="640" y="440" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/><rect x="880" y="440" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/><rect x="640" y="710" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/>`;
+ s+=`<g stroke="#8A9399" stroke-width="12" stroke-linecap="round"><line x1="470" y1="170" x2="470" y2="980"/><line x1="700" y1="170" x2="700" y2="980"/><line x1="930" y1="170" x2="930" y2="980"/><line x1="470" y1="370" x2="700" y2="610" stroke-width="6"/><line x1="700" y1="610" x2="930" y2="850" stroke-width="6"/></g><g fill="#B07B45"><rect x="455" y="355" width="490" height="18"/><rect x="455" y="595" width="490" height="18"/><rect x="455" y="835" width="490" height="18"/></g>`;return s}
+const sky=`<rect width="1080" height="1020" fill="#CFE6F2"/><circle cx="150" cy="140" r="60" fill="#FBE7A1"/><g fill="#fff" opacity=".9"><ellipse cx="330" cy="120" rx="80" ry="26"/><ellipse cx="380" cy="100" rx="50" ry="30"/></g><rect y="975" width="1080" height="45" fill="#7E8A6A"/>`;
+function mug(x,y){return `<g transform="translate(${x} ${y})"><rect x="-16" y="-34" width="32" height="34" rx="5" fill="#fff" stroke="${INK}" stroke-width="4"/><path d="M16 -26 q14 0 14 10 q0 10 -14 10" fill="none" stroke="${INK}" stroke-width="4"/><path d="M-6 -42 q6 -8 0 -16 M6 -42 q6 -8 0 -16" stroke="#9aa" stroke-width="3" fill="none"/></g>`}
+const CAPS=[[0,5.5,"The phone's in your pocket.<br><em>That's not the problem.</em>"],[5.5,16.5,"The problem is <em>what you get from the call.</em>"],[16.5,20.5,"Then it's more calls <em>just to price it.</em>"],[20.5,26.5,"A quote form asks <em>the right questions first.</em>"],[26.5,33,"Scaffolders: <em>what's the vaguest quote request you've had?</em>"]];
+const DIA=[[6.0,'S',"Where's the job?"],[7.2,'H',"Near the big|roundabout."],[8.6,'S',"How many storeys?"],[9.8,'H',"Erm... tall-ish?"],[11.2,'S',"Front or back?"],[12.4,'H',"The bit with|the gutter."],[13.8,'S',"Can you send|a photo?"],[15.0,'H',"Of what?"]];
+window.render=function(t){let s='';
+ if(t<5.5){ // S1: phone buzzes in pocket, he answers
+  const buzz=t>.4&&t<2.4&&(t%.5)<.3, ans=t>=2.6;
+  s+=sky+scaffolding();
+  const pocket=`<rect x="10" y="-150" width="30" height="44" rx="6" fill="#1b1f22"/><rect x="14" y="-146" width="22" height="34" rx="3" fill="${buzz?'#9FE3C1':'#4d6b60'}"/>`+(buzz?`<g stroke="${BR}" stroke-width="5" stroke-linecap="round"><path d="M50 -150 l14 -8 M52 -130 l16 0 M50 -110 l14 8"/></g>`:'');
+  s+=scaff({x:640,y:595+(buzz?Math.sin(t*80)*2:0),s:1.15,t,e:ans?'smile':'worried',look:ans?[-4,0]:[6,10],L:[-90,-260],R:ans?[52,-212]:[60,-100],
+     extra:(ans?`<rect x="38" y="-262" width="34" height="58" rx="7" fill="#1b1f22"/>`:pocket)+`<rect x="-200" y="-276" width="230" height="16" rx="8" fill="#8A9399"/>`});
+  if(t>3.4)s+=bubble(70,300,400,150,"Hi, I need|a scaffold.",40,null)+`<text x="90" y="285" font-family="Inter" font-weight="700" font-size="26" fill="${INK}">On the phone:</text>`;
+ } else if(t<16.5){ // S2: the vague call, split screen
+  s+=`<rect width="540" height="1020" fill="#F3E9D8"/><rect y="880" width="540" height="140" fill="#C9A77C"/><rect x="540" width="540" height="1020" fill="#CFE6F2"/><rect x="536" width="8" height="1020" fill="${INK}"/>`;
+  s+=`<rect x="60" y="430" width="200" height="160" fill="#cfe0e8" stroke="#fff" stroke-width="10"/><rect x="330" y="760" width="170" height="120" fill="#B07B45"/>`;
+  s+=`<g stroke="#8A9399" stroke-width="12"><line x1="600" y1="300" x2="600" y2="1020"/><line x1="1040" y1="300" x2="1040" y2="1020"/></g><rect x="580" y="900" width="480" height="18" fill="#B07B45"/>`;
+  const cur=[...DIA].reverse().find(d=>t>=d[0]); const curH=[...DIA].reverse().find(d=>t>=d[0]&&d[1]=='H'); const curS=[...DIA].reverse().find(d=>t>=d[0]&&d[1]=='S');
+  const sTalk=cur&&cur[1]=='S'&&t-cur[0]<.8, hTalk=cur&&cur[1]=='H'&&t-cur[0]<.8;
+  const exasp=Math.max(0,DIA.findIndex(d=>d===curS));
+  s+=home({x:270,y:990,s:1.3,t,e:hTalk?'talk':'smile',look:[4,-4]});
+  s+=scaff({x:820,y:900,s:1.25,t,e:sTalk?'talk':(exasp>=2?'cross':'worried'),L:[-60,-110],R:[52,-212],look:[-6,0],extra:`<rect x="38" y="-262" width="34" height="58" rx="7" fill="#1b1f22"/>`});
+  if(curS)s+=bubble(580,60,460,150,curS[2],40,null);
+  if(curH)s+=bubble(40,60,460,150,curH[2],40,null);
+  if(t>15.4)s+=`<text x="810" y="330" text-anchor="middle" font-family="Inter" font-weight="800" font-size="90" fill="#9E3814">?!</text>`;
+ } else if(t<20.5){ // S3: notes on his hand / board
+  const tt=t-16.5;
+  s+=`<rect width="1080" height="1020" fill="#CFE6F2"/>`;
+  s+=`<g transform="rotate(-3 540 520)"><rect x="140" y="160" width="800" height="620" rx="16" fill="#C9A06A"/><rect x="170" y="190" width="740" height="560" rx="8" fill="#D9B27D"/>`;
+  [["Near big roundabout?",.3],["Tall-ish??",1.1],["The bit with the gutter",1.9],["Photo of... ???",2.7]].forEach((n,i)=>{if(tt>n[1])s+=`<text x="210" y="${290+i*120}" font-family="'Comic Sans MS','Comic Neue',cursive" font-size="58" fill="#2b2b2b">${n[0]}</text>`});
+  s+=`</g>`;
+  s+=scaff({x:900,y:1000,s:.9,t,e:'cross',L:[-70,-120],R:[30,-250],look:[-8,-6]});
+ } else if(t<26.5){ // S4: the quote form
+  const tt=t-20.5;
+  s+=`<rect width="540" height="1020" fill="#F3E9D8"/><rect x="540" width="540" height="1020" fill="#CFE6F2"/><rect x="536" width="8" height="1020" fill="${INK}"/>`;
+  s+=`<g transform="translate(60 70)"><rect width="420" height="600" rx="40" fill="${INK}"/><rect x="18" y="40" width="384" height="530" rx="22" fill="#fff"/><text x="40" y="95" font-family="Inter" font-weight="800" font-size="28" fill="${INK}">Get a scaffold quote</text>`;
+  [['Address and postcode','12 Elm Road, PO19'],['How many storeys?','3'],['Which sides?','Front only'],['Photo of the access','attached'],]
+   .forEach((r,i)=>{const on=tt>.5+i*.8;s+=`<g transform="translate(40 ${135+i*100})"><rect width="340" height="80" rx="12" fill="#F2F5F3"/><text x="16" y="30" font-family="Inter" font-size="21" fill="#55615E">${r[0]}</text>${on?`<text x="16" y="62" font-family="Inter" font-weight="700" font-size="25" fill="${INK}">${r[1]}</text><circle cx="312" cy="40" r="18" fill="#1F7A4D"/><path d="M302 41 l7 7 l13 -15" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>`:''}</g>`});
+  s+=`<text x="210" y="${555}" text-anchor="middle" font-family="Inter" font-size="18" fill="#55615E">Example</text></g>`;
+  s+=home({x:270,y:1000,s:.9,t,e:'smile',phone:false,R:[30,-190],look:[0,-6]});
+  const got=tt>3.8;
+  s+=`<g stroke="#8A9399" stroke-width="12"><line x1="600" y1="300" x2="600" y2="1020"/><line x1="1040" y1="300" x2="1040" y2="1020"/></g><rect x="580" y="900" width="480" height="18" fill="#B07B45"/>`;
+  s+=scaff({x:820,y:900,s:1.25,t,e:got?'grin':'smile',L:got?[-80,-230]:[-60,-110],R:[30,-170],look:got?[-4,-2]:[0,8],extra:`<rect x="10" y="-210" width="44" height="72" rx="8" fill="#1b1f22"/><rect x="15" y="-203" width="34" height="56" rx="4" fill="${got?'#9FE3C1':'#4d6b60'}"/>`+(got?`<rect x="-88" y="-262" width="16" height="34" rx="7" fill="${SK}"/>`:'')});
+  if(got)s+=bubble(580,60,460,150,"Elm Road, 3 storeys,|front, photo. Sorted.",32,null);
+ } else { // S5: end card
+  s+=`<rect width="1080" height="1020" fill="${INK}"/><rect x="440" y="180" width="200" height="200" rx="44" fill="#fff"/><rect x="490" y="230" width="100" height="100" transform="rotate(45 540 280)" fill="${BR}"/>
+  <text x="540" y="520" text-anchor="middle" font-family="'Source Serif 4',Georgia" font-weight="700" font-size="88" fill="#fff">Pillion Web</text>
+  <text x="540" y="595" text-anchor="middle" font-family="Inter" font-size="36" fill="#cfd9d5">Quote forms for trades firms</text>
+  <text x="540" y="670" text-anchor="middle" font-family="Inter" font-weight="800" font-size="46" fill="${BR}">pillionweb.co.uk</text>
+  <text x="540" y="740" text-anchor="middle" font-family="Inter" font-size="32" fill="#cfd9d5">Chichester based. Sussex and Hampshire</text>`;
+  s+=scaff({x:920,y:1010,s:.75,t,e:'grin',L:[-55,-80],R:[70,-200],extra:`<rect x="64" y="-228" width="14" height="30" rx="6" fill="${SK}"/>`});
+ }
+ document.getElementById('st').innerHTML=s;
+ const c=CAPS.find(c=>t>=c[0]&&t<c[1])||CAPS[CAPS.length-1]; const el=document.getElementById('capt'); if(el.dataset.k!=c[0]){el.innerHTML=c[2];el.dataset.k=c[0]}
+ const last=c===CAPS[CAPS.length-1]; const o=Math.min(cl((t-c[0])/.3),last?1:cl((c[1]-t)/.25)); el.style.opacity=o; el.style.transform=`translateY(${(1-o)*16}px)`;
+};
+render(0);
+</script></body></html>
