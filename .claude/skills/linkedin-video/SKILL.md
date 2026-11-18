@@ -12,8 +12,13 @@ Write the post text with the `linkedin-post` skill. Its rules apply here too: no
 ## What makes it work (lessons from Oscar's feedback)
 
 - **True to the job, or it fails.** Trades keep their phone in their pocket and answer it. A joke built on a false premise ("the phone's in the van") was rejected straight away. Before writing, check the premise against how the trade really works, and ask Oscar if unsure.
-- **The best pain is the useless call,** not the missed one: they answer and get nothing they can price from ("the pipey bit", "tall-ish", "near the big church"). The quote form fixes that by asking the right questions first. Find the trade's version: plumbers (leaks, "the thing under the sink"), roofers ("a tile's missing"; "which side?"; "the top"), electricians ("the switchy box"), builders ("a normal-sized extension"), decorators ("sort of grey but warm").
-- **One recognisable scene, escalating, then the fix.** About four beats: answer, three rounds of vague answers getting worse, a deadpan reaction (eyes shut, sad horn, camera push in), the form arriving with exactly what he needed, the end card with a question.
+- **Rotate the three services,** never two videos in a row on the same one:
+  - **Right details on Google** (fixed price from £225): an old number, wrong hours, "Closed" on Google when they are open, or different names on Google, Yell and Facebook so customers think it is three firms. The fix: the same name, number and hours everywhere.
+  - **A new website:** the 2011 site with tiny text you have to pinch, a photo of a van three vans ago, a contact page that goes nowhere on a phone. The fix: a small site that works on a phone, quote form built in.
+  - **A quote form (enquiries to your phone):** the useless call, where they answer and get nothing they can price from ("the pipey bit", "tall-ish"). The fix: the form asks the right questions first.
+  - Optional monthly maintenance only as a light touch (Christmas hours still up in June), never as the main pitch.
+  - Explainers (reviews, AI chat) are not services: no video sells them.
+- **One recognisable scene, escalating, then the fix.** About four beats: the setup, three rounds getting worse, a deadpan reaction (eyes shut, sad horn, camera push in), the fix, then the end card with a question.
 - **End on a question the audience can answer with a story** ("Plumbers: what's the best description of a leak you've been given?"). That is where the comments come from.
 - **Captions carry it.** Most LinkedIn video plays muted, so the caption band tells the story and the speech bubbles carry the dialogue. Sound is a bonus.
 - **Rotate trades.** Do not make two in a row for the same trade. Avoid scaffolding for now (Oscar asked for something else).
