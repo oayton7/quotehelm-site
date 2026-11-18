@@ -1,6 +1,6 @@
 # Oscar's to-do list
 
-Things only Oscar can do, in order. Agents: keep this list current. Tick items off when Oscar reports them done, and add new ones as they come up. Last updated 10 November 2026 (Yell).
+Things only Oscar can do, in order. Agents: keep this list current. Tick items off when Oscar reports them done, and add new ones as they come up. Last updated 18 November 2026 (LinkedIn posts).
 
 ## Now (can be done from anywhere)
 
@@ -9,6 +9,7 @@ Things only Oscar can do, in order. Agents: keep this list current. Tick items o
   - [x] Phone number decided: Oscar’s mobile is public on Yell, Google, the website and other listings (10 November 2026)
   - [ ] Fill in the profile sections (strapline: the tagline in [docs/16](16-local-search-pack.md), summary, description, services, categories, areas, website and LinkedIn, logo, payment methods, hours). Leave awards, accreditations, qualifications and associations empty
   - [ ] Yell's emails landed outside the Zoho inbox: mark them as not spam so later emails arrive
+- [ ] LinkedIn posts: about two a week, drafted with the `linkedin-post` skill from the topic bank in [docs/18](18-linkedin-posts.md). Decide whether to post from the personal profile and reshare to the company page (recommended for reach). Add the link as the first comment, reply to comments in the first hour, and report the numbers after a week so they go in the post log
 - [ ] FreeIndex free listing, same wording and the same phone number
 - [x] LinkedIn company page: tagline, services, About and work location done (10 November 2026). The personal profile stays as it is, by Oscar’s choice. Still to check: the Chichester location and the email domain check on the company page dashboard. Cancel the Premium free trial before it ends unless choosing to pay
 
