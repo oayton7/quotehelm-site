@@ -19,7 +19,7 @@ Last updated 18 November 2026. Every pull request updates this section and adds 
 - **Google Ads:** a Smart campaign draft exists but is not published and has no payment details. Parked: ads are paid and do not help normal search or AI answers. Conditions before any launch are in [docs/17](docs/17-oscar-to-do.md).
 - **Yell:** free listing created and waiting for Yell’s approval. The street address must be hidden before it goes public (see the [to-do list](docs/17-oscar-to-do.md)).
 - **Phone and LinkedIn:** Oscar’s mobile, 07825 254268, is published on the site, Google and Yell so every listing matches. The LinkedIn company page has the tagline, services and About filled in.
-- **LinkedIn posts:** the first post (scaffolders) went up on the company page around 10 November. A `linkedin-post` skill now drafts posts aimed at trades owners in West Sussex, East Sussex and Hampshire, with the playbook, topic bank and post log in [docs/18](docs/18-linkedin-posts.md). Oscar posts; agents only draft.
+- **LinkedIn posts:** the first post (scaffolders) went up on the company page around 10 November. A `linkedin-post` skill now drafts posts aimed at trades owners in West Sussex, East Sussex and Hampshire, with the playbook, topic bank and post log in [docs/18](docs/18-linkedin-posts.md). A free `linkedin-video` skill makes short cartoon videos (first one: a plumber and "the pipey bit"). Oscar posts; agents only draft.
 - **Next:** Oscar’s [to-do list](docs/17-oscar-to-do.md): finish Yell, then FreeIndex; the Business Profile video back in Chichester; then Bing Places and Apple Business Connect; then the first GEO check.
 
 The full history is in the [progress log](docs/log/README.md) and decisions are in the [decision register](docs/10-decisions.md).
@@ -28,7 +28,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
-| 18 November 2026 | LinkedIn post skill added, with a playbook, topic bank and post log in [docs/18](docs/18-linkedin-posts.md). First LinkedIn post (scaffolders) reported. |
+| 18 November 2026 | LinkedIn post and free cartoon video skills added, with a playbook, topic bank and post log in [docs/18](docs/18-linkedin-posts.md). First LinkedIn post (scaffolders) reported. |
 | 10 November 2026 | Phone number added to the site footer, contact page, structured data and `llms.txt`; LinkedIn company page completed. |
 | 10 November 2026 | Yell listing created, awaiting approval; address and phone number to resolve first. Tagline chosen (“Quote forms, websites and Google listings that help trades firms win more work”) and added to the structured data and `llms.txt`. |
 | 10 November 2026 | Google Business Profile created (verification pending); Google Ads draft parked; Oscar’s [to-do list](docs/17-oscar-to-do.md) and a refreshed Grok brief added. |

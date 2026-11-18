@@ -1,6 +1,6 @@
 # LinkedIn posts: playbook, topic bank and post log
 
-How Pillion Web uses LinkedIn to reach trades business owners in West Sussex, East Sussex and Hampshire without paying for ads. Agents draft with the `linkedin-post` skill (`.claude/skills/linkedin-post/SKILL.md`); other assistants, such as Grok, should follow the same rules. Oscar posts everything himself. Prepared 18 November 2026.
+How Pillion Web uses LinkedIn to reach trades business owners in West Sussex, East Sussex and Hampshire without paying for ads. Agents draft with the `linkedin-post` skill (`.claude/skills/linkedin-post/SKILL.md`) and make free cartoon videos with the `linkedin-video` skill (`.claude/skills/linkedin-video/SKILL.md`); other assistants, such as Grok, should follow the same rules. Oscar posts everything himself. Prepared 18 November 2026.
 
 ## The short version
 
@@ -64,6 +64,7 @@ Tick an idea when it is posted. Rotate trades and counties.
 | [ ] | Checklist | Scaffolders | Hampshire | Five questions a scaffolding quote form should ask (storeys, elevations, pavement licence, trade or homeowner, start date) | /trades/scaffolders/ |
 | [ ] | Myth | All trades | West Sussex | You do not need a new website to get more quote requests | /guides/missed-enquiries-checklist/ |
 | [ ] | Local | Builders | Brighton, Lewes | Terraces, flats and conservation areas: ask the right questions before the site visit | /areas/brighton/ |
+| [ ] | Cartoon video | Plumbers | Any | "The pipey bit": the useless call, then a quote form with the postcode, problem and photo. Drafted, made free with the `linkedin-video` skill: [docs/linkedin/2026-11-plumber-pipey-bit](https://github.com/oayton7/quotehelm-site/tree/main/docs/linkedin/2026-11-plumber-pipey-bit) | /trades/plumbers/ |
 | [ ] | Local | Plumbers | Portsmouth, Havant | Terraced streets and parking: get access details before calling back | /areas/portsmouth/ |
 | [ ] | Checklist | All trades | Sussex and Hampshire | Check your Google details in five minutes: name, phone, hours, area, website | /guides/check-your-google-details/ |
 | [ ] | Local | Electricians | Southampton, Winchester | Landlords and letting agents as customers: what they need from a quote request | /areas/southampton/ |
