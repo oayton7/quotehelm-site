@@ -42,21 +42,27 @@ These are widely reported LinkedIn practices, not guarantees. Treat them as thin
 - **Hook in the first two lines.** Only about the first 200 characters show before "see more", less on a phone. Make line one a specific, slightly surprising statement about their work. No "I'm excited to share".
 - **Length:** 120 to 220 words for a text post. Short lines, lots of white space.
 - **Local signals in the text,** not just hashtags. Name one or two real places that fit the point, and vary them across posts, for example Chichester, Bognor Regis, Worthing, Horsham, Crawley (West Sussex); Brighton, Hove, Eastbourne, Lewes, Hastings (East Sussex); Portsmouth, Southampton, Havant, Winchester, Basingstoke (Hampshire). Use local detail from the town pages (coastal storms, terraces and parking, conservation areas) only where it is true and relevant.
-- **Links:** keep the link out of the post body. Put it in a first comment Oscar adds straight after posting, pointing to the most relevant guide or trade page, not always the home page.
+- **Links:** keep the link out of the post body. Most sources report a large reach penalty for links in the post, and some say the link-in-first-comment workaround no longer helps much either. Default: no link in the post; add it as a first comment only when it genuinely helps the reader (a checklist or guide), pointing to the most relevant page, not always the home page. Every few posts, use no link at all so the post can be measured on its own.
 - **Hashtags:** three to five at the end. One or two trade tags, one or two county or town tags, at most one general tag. Pick from: #Scaffolding #Roofing #Builders #Plumbing #Electricians #Decorators #TradesBusiness #WestSussex #EastSussex #Hampshire #Sussex #Chichester #Brighton #Portsmouth #Southampton #Worthing.
-- **Where to post:** a company page with few followers reaches very few people. Recommend that Oscar posts from his personal profile, mentions the Pillion Web page in the text, and reshares to the company page, unless he says otherwise. His personal profile wording stays as it is by his choice; posting from it is a separate decision for him.
-- **The first hour:** Oscar should be around to reply to every comment with a real answer or follow-up question.
+- **Where to post:** a company page with few followers reaches very few people (one 2026 source puts company page organic reach at about 1 to 2%). Recommend that Oscar posts from his personal profile, mentions the Pillion Web page in the text, and reshares to the company page, unless he says otherwise. His personal profile wording stays as it is by his choice; posting from it is a separate decision for him.
+- **The first hour:** Oscar should be around to reply to every comment with a real answer or follow-up question. Longer comments and back-and-forth replies are reported to count for far more than likes, so end with a question that invites a sentence, not a thumbs-up.
 - **Timing:** suggest weekday early morning (about 6:30 to 8:00) or early evening (about 18:00 to 20:00), when trades owners are off the tools. Two posts a week is a sustainable start.
 - **Between posts:** suggest Oscar spends ten minutes leaving useful comments on posts by local trades firms, chambers and suppliers. Comments are his to write and send.
 
 ## Formats to rotate
+
+Most 2026 benchmarks rank document carousels (a PDF uploaded as a document) first for engagement, then native video, then image posts, then text only. Polls get seen but get little real discussion, so use them rarely. For small accounts, an image post with Oscar's own photo is a safe default. Aim for roughly: one carousel or image-led checklist and one scene-and-fix or question post per week. See the research notes in `docs/18-linkedin-posts.md`.
 
 1. **Scene and fix:** a common moment on the job, what it costs, a simple fix (like the first post).
 2. **Checklist:** "Five things a scaffolding quote form should ask" (from `guides/` and `trades/`). Can also be a PDF carousel that Oscar uploads.
 3. **Myth:** "You don't need a new website to get more quote requests."
 4. **Local:** a point tied to one town or county (storm callouts on the coast, parking and access in Portsmouth terraces).
 5. **Building Pillion Web:** an honest update on what Oscar is learning or making. No numbers he has not reported.
-6. **Question post:** a short poll-style question to get trades owners talking (missed calls or messy quote requests?).
+6. **Question post:** a short open question to get trades owners talking. Use the audience question bank in `docs/18-linkedin-posts.md`. Ask open or two-way-choice questions that invite a story ("what's the worst...", "which costs you more..."), never yes or no.
+
+## Market context to draw on
+
+Use the market notes in `docs/18-linkedin-posts.md` for angles (for example: small builders reported fewer enquiries in the first half of 2026, so each enquiry matters more; word of mouth is still how most homeowners find trades, but they check the firm online before calling). Only state a figure from a primary source named there, give the source in the first comment, and say "one survey found" rather than presenting it as fact about every firm. Never use the vendor "£24,000 a year lost to missed calls" style figures: their methods are not published.
 
 ## Output
 
