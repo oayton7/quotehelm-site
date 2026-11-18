@@ -1,4 +1,4 @@
-# Internal folders (business plan, archive, Tandem concept) are kept out of search.
+# Internal folders (business plan, archive, Tandem concept, agent skills) are kept out of search.
 # Each crawler reads only its own section, so every section repeats the list.
 
 User-agent: *
@@ -8,6 +8,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: GPTBot
@@ -17,6 +18,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: OAI-SearchBot
@@ -26,6 +28,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: ChatGPT-User
@@ -35,6 +38,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: ClaudeBot
@@ -44,6 +48,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: Claude-SearchBot
@@ -53,6 +58,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: PerplexityBot
@@ -62,6 +68,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: Google-Extended
@@ -71,6 +78,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 User-agent: Bingbot
@@ -80,6 +88,7 @@ Disallow: /site/
 Disallow: /scripts/
 Disallow: /README.md
 Disallow: /AGENTS.md
+Disallow: /.claude/
 Allow: /
 
 Sitemap: https://pillionweb.co.uk/sitemap.xml

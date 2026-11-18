@@ -123,7 +123,7 @@ These are bodies for Pillion Web's customers rather than for Pillion Web. Some h
 - [ ] Location: Chichester, West Sussex, with no street address
 - [ ] Specialities: quote forms, Google Business Profile, local SEO, websites for trades
 - [ ] Logo: `favicon.png`; cover image: `og.png`
-- [ ] Posts: use the separately drafted posts. Link to guides rather than making claims
+- [ ] Posts: draft with the `linkedin-post` skill and follow [docs/18](18-linkedin-posts.md). Link to guides rather than making claims
 
 ## Only Oscar can do
 
