@@ -65,7 +65,7 @@ Tick an idea when it is posted. Rotate trades and counties.
 | [ ] | Myth | All trades | West Sussex | You do not need a new website to get more quote requests | /guides/missed-enquiries-checklist/ |
 | [ ] | Local | Builders | Brighton, Lewes | Terraces, flats and conservation areas: ask the right questions before the site visit | /areas/brighton/ |
 | [ ] | Cartoon video | Plumbers | Any | "The pipey bit": the useless call, then a quote form with the postcode, problem and photo. Drafted, made free with the `linkedin-video` skill: [docs/linkedin/2026-11-plumber-pipey-bit](https://github.com/oayton7/quotehelm-site/tree/main/docs/linkedin/2026-11-plumber-pipey-bit) | /trades/plumbers/ |
-| [ ] | Picture | Plumbers | Any | A realistic text conversation: "the pipey bit", "the wet one", a thumb-over-the-lens photo, "near the big church". Drafted: [docs/linkedin/2026-11-pictures](https://github.com/oayton7/quotehelm-site/tree/main/docs/linkedin/2026-11-pictures) | /trades/plumbers/ |
+| [x] | Picture | Plumbers | Any | A realistic text conversation: "the pipey bit", "the wet one", a thumb-over-the-lens photo, "near the big church". Drafted: [docs/linkedin/2026-11-pictures](https://github.com/oayton7/quotehelm-site/tree/main/docs/linkedin/2026-11-pictures) | /trades/plumbers/ |
 | [ ] | Local | Plumbers | Portsmouth, Havant | Terraced streets and parking: get access details before calling back | /areas/portsmouth/ |
 | [ ] | Checklist | All trades | Sussex and Hampshire | Check your Google details in five minutes: name, phone, hours, area, website | /guides/check-your-google-details/ |
 | [ ] | Local | Electricians | Southampton, Winchester | Landlords and letting agents as customers: what they need from a quote request | /areas/southampton/ |
@@ -123,3 +123,4 @@ Add a row when Oscar reports a post went up, and fill in results only from numbe
 | Date | Profile | Format | Trade | Places | Hook | First-comment link | Results (as reported) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ~10 Nov 2026 | Company page | Scene and fix | Scaffolders | Chichester, Portsmouth | Most scaffolders lose work before they've even quoted. | None | Not yet reported |
+| 18 Nov 2026 | Not stated | Picture (text conversation) | Plumbers | None named | Every plumber has had this text. | None | Not yet reported |
