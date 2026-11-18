@@ -1,0 +1,99 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>Scaffold video</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+<script src="character.js"></script>
+<style>*{margin:0;box-sizing:border-box}body{width:1080px;height:1350px;overflow:hidden;font-family:Inter,sans-serif;background:#F2F5F3}
+#cap{position:absolute;left:0;right:0;bottom:0;height:330px;background:#12302B;color:#fff;display:flex;align-items:center;padding:0 80px}
+.c{position:absolute;left:80px;right:80px;font-family:"Source Serif 4",Georgia,serif;font-size:64px;line-height:1.15;font-weight:700;opacity:0}
+.c em{font-style:normal;color:#C8963E}
+svg{position:absolute;left:0;top:0}
+</style></head><body>
+<svg id="stage" width="1080" height="1020" viewBox="0 0 1080 1020"></svg>
+<div id="cap">
+<div class="c" id="c1">Three storeys up.<br><em>The phone's in the van.</em></div>
+<div class="c" id="c2">By break time, they've <em>rung someone else.</em></div>
+<div class="c" id="c3">A quote form asks <em>what you need to price it.</em></div>
+<div class="c" id="c4">Price it at your break. <em>No phone tag.</em></div>
+<div class="c" id="c5">Pillion Web<br><em style="font-family:Inter;font-size:50px">pillionweb.co.uk</em></div>
+</div>
+<script>
+const st=document.getElementById('stage');
+const brick=()=>{let s='';for(let r=0;r<40;r++){for(let c=0;c<12;c++){const x=560+c*48+(r%2?24:0)-24;s+=`<rect x="${x}" y="${120+r*22}" width="44" height="18" fill="#B8664A" opacity="${.85+((r*7+c*3)%5)*.03}"/>`}}return s};
+st.innerHTML=`
+<defs><clipPath id="wall"><rect x="560" y="120" width="520" height="860"/></clipPath></defs>
+<g id="sceneA">
+ <rect width="1080" height="1020" fill="#DCEBF2"/>
+ <circle cx="160" cy="150" r="60" fill="#F7E7B4"/>
+ <polygon points="530,130 820,20 1110,130" fill="#4A3F3A"/>
+ <rect x="560" y="120" width="520" height="860" fill="#9E5540"/><g clip-path="url(#wall)">${brick()}</g>
+ <rect x="640" y="430" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/><rect x="880" y="430" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/>
+ <rect x="640" y="700" width="120" height="150" fill="#cfe0e8" stroke="#fff" stroke-width="10"/>
+ <g stroke="#8A9399" stroke-width="12" stroke-linecap="round">
+  <line x1="470" y1="150" x2="470" y2="980"/><line x1="700" y1="150" x2="700" y2="980"/><line x1="930" y1="150" x2="930" y2="980"/>
+  <line x1="460" y1="360" x2="940" y2="360" stroke-width="8"/><line x1="460" y1="600" x2="940" y2="600" stroke-width="8"/><line x1="460" y1="840" x2="940" y2="840" stroke-width="8"/>
+  <line x1="470" y1="360" x2="700" y2="600" stroke-width="6"/><line x1="700" y1="600" x2="930" y2="840" stroke-width="6"/>
+ </g>
+ <g fill="#B07B45"><rect x="455" y="345" width="490" height="16"/><rect x="455" y="585" width="490" height="16"/><rect x="455" y="825" width="490" height="16"/></g>
+ <rect y="975" width="1080" height="45" fill="#7E8A6A"/>
+ <g id="guyA" transform="translate(600 345)">${scaffolder('reach')}</g>
+ <g id="van" transform="translate(30 780)">
+  <rect x="0" y="40" width="380" height="160" rx="18" fill="#12302B"/><path d="M280 40 L330 40 L380 110 L380 200 L280 200 Z" fill="#163a33"/>
+  <path d="M292 54 L326 54 L366 108 L292 108 Z" fill="#cfe0e8"/>
+  <rect x="30" y="80" width="200" height="40" rx="6" fill="none"/>
+  <text x="30" y="130" font-family="'Source Serif 4',Georgia" font-weight="700" font-size="29" fill="#fff">Your Scaffolding</text>
+  <circle cx="80" cy="200" r="32" fill="#1b1f22"/><circle cx="80" cy="200" r="13" fill="#8A9399"/><circle cx="310" cy="200" r="32" fill="#1b1f22"/><circle cx="310" cy="200" r="13" fill="#8A9399"/>
+  <g id="vanphone"><rect x="316" y="72" width="22" height="34" rx="4" fill="#12302B"/><rect id="glow" x="319" y="76" width="16" height="24" rx="2" fill="#9FE3C1"/></g>
+  <g id="rings" fill="none" stroke="#C8963E" stroke-width="6" stroke-linecap="round">
+   <path id="r1" d="M350 60 Q372 89 350 118"/><path id="r2" d="M366 44 Q400 89 366 134"/>
+  </g>
+ </g>
+ <g id="missed" font-family="Inter" font-weight="700" font-size="30"></g>
+</g>
+<g id="sceneB" opacity="0">
+ <rect width="1080" height="1020" fill="#F2F5F3"/>
+ <rect x="290" y="60" width="500" height="920" rx="60" fill="#12302B"/><rect x="310" y="100" width="460" height="850" rx="40" fill="#fff"/>
+ <text x="340" y="170" font-family="Inter" font-weight="700" font-size="30" fill="#12302B">New quote request</text>
+ <rect x="640" y="140" width="110" height="38" rx="19" fill="#F2F5F3"/><text x="660" y="167" font-family="Inter" font-size="22" fill="#55615E">Example</text>
+ <g id="rows" font-family="Inter"></g>
+</g>
+<g id="sceneC" opacity="0">
+ <rect width="1080" height="1020" fill="#DCEBF2"/><rect y="830" width="1080" height="190" fill="#7E8A6A"/>
+ <g transform="translate(-20 650) scale(.9)"><rect x="0" y="40" width="380" height="160" rx="18" fill="#12302B"/><circle cx="80" cy="200" r="32" fill="#1b1f22"/><circle cx="310" cy="200" r="32" fill="#1b1f22"/></g>
+ <rect x="700" y="770" width="70" height="60" rx="10" fill="#fff" stroke="#12302B" stroke-width="6"/><path d="M770 785 q30 0 30 18 q0 18 -30 18" fill="none" stroke="#12302B" stroke-width="6"/>
+ <g id="guyC" transform="translate(560 840) scale(1.6)"></g>
+ <g id="bubble" opacity="0"><rect x="640" y="300" width="380" height="150" rx="30" fill="#fff" stroke="#12302B" stroke-width="5"/>
+  <circle cx="705" cy="375" r="34" fill="#1F7A4D"/><path d="M688 376 l12 12 l22 -26" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="760" y="365" font-family="Inter" font-weight="700" font-size="34" fill="#12302B">Quote sent</text><text x="760" y="405" font-family="Inter" font-size="26" fill="#55615E">before 11am</text></g>
+</g>
+<g id="sceneD" opacity="0">
+ <rect width="1080" height="1020" fill="#12302B"/>
+ <rect x="440" y="250" width="200" height="200" rx="44" fill="#fff"/><rect x="490" y="300" width="100" height="100" transform="rotate(45 540 350)" fill="#C8963E"/>
+ <text x="540" y="590" text-anchor="middle" font-family="'Source Serif 4',Georgia" font-weight="700" font-size="84" fill="#fff">Pillion Web</text>
+ <text x="540" y="665" text-anchor="middle" font-family="Inter" font-size="36" fill="#cfd9d5">Quote forms for trades firms</text>
+ <text x="540" y="715" text-anchor="middle" font-family="Inter" font-size="36" fill="#cfd9d5">Chichester based. Sussex and Hampshire</text>
+</g>`;
+const rows=[['Address','Near Chichester, PO19'],['Job','Roof repair, front only'],['Storeys','3'],['Access','photo attached'],['Pavement','Yes, may need a licence'],['Needed','Monday, about 2 weeks'],['From','Homeowner']];
+document.getElementById('rows').innerHTML=rows.map((r,i)=>`<g class="row" opacity="0" transform="translate(0 ${230+i*100})"><text x="340" y="0" font-size="24" fill="#55615E">${r[0]}</text><text x="340" y="40" font-size="32" font-weight="600" fill="#12302B">${r[1]}</text>${r[0]=='Access'?'<rect x="620" y="-28" width="120" height="76" rx="8" fill="#B8664A"/><rect x="636" y="-16" width="14" height="56" fill="#8A9399"/><rect x="700" y="-16" width="14" height="56" fill="#8A9399"/>':''}<line x1="340" y1="62" x2="740" y2="62" stroke="#DCE3E0" stroke-width="2"/></g>`).join('');
+document.getElementById('guyC').innerHTML=scaffolder('phone');
+const $=id=>document.getElementById(id);
+const clamp=(v)=>Math.max(0,Math.min(1,v));
+const fade=(t,a,b,d=.4)=>clamp((t-a)/d)*clamp((b-t)/d);
+window.render=function(t){
+  // scenes: A 0-8, B 8-14.5, C 14.5-19, D 19-23
+  $('sceneA').setAttribute('opacity',clamp((8.4-t)/.4));
+  $('sceneB').setAttribute('opacity',fade(t,8,14.9));
+  $('sceneC').setAttribute('opacity',fade(t,14.5,19.4));
+  $('sceneD').setAttribute('opacity',clamp((t-19)/.4));
+  const bob=Math.sin(t*3)*3;$('guyA').setAttribute('transform',`translate(600 ${345+bob})`);
+  const ring=t<6.5?(Math.sin(t*14)>0?1:.25):0;$('r1').setAttribute('opacity',ring);$('r2').setAttribute('opacity',ring*.8);
+  $('glow').setAttribute('fill',ring>.5?'#9FE3C1':'#5f8f7b');
+  let m='';const n=t<4?0:Math.min(3,Math.floor((t-4)/1)+1);
+  for(let i=0;i<n;i++){m+=`<g transform="translate(40 ${690-i*70})"><rect width="380" height="56" rx="28" fill="#9E3814"/><text x="28" y="38" fill="#fff">Missed call</text><text x="352" y="38" text-anchor="end" fill="#fff" font-weight="400">${['9:12','9:40','10:05'][i]}</text></g>`}
+  $('missed').innerHTML=m;
+  document.querySelectorAll('.row').forEach((r,i)=>r.setAttribute('opacity',clamp((t-8.6-i*.55)/.35)));
+  const g=$('guyC');g.innerHTML=scaffolder(t>17?'thumb':'phone');
+  $('bubble').setAttribute('opacity',clamp((t-16.6)/.4));
+  const caps=[[0,4],[4,8.2],[8.2,14.5],[14.5,19],[19,24]];
+  caps.forEach((c,i)=>{const o=fade(t,c[0],c[1],.35);const e=$('c'+(i+1));e.style.opacity=i==0?Math.min(clamp((c[1]-t)/.35),clamp((t+.01)/.35)):o;e.style.transform=`translateY(${(1-o)*20}px)`;});
+};
+render(0);
+</script></body></html>

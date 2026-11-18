@@ -1,0 +1,61 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>Scaffold quote carousel</title>
+<script src="character.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+@page{size:1080px 1350px;margin:0}
+:root{--ink:#12302B;--brass:#C8963E;--mist:#F2F5F3;--text:#1E2826;--muted:#55615E}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:#fff}
+.s{width:1080px;height:1350px;padding:110px 100px 90px;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;background:var(--mist)}
+.s.dark{background:var(--ink);color:#fff}
+.mark{width:64px;height:64px;border-radius:14px;background:var(--ink);position:relative;flex:none}
+.dark .mark{background:#fff}
+.mark:after{content:"";position:absolute;width:24px;height:24px;background:var(--brass);transform:rotate(45deg);left:20px;top:20px}
+.brand{display:flex;align-items:center;gap:20px;font-family:"Source Serif 4",Georgia,serif;font-size:34px;font-weight:700}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:28px;color:var(--muted)}
+.dark .foot{color:#cfd9d5}
+.num{font-family:"Source Serif 4",Georgia,serif;font-size:300px;line-height:1;color:var(--brass);font-weight:700;margin-top:120px}
+h1{font-family:"Source Serif 4",Georgia,serif;font-size:104px;line-height:1.05;font-weight:700;margin-top:150px;letter-spacing:-1px}
+h2{font-family:"Source Serif 4",Georgia,serif;font-size:96px;line-height:1.08;font-weight:700;margin-top:30px;color:var(--ink);letter-spacing:-.5px}
+.dark h2{color:#fff}
+p{font-size:50px;line-height:1.38;margin-top:50px;color:var(--muted);max-width:860px}
+.dark p{color:#dfe7e4}
+.lead{font-size:46px;color:#dfe7e4;max-width:560px}
+.guy{position:absolute;right:70px;bottom:150px}
+.bar{width:120px;height:10px;background:var(--brass);margin-top:60px}
+.swipe{font-size:34px;font-weight:600;color:var(--brass)}
+.url{font-size:52px;font-weight:700;color:var(--brass);margin-top:50px}
+.dots{display:flex;gap:12px}.dots i{width:14px;height:14px;border-radius:50%;background:#c5d0cc}.dots i.on{background:var(--brass)}
+</style></head><body>
+<section class="s dark"><div class="brand"><span class="mark"></span>Pillion Web</div>
+<h1>What to ask before you price a scaffold</h1><div class="bar"></div>
+<p class="lead">Five details every scaffolding quote request should give you, before you pick up the phone.</p>
+<svg class="guy" width="380" height="560" viewBox="-130 -280 260 290"><g id="g1"></g></svg>
+<div class="foot"><span>For scaffolders in Sussex and Hampshire</span><span class="swipe">Swipe →</span></div></section>
+
+<section class="s"><div class="num">1</div><h2>The address and postcode</h2>
+<p>So you can check it is on your patch, and look at the street, parking and access, before you ring back.</p>
+<div class="foot"><span>Pillion Web</span><span class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></span></div></section>
+
+<section class="s"><div class="num">2</div><h2>How many storeys, and which sides</h2>
+<p>Front only, or front and back? Two storeys or three? What is it for: roof, chimney, painting or an extension?</p>
+<div class="foot"><span>Pillion Web</span><span class="dots"><i></i><i class="on"></i><i></i><i></i><i></i></span></div></section>
+
+<section class="s"><div class="num">3</div><h2>A photo of the access</h2>
+<p>Side passages, conservatories, gardens, a neighbour's drive. One phone photo tells you more than ten minutes of questions.</p>
+<div class="foot"><span>Pillion Web</span><span class="dots"><i></i><i></i><i class="on"></i><i></i><i></i></span></div></section>
+
+<section class="s"><div class="num">4</div><h2>Pavement or road, and who is asking</h2>
+<p>Going on the pavement may need a licence from the council. A homeowner, a builder or a roofer changes the job and the conversation.</p>
+<div class="foot"><span>Pillion Web</span><span class="dots"><i></i><i></i><i></i><i class="on"></i><i></i></span></div></section>
+
+<section class="s"><div class="num">5</div><h2>When it is needed, and for how long</h2>
+<p>Monday or next month? Two weeks or two months? It sorts the urgent jobs from the ones that can wait.</p>
+<div class="foot"><span>Pillion Web</span><span class="dots"><i></i><i></i><i></i><i></i><i class="on"></i></span></div></section>
+
+<section class="s dark"><div class="brand"><span class="mark"></span>Pillion Web</div>
+<h2 style="margin-top:150px">A quote form on the website you already have can ask all five.</h2><div class="bar"></div>
+<p style="max-width:620px">Every request lands on your phone with the details you need to price it. No phone tag.</p>
+<div class="url">pillionweb.co.uk</div>
+<svg class="guy" width="300" height="440" viewBox="-130 -280 260 290" style="bottom:130px"><g id="g2"></g></svg>
+<div class="foot"><span>Chichester based. Working across Sussex and Hampshire</span></div></section>
+<script>g1.innerHTML=scaffolder("reach");g2.innerHTML=scaffolder("thumb")</script></body></html>

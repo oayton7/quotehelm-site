@@ -71,7 +71,7 @@ Tick an idea when it is posted. Rotate trades and counties.
 | [ ] | Explainer | Decorators, kitchen fitters | Horsham, Crawley | What a small trades website should cost, and what keeps costing money | /guides/trades-website-cost/ |
 | [ ] | Building Pillion Web | None | Chichester | Why Pillion Web started with scaffolders, and what Oscar has learned since | / |
 | [ ] | Question | All trades | Any | Which costs you more work: missed calls or messy quote requests? Short follow-up on replies to the first post | /guides/missed-enquiries-checklist/ |
-| [ ] | Carousel | Scaffolders | Sussex and Hampshire | Six-slide PDF: "What to ask before you price a scaffold": storeys, elevations, access photo, pavement licence, trade or homeowner, start date | /trades/scaffolders/ |
+| [ ] | Carousel | Scaffolders | Sussex and Hampshire | Six-slide PDF: "What to ask before you price a scaffold": storeys, elevations, access photo, pavement licence, trade or homeowner, start date. Drafted: PDF and a 23-second character video in [docs/linkedin/2026-11-scaffold-quote](https://github.com/oayton7/quotehelm-site/tree/main/docs/linkedin/2026-11-scaffold-quote) | /trades/scaffolders/ |
 | [ ] | Market | Builders | West Sussex, Hampshire | Fewer people are asking for quotes this year (FMB). When enquiries are scarce, the ones you miss cost more | /guides/missed-enquiries-checklist/ |
 | [ ] | Trust | All trades | Any | A referral still Googles you before they ring. What they see in ten seconds | /guides/check-your-google-details/ |
 
