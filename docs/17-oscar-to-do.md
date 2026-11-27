@@ -14,7 +14,8 @@ Things only Oscar can do, in order. Agents: keep this list current. Tick items o
 
 ## When back in Chichester
 
-- [ ] Google Business Profile: record the verification video at the Chichester address. The profile is created and saved as a service business (West Sussex, East Sussex, Hampshire; category Website designer; logo and photos uploaded). Go to business.google.com, open Pillion Web and press Verify. One continuous take of 1 to 2 minutes: street sign or landmark outside, unlock the door, the laptop with pillionweb.co.uk open, then log into the Pillion Web email or the profile. No faces or private papers
+- [x] Google Business Profile verification video submitted on 20 November 2026 (Oscar reports the profile may now be live). Send the profile link and the review link to an agent
+- [ ] (Only if the video is rejected) Google Business Profile: record a second verification video at the Chichester address with a printed business card (print-ready design made) and a recognisable landmark. The profile is created and saved as a service business (West Sussex, East Sussex, Hampshire; category Website designer; logo and photos uploaded). Go to business.google.com, open Pillion Web and press Verify. One continuous take of 1 to 2 minutes: street sign or landmark outside, unlock the door, the laptop with pillionweb.co.uk open, then log into the Pillion Web email or the profile. No faces or private papers
 
 ## Done
 
@@ -28,6 +29,8 @@ Things only Oscar can do, in order. Agents: keep this list current. Tick items o
 - [ ] Add a real photo of Oscar at work to the profile
 
 ## Later
+
+- [ ] Ask the client from the free job for a Google review, using the review link from the Business Profile. Their honest words, no reward
 
 - [ ] Ask real clients for Google reviews after real jobs, following the [review requests guide](https://pillionweb.co.uk/guides/how-google-review-requests-work/). Send any reviews meant for the site with the reviewer's permission
 - [ ] Decide whether to offer review requests or AI chat as services. If yes, an agent records a decision replacing D03 and updates the site

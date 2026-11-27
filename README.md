@@ -6,7 +6,7 @@ Pillion Web is Oscar Ayton’s business for practical websites and enquiry syste
 
 ## Current status
 
-Last updated 10 November 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
+Last updated 27 November 2026. Every pull request updates this section and adds a row to Progress below, so anyone or any AI agent reading this page sees the latest state.
 
 - **Brand:** Pillion Web chosen (decision D01) and live. Companies House and UK IPO trademark checks are still to do.
 - **Domain and email:** pillionweb.co.uk bought on GoDaddy (D08), with its A records and www CNAME pointing at GitHub Pages. getquotehelm.co.uk is registered on Porkbun and paid through 21 October 2027; it will forward to pillionweb.co.uk after the rebrand merges. Zoho Mail is set up on it, with MX, SPF, DKIM and DMARC records in place and mail reaching Zoho. oscar@pillionweb.co.uk is set up as an alias on Oscar’s mailbox and a test email arrived on 30 October. The main mailbox address stays oscarayton@getquotehelm.co.uk for now, because Emelia and logins use it. Cold email stays on getquotehelm.co.uk while the new domain builds sending reputation.
@@ -15,7 +15,8 @@ Last updated 10 November 2026. Every pull request updates this section and adds 
 - **Pilot terms:** approved (D04, D05, D07): £345 setup, 50% upfront and 50% before go-live, optional £59 a month maintenance with the first month free.
 - **Test build:** Stage 1 works with synthetic enquiries. SMS (Stage 2) and most acceptance tests are still to do.
 - **Search and AI visibility:** seven guides at /guides/, seven trade pages (scaffolders added) and six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), each with question headings, answer-first copy and matching structured data. Tracking sheet in [docs/15](docs/15-seo-geo-tracking.md). The site is in Google Search Console and Bing Webmaster Tools with the sitemap submitted, and the LinkedIn company page ([linkedin.com/company/146921031](https://www.linkedin.com/company/146921031/)) is linked from the structured data. The Business Profile draft, standard wording, listings and LinkedIn checklist are in [docs/16](docs/16-local-search-pack.md). Oscar meets clients in person when needed, so Pillion Web is eligible for a Business Profile. Still to do: create and verify it, directory listings and the first GEO check.
-- **Google Business Profile:** created as a service business (West Sussex, East Sussex, Hampshire; category Website designer). Waiting for Oscar’s verification video, which must be recorded at the Chichester address.
+- **Google Business Profile:** created as a service business (West Sussex, East Sussex, Hampshire; category Website designer). Verification video submitted on 20 November 2026; Oscar reports it may now be live. Its link is to be added to the site’s structured data.
+- **SEO and GEO tune-up (27 November):** About page, question sections on all seven trade pages, placeholder notice removed from the form markup, `knowsAbout` in the structured data, and a first search baseline in [docs/15](docs/15-seo-geo-tracking.md).
 - **Google Ads:** a Smart campaign draft exists but is not published and has no payment details. Parked: ads are paid and do not help normal search or AI answers. Conditions before any launch are in [docs/17](docs/17-oscar-to-do.md).
 - **Yell:** free listing created and waiting for Yell’s approval. The street address must be hidden before it goes public (see the [to-do list](docs/17-oscar-to-do.md)).
 - **Phone and LinkedIn:** Oscar’s mobile, 07825 254268, is published on the site, Google and Yell so every listing matches. The LinkedIn company page has the tagline, services and About filled in.
@@ -27,6 +28,7 @@ The full history is in the [progress log](docs/log/README.md) and decisions are 
 
 | Date | Milestone |
 | --- | --- |
+| 27 November 2026 | SEO and GEO tune-up: About page, questions on every trade page, crawlable form markup fixed, first search baseline recorded. |
 | 10 November 2026 | Phone number added to the site footer, contact page, structured data and `llms.txt`; LinkedIn company page completed. |
 | 10 November 2026 | Yell listing created, awaiting approval; address and phone number to resolve first. Tagline chosen (“Quote forms, websites and Google listings that help trades firms win more work”) and added to the structured data and `llms.txt`. |
 | 10 November 2026 | Google Business Profile created (verification pending); Google Ads draft parked; Oscar’s [to-do list](docs/17-oscar-to-do.md) and a refreshed Grok brief added. |

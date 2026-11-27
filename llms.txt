@@ -34,6 +34,7 @@ Replies are on weekdays, usually within one working day. If the form cannot send
 
 ## Pages
 - [Home](https://pillionweb.co.uk/)
+- [About Pillion Web](https://pillionweb.co.uk/about/)
 - [Prices](https://pillionweb.co.uk/pricing/)
 - [Get a quote](https://pillionweb.co.uk/contact/)
 - [Areas we cover](https://pillionweb.co.uk/areas/)
