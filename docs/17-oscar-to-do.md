@@ -14,8 +14,7 @@ Things only Oscar can do, in order. Agents: keep this list current. Tick items o
 
 ## When back in Chichester
 
-- [x] Google Business Profile verification video submitted on 20 November 2026 (Oscar reports the profile may now be live). Send the profile link and the review link to an agent
-- [ ] (Only if the video is rejected) Google Business Profile: record a second verification video at the Chichester address with a printed business card (print-ready design made) and a recognisable landmark. The profile is created and saved as a service business (West Sussex, East Sussex, Hampshire; category Website designer; logo and photos uploaded). Go to business.google.com, open Pillion Web and press Verify. One continuous take of 1 to 2 minutes: street sign or landmark outside, unlock the door, the laptop with pillionweb.co.uk open, then log into the Pillion Web email or the profile. No faces or private papers
+- [x] Google Business Profile verified (November 2026): https://g.page/r/CY5VX_toBv5LEBM. Review link: https://g.page/r/CY5VX_toBv5LEBM/review
 
 ## Done
 
@@ -23,7 +22,7 @@ Things only Oscar can do, in order. Agents: keep this list current. Tick items o
 
 ## After the Business Profile is verified
 
-- [ ] Send the profile link to an agent, to add it to the site's structured data (`sameAs`)
+- [x] Profile link added to the site's structured data (`sameAs`) and `llms.txt`
 - [ ] Bing Places for Business: import from the Google profile
 - [ ] Apple Business Connect
 - [ ] Add a real photo of Oscar at work to the profile

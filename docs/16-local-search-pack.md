@@ -16,6 +16,8 @@ Search engines and AI tools trust a business more when the same details appear i
 | Location | Chichester based. No street address shown |
 | Area | Working across West Sussex, Sussex, Hampshire and the South East (chosen by Oscar, 10 November 2026) |
 | Phone | 07825 254268 (Oscar’s mobile, approved for publication by Oscar on 10 November 2026). Use the same number on every listing |
+| Google Business Profile | https://g.page/r/CY5VX_toBv5LEBM (verified November 2026) |
+| Google review link | https://g.page/r/CY5VX_toBv5LEBM/review (send to real clients after a job) |
 | Price wording | Fixed prices from £225 |
 | Tagline (chosen by Oscar, 10 November 2026) | Quote forms, websites and Google listings that help trades firms win more work |
 
