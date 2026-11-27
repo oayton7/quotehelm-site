@@ -4,7 +4,7 @@ How to tell whether search and AI visibility are improving for Pillion Web. It f
 
 ## What is on the site
 
-- Home, prices, contact, seven trade pages (including scaffolders) and six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), each with a unique title, description, canonical URL and accurate structured data. Town and trade pages use question headings with the answer first, and FAQ structured data that matches the visible questions.
+- Home, prices, contact, an About page (who runs Pillion Web, with AboutPage, Person and FAQ structured data), seven trade pages (including scaffolders) and six town pages (Chichester, Bognor Regis, Worthing, Brighton, Portsmouth, Southampton), each with a unique title, description, canonical URL and accurate structured data. Town and all seven trade pages use question headings with the answer first, and FAQ structured data that matches the visible questions.
 - Structured data names the business as Pillion Web with Quotehelm as the alternate (previous) name.
 - `llms.txt` summarises the services, prices and pages in plain text.
 - Guides at `/guides/` answer buyer questions: missed enquiries, checking business details on Google, what a trades website costs, what a quote form does for a scaffolder, what Pillion Web costs, how Google review requests work, and what AI chat can and cannot do. Each guide has article and breadcrumb structured data and a named author.
@@ -61,8 +61,8 @@ Mobile Lighthouse scores, run locally against a test server on 10 November 2026 
 
 | Date | Assistant or search | Question | Pillion Web mentioned or linked? | Notes |
 | --- | --- | --- | --- | --- |
-| | Google | 6 | | |
-| | ChatGPT | 1 | | |
-| | Perplexity | 3 | | |
+| 2026-11-27 | Agent web search (leans to US results; not a UK browser check) | 6 ("Pillion Web" Chichester) | No | Generic Chichester web design directories only. Site 17 days after the new pages went live |
+| 2026-11-27 | Agent web search | Site name (pillionweb.co.uk) | No | Results were about motorcycle pillions: the brand name shares a common word, so name searches need "Pillion Web" plus Chichester or trades |
+| 2026-11-27 | Agent web search | Quote form for scaffolders, Chichester | No | Local scaffolders and directories (Checkatrade, Bark, Yell). Baseline only; repeat monthly from a UK browser and with Search Console |
 
 Check monthly. Compare with Search Console queries and with how real enquiries say they found you. Record findings in the progress log.
